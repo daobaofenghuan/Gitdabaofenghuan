@@ -7,6 +7,7 @@ package com.sindcreate.dj.cell.messagecell;
 
 
 import android.annotation.SuppressLint;
+import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +20,10 @@ import android.widget.TextView;
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.base.RVBaseCell;
 import com.sindcreate.dj.base.RVBaseViewHolder;
+import com.sindcreate.dj.bean.Mydata;
 import com.sindcreate.dj.model.Entry;
+
+
 
 /**
  * Created by Double on 2018/5/23.
@@ -28,9 +32,10 @@ import com.sindcreate.dj.model.Entry;
 public class Part_message extends RVBaseCell<Entry> {
     //警示教育
     public static final int TYPE = 502;
-
+    RelativeLayout dui;
     public Part_message(Entry entry){
         super(entry);
+
 
     }
     @Override
@@ -43,8 +48,15 @@ public class Part_message extends RVBaseCell<Entry> {
     public RVBaseViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         RVBaseViewHolder view= new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_message_part1_1,parent,false));
+        dui =view.getRelativeLayout(R.id.id_message_iconright);
+        if(mData.flag1){
 
-       LinearLayout rydown=view.getLinearLayout(R.id.id_message_rlydown);
+      dui.setVisibility(View.VISIBLE);}
+      else {
+            dui.setVisibility(View.INVISIBLE);
+        }
+
+       RelativeLayout rydown=view.getRelativeLayout(R.id.id_message_rlydown);
        // ImageView down=view.getImageView(R.id.id_message_icondown);
         final LinearLayout relativeLayout=view.getLinearLayout(R.id.id_message_nr);
         relativeLayout.setVisibility(View.GONE);
@@ -66,8 +78,28 @@ public class Part_message extends RVBaseCell<Entry> {
     }
 
     @Override
-    public void onBindViewHolder(RVBaseViewHolder holder, int position) {
-
+    public void onBindViewHolder(final RVBaseViewHolder holder, int position) {
+//        if(mData.flag1){
+//            System.out.println("阅读过了");
+//           new Handler().postDelayed(new Runnable() {
+//               @Override
+//               public void run() {
+//                   holder.getRelativeLayout(R.id.id_message_iconright).setVisibility(View.VISIBLE);
+//                   //holder.dui.setVisibility(View.VISIBLE);
+//               }
+//           },300);
+//          }else {
+//            System.out.println("没阅读过");
+//            new Handler().postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    holder.getRelativeLayout(R.id.id_message_iconright).setVisibility(View.INVISIBLE);
+//                }
+//            },300);
+//
+//
+//
+//        }
 
     }
 

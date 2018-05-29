@@ -53,6 +53,25 @@ public class DataMocker {
         return entries;
     }
 
+
+    public static List<Entry> mockMoreDatamessage(){
+        List<Entry> entries = new ArrayList<>();
+        Entry entry;
+        for(int i=1;i<5;i++){
+            entry = new Entry();
+            if(i % 2 == 0){
+                entry.type = Entry.TYPE_MESSAGE;
+                entry.flag1 = true;
+            }else{
+                entry.type = Entry.TYPE_MESSAGE;
+                entry.flag1 =false;
+            }
+
+            entries.add(entry);
+        }
+        return entries;
+    }
+
     public static List<String> getData(){
         List<String> data = new ArrayList<>();
         for(int i=0;i<20;i++){

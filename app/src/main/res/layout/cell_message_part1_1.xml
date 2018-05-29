@@ -9,34 +9,58 @@
 
 
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/id_message_rlydown"
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_44dp"
-        android:orientation="horizontal">
+
+       >
 
         <RelativeLayout
 
-            android:layout_width="@dimen/param_5dp"
-            android:layout_height="@dimen/param_5dp"
-            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/param_10dp"
+            android:layout_height="@dimen/param_10dp"
+          android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/param_10dp"
-            android:background="@drawable/yuan_dian" />
+            android:background="@drawable/yuan_dian" >
+            <RelativeLayout
+                android:layout_width="@dimen/param_5dp"
+                android:layout_height="@dimen/param_5dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/yuan_dian"
+                />
+            <RelativeLayout
+                android:id="@+id/id_message_iconright"
+                android:layout_width="@dimen/param_10dp"
+                android:layout_height="@dimen/param_10dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/icon_yandian_right"
+                android:visibility="invisible"
+               /> >
+
+
+
+
+    </RelativeLayout>
 
         <TextView
-            android:layout_width="@dimen/param_0dp"
+
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/param_5dp"
-            android:layout_marginRight="@dimen/param_21dp"
-            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/param_20dp"
+            android:layout_centerVertical="true"
             android:singleLine="true"
+            android:layout_marginRight="@dimen/param_90dp"
             android:ellipsize="end"
             android:text="@string/service_text2"
             android:textColor="@color/dj_textcolorsbule"
             android:textSize="@dimen/param_13dp" />
 
         <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
             android:id="@+id/id_message_icondown"
             android:layout_width="@dimen/param_7.5dp"
             android:layout_height="@dimen/param_10dp"
@@ -47,7 +71,7 @@
             />
 
 
-    </LinearLayout>
+    </RelativeLayout>
 <LinearLayout
     android:id="@+id/id_message_nr"
     android:layout_width="match_parent"
@@ -67,7 +91,7 @@
 <RelativeLayout
 
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="@dimen/param_22dp"
 
     >
     <TextView

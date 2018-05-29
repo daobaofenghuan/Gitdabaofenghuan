@@ -19,14 +19,34 @@
 
        android:orientation="vertical">
 
-      <ImageView
-          android:id="@+id/id_home_sanhuiyike_img"
-          android:layout_width="@dimen/param_55dp"
-          android:layout_height="55dp"
+        <RelativeLayout
+            android:layout_width="@dimen/param_55dp"
+            android:layout_height="55dp">
 
 
-          android:gravity="center_vertical"
-          android:src="@mipmap/icon_homepage_1" />
+
+           <ImageView
+               android:id="@+id/id_home_sanhuiyike_img"
+               android:layout_width="@dimen/param_55dp"
+               android:layout_height="55dp"
+
+
+               android:gravity="center_vertical"
+               android:src="@mipmap/icon_homepage_1" />
+
+           <ImageView
+               android:layout_width="@dimen/param_12dp"
+               android:layout_height="@dimen/param_12dp"
+               android:src="@mipmap/icon_home_dian"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentRight="true"
+               android:layout_margin="@dimen/param_4dp"
+
+               />
+
+        </RelativeLayout>
+
+
 
       <TextView
           android:id="@+id/id_home_sanhuiyike_tx"
@@ -48,14 +68,34 @@
 
        android:orientation="vertical">
 
-      <ImageView
-          android:id="@+id/id_home_dandri_img"
-          android:layout_width="55dp"
-          android:layout_height="55dp"
+      <RelativeLayout
+          android:layout_width="@dimen/param_55dp"
+          android:layout_height="55dp">
 
 
-          android:gravity="center_vertical"
-          android:src="@mipmap/icon_homepage_2" />
+
+         <ImageView
+             android:id="@+id/id_home_dangri_img"
+             android:layout_width="@dimen/param_55dp"
+             android:layout_height="55dp"
+
+
+             android:gravity="center_vertical"
+             android:src="@mipmap/icon_homepage_2" />
+
+         <ImageView
+             android:visibility="gone"
+             android:layout_width="@dimen/param_12dp"
+             android:layout_height="@dimen/param_12dp"
+             android:src="@mipmap/icon_home_dian"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentRight="true"
+             android:layout_margin="@dimen/param_4dp"
+
+             />
+
+      </RelativeLayout>
+
 
       <TextView
           android:id="@+id/id_home_dandri_tx"
@@ -75,15 +115,34 @@
        android:gravity="center"
 
        android:orientation="vertical">
-
-      <ImageView
-          android:id="@+id/id_home_zaixiandati_img"
-          android:layout_width="55dp"
-          android:layout_height="55dp"
+      <RelativeLayout
+          android:layout_width="@dimen/param_55dp"
+          android:layout_height="55dp">
 
 
-          android:gravity="center_vertical"
-          android:src="@mipmap/icon_homepage_1" />
+
+         <ImageView
+             android:id="@+id/id_home_zaixiandati_img"
+             android:layout_width="@dimen/param_55dp"
+             android:layout_height="55dp"
+
+
+             android:gravity="center_vertical"
+             android:src="@mipmap/icon_homepage_3" />
+
+         <ImageView
+             android:layout_width="@dimen/param_12dp"
+             android:layout_height="@dimen/param_12dp"
+             android:src="@mipmap/icon_home_dian"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentRight="true"
+             android:layout_margin="@dimen/param_4dp"
+             android:visibility="gone"
+
+             />
+
+      </RelativeLayout>
+
 
       <TextView
           android:id="@+id/id_home_zaixiandati_tx"
@@ -103,15 +162,33 @@
        android:gravity="center"
 
        android:orientation="vertical">
-
-      <ImageView
-          android:id="@+id/id_bottom_image001"
-          android:layout_width="55dp"
-          android:layout_height="55dp"
+      <RelativeLayout
+          android:layout_width="@dimen/param_55dp"
+          android:layout_height="55dp">
 
 
-          android:gravity="center_vertical"
-          android:src="@mipmap/icon_homepage_1" />
+
+         <ImageView
+             android:id="@+id/id_home_gongzuorenwu_img"
+             android:layout_width="@dimen/param_55dp"
+             android:layout_height="55dp"
+
+
+             android:gravity="center_vertical"
+             android:src="@mipmap/icon_homepage_4" />
+
+         <ImageView
+             android:layout_width="@dimen/param_12dp"
+             android:layout_height="@dimen/param_12dp"
+             android:src="@mipmap/icon_home_dian"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentRight="true"
+             android:layout_margin="@dimen/param_4dp"
+android:visibility="gone"
+             />
+
+      </RelativeLayout>
+
 
       <TextView
           android:id="@+id/id_bottom_text001"

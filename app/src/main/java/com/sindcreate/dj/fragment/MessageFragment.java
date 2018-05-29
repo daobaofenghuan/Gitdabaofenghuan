@@ -2,6 +2,7 @@ package com.sindcreate.dj.fragment;
 
 import android.content.Intent;
 import android.os.Build;
+import android.os.Message;
 import android.support.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +12,9 @@ import android.widget.TextView;
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.activity.MessageActivity;
 import com.sindcreate.dj.base.Cell;
+import com.sindcreate.dj.bean.Mydata;
 import com.sindcreate.dj.cell.defautcell.ImageCell;
+import com.sindcreate.dj.cell.defautcell.TextCell;
 import com.sindcreate.dj.cell.educell.Part_caution;
 import com.sindcreate.dj.cell.educell.Part_theme;
 import com.sindcreate.dj.cell.messagecell.Part_message;
@@ -25,6 +28,7 @@ import java.util.List;
 
 import static com.sindcreate.dj.DataMocker.mockData;
 import static com.sindcreate.dj.DataMocker.mockMoreData;
+import static com.sindcreate.dj.DataMocker.mockMoreDatamessage;
 
 /**
  * Created by Double on 2018/5/22.
@@ -62,7 +66,7 @@ public class MessageFragment extends AbsBaseFragment<Entry> {
             @Override
             public void run() {
                 hideLoadMore();
-                mBaseAdapter.addAll(getCells(mockMoreData()));
+                mBaseAdapter.addAll(getCells(mockMoreDatamessage()));
 
             }
         },10000);
@@ -72,27 +76,23 @@ public class MessageFragment extends AbsBaseFragment<Entry> {
         //根据实体生成Cell
         List<Cell> cells = new ArrayList<>();
 
-        //  cells.add(new Part_theme(null));
-        cells.add(new Part_title(null));
-          cells.add(new Part_message(null));
-        cells.add(new Part_message(null));
-        cells.add(new Part_message(null));
-        cells.add(new Part_message(null));
-        //   cells.add(new Part_caution(null));
-//        cells.add(new Partone(null));
-//        cells.add(new Part_EveryDayHomework(null));
-//        cells.add(new Part_EveryDayLesson(null));
-//        cells.add(new Part_Event(null));
-//        cells.add(new Part_Showresult(null));
 
-//        for (int i=0;i<entries.size();i++){
-//            Entry entry = entries.get(i);
-//            if(entry.type == Entry.TYPE_IMAGE){
-//                cells.add(new ImageCell(entry));
-//            }else{
-//                cells.add(new TextCell(entry));
-//            }
-//        }
+        cells.add(new Part_title(null));
+
+
+        for (int i=0;i<entries.size();i++){
+            Entry entry = entries.get(i);
+            if(entry.type == Entry.TYPE_IMAGE){
+               cells.add(new ImageCell(entry));
+            }if(entry.type==Entry.TYPE_MESSAGE){
+                cells.add(new Part_message(entry));
+                System.out.println("消息添加成功");
+            }
+
+            else{
+               cells.add(new TextCell(entry));
+           }
+        }
         return cells;
     }
 
@@ -118,7 +118,7 @@ public class MessageFragment extends AbsBaseFragment<Entry> {
             @Override
             public void run() {
                 mBaseAdapter.hideLoading();
-                mBaseAdapter.addAll(getCells(mockData()));
+                mBaseAdapter.addAll(getCells(mockMoreDatamessage()));
             }
         },2000);
     }

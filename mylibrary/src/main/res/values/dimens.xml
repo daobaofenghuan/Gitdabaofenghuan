@@ -70,11 +70,14 @@
     <dimen name="param_22dp">22dp</dimen>
     <dimen name="param_23dp">23dp</dimen>
     <dimen name="param_24dp">24dp</dimen>
+    <dimen name="param_24.5dp">24.5dp</dimen>
     <dimen name="param_25dp">25dp</dimen>
     <dimen name="param_26dp">26dp</dimen>
     <dimen name="param_27dp">27dp</dimen>
+    <dimen name="param_27.5dp">27.5dp</dimen>
     <dimen name="param_29dp">29dp</dimen>
     <dimen name="param_28dp">28dp</dimen>
+    <dimen name="param_28.5dp">28.5dp</dimen>
     <dimen name="param_30dp">30dp</dimen>
     <dimen name="param_31dp">31dp</dimen>
     <dimen name="param_33dp">33dp</dimen>

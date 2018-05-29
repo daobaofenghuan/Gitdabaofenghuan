@@ -22,17 +22,39 @@
 
         />
 
-
-    <ImageView
-        android:id="@+id/title_img"
-        android:layout_marginRight="22dp"
+    <RelativeLayout
+        android:id="@+id/id_title_rigtbut"
+        android:layout_width="@dimen/param_34dp"
+        android:layout_height="@dimen/param_28.5dp"
         android:layout_alignParentRight="true"
-        android:layout_width="33dp"
-        android:layout_height="33dp"
-        android:background="@mipmap/icon_title_p1"
         android:layout_centerVertical="true"
+        android:layout_marginRight="22dp">
 
-        />
 
+
+
+
+        <ImageView
+            android:id="@+id/title_img"
+            android:layout_width="@dimen/param_24.5dp"
+
+            android:layout_height="@dimen/param_27.5dp"
+            android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+            android:background="@mipmap/icon_title_p1"
+
+
+            />
+        <TextView
+            android:layout_width="@dimen/param_19dp"
+            android:layout_height="@dimen/param_19dp"
+            android:background="@drawable/yuan_dian_lan"
+            android:text="8"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
 </RelativeLayout>
 </RelativeLayout>
