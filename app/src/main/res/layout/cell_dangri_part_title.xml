@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_32dp"
+        android:background="@color/dj_bj_fen"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="@dimen/param_10dp"
+            android:layout_height="@dimen/param_10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:background="@drawable/yuan_dian_red"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/param_21dp"
+            android:layout_marginBottom="@dimen/param_5dp"
+            android:layout_marginLeft="@dimen/param_26dp"
+            android:layout_marginTop="@dimen/param_6dp"
+            android:text="未读人员"
+            android:textColor="@color/dj_textcolors_hei2"
+            android:textSize="@dimen/param_13dp"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
+
+

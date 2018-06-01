@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+
+    android:background="@color/dj_hui"
+    >
+
+    <LinearLayout
+
+        android:id="@+id/bottom_dr_ly1"
+        android:layout_width="wrap_content"
+      android:layout_centerVertical="true"
+        android:layout_height="@dimen/param_16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/param_17dp"
+        >
+
+        <ImageView
+
+    android:layout_width="@dimen/param_10dp"
+    android:layout_height="@dimen/param_10dp"
+    android:src="@mipmap/icon_done"
+    />
+<TextView
+    android:layout_marginLeft="@dimen/param_3dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="已读"
+    android:textSize="@dimen/param_12dp"
+    android:textColor="@color/base_text_black"
+
+    />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_dr_ly2"
+        android:layout_toRightOf="@+id/bottom_dr_ly1"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="@dimen/param_16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/param_17dp"
+        >
+
+        <ImageView
+
+            android:layout_width="@dimen/param_10dp"
+            android:layout_height="@dimen/param_10dp"
+            android:src="@mipmap/icon_done"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/param_3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已读"
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/base_text_black"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_dr_ly3"
+        android:layout_toRightOf="@+id/bottom_dr_ly2"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="@dimen/param_16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/param_73dp"
+        >
+
+        <ImageView
+
+            android:layout_width="@dimen/param_10dp"
+            android:layout_height="@dimen/param_10dp"
+            android:src="@mipmap/icon_done"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/param_3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已读"
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/base_text_black"
+
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

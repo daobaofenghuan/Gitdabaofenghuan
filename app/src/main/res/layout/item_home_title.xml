@@ -2,12 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="36dp"
-    android:background="@color/base_gray_eee"
-    android:orientation="horizontal"
+
+    android:orientation="vertical"
     android:gravity="center_vertical"
     >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_3.5dp"
+        android:background="@color/dj_home_title_bj"
+        android:alpha="0.19"
+        />
 <RelativeLayout
-    android:layout_marginTop="3.5dp"
+
     android:layout_width="match_parent"
     android:layout_height="@dimen/param_32dp"
     android:background="@color/dj_bj_fen"

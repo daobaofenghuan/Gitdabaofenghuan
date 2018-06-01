@@ -68,7 +68,8 @@
     <color name="dj_textcolors">#15182d</color>
     <color name="dj_textcolorhui">#888888</color>
     <color name="dj_textcolor_org">#fe8c26</color>
-
+    <color name="dj_textcolors_hei">#474747</color>
+    <color name="dj_textcolors_hei2">#333333</color>
     <color name="dj_home_title_bj">#d8d8d8</color>
     <color name="dj_bj_fen">#fff7f7</color>
     <color name="dj_bj_fen2">#ffedee</color>
@@ -79,6 +80,7 @@
     <color name="dj_yuandian">#c6c6c6</color>
     <color name="dj_textcolorsbule">#17b9ec</color>
     <color name="dj_yuandianlan">#08e0e7</color>
+
 
 
 </resources>

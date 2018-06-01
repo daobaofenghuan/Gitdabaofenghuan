@@ -24,7 +24,9 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_0.5dp"
-        android:background="@color/base_divider"
+        android:background="@color/dj_dim"
+        android:alpha="0.16"
+
         />
     <include
         android:id="@+id/id_title_event2"
@@ -35,7 +37,9 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_0.5dp"
-        android:background="@color/base_divider"
+        android:background="@color/dj_dim"
+        android:alpha="0.16"
+
         />
     <include
         android:id="@+id/id_title_event3"
@@ -47,7 +51,9 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_0.5dp"
-        android:background="@color/base_divider"
+        android:background="@color/dj_dim"
+        android:alpha="0.16"
+
         />
 
 </LinearLayout>

@@ -67,8 +67,7 @@
     android:layout_height="@dimen/param_42dp"
     android:orientation="horizontal"
     >
-    <EditText
-        android:paddingLeft="@dimen/param_2dp"
+    <LinearLayout
         android:layout_marginLeft="@dimen/param_10dp"
         android:layout_marginTop="6.5dp"
         android:layout_width="@dimen/param_0dp"
@@ -77,7 +76,31 @@
         android:layout_marginBottom="6.5dp"
         android:background="@drawable/yuanjiaor_search"
         android:layout_marginRight="@dimen/param_10dp"
-        />
+        android:orientation="horizontal"
+        >
+     <ImageView
+         android:layout_marginLeft="@dimen/param_10dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@mipmap/icon_search"
+         android:layout_marginTop="@dimen/param_7dp"
+         android:layout_marginBottom="@dimen/param_6.5dp"
+
+         />
+        <EditText
+            android:paddingLeft="@dimen/param_2dp"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:layout_marginTop="@dimen/param_6.5dp"
+            android:layout_width="@dimen/param_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="6.5dp"
+            android:background="@drawable/yuanjiaor_search"
+            android:layout_marginRight="@dimen/param_10dp"
+            />
+
+    </LinearLayout>
+
 <TextView
     android:layout_gravity="center_vertical"
     android:layout_width="@dimen/param_48dp"

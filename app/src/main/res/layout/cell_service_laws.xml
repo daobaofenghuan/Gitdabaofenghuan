@@ -52,7 +52,10 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_0.5dp"
-        android:background="@color/dj_dim"/>
+        android:background="@color/dj_dim"
+        android:alpha="0.16"
+        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_44dp"
@@ -91,7 +94,10 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_0.5dp"
-        android:background="@color/dj_dim"/>
+        android:background="@color/dj_dim"
+        android:alpha="0.16"
+        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_44dp"
@@ -130,7 +136,10 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_0.5dp"
-        android:background="@color/dj_dim"/>
+        android:background="@color/dj_dim"
+        android:alpha="0.16"
+        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_44dp"
@@ -169,7 +178,10 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_0.5dp"
-        android:background="@color/dj_dim"/>
+        android:background="@color/dj_dim"
+        android:alpha="0.16"
+        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_44dp"

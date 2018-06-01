@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="9.5dp"
-            android:background="@drawable/shap_line"
+
             android:orientation="horizontal">
 
             <TextView
@@ -60,13 +60,21 @@
                 android:textSize="15sp" />
 
         </LinearLayout>
-
+        <View
+            android:layout_marginTop="@dimen/param_2.5dp"
+            android:layout_marginLeft="@dimen/param_40dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/param_0.5dp"
+            android:background="@color/dj_dim"
+            android:alpha="0.16"
+            android:layout_marginRight="@dimen/param_22dp"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="9.5dp"
-            android:background="@drawable/shap_line"
+
             android:orientation="horizontal">
 
             <TextView
@@ -95,7 +103,15 @@
                 android:textSize="15sp" />
 
         </LinearLayout>
-
+        <View
+            android:layout_marginTop="@dimen/param_2.5dp"
+            android:layout_marginLeft="@dimen/param_40dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/param_0.5dp"
+            android:background="@color/dj_dim"
+            android:alpha="0.16"
+            android:layout_marginRight="@dimen/param_22dp"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -118,14 +134,13 @@
             <TextView
 
                 android:id="@+id/id_home_event2_zhuangtai"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
+                android:layout_width="@dimen/param_67dp"
+                android:layout_height="@dimen/param_22dp"
+                android:gravity="center"
                 android:background="@drawable/yuanjiao_yiwancheng"
                 android:ellipsize="end"
-                android:maxLines="2"
-                android:padding="@dimen/param_2dp"
-                android:paddingTop="1.5dp"
+                android:maxLines="1"
+
                 android:text="已完成"
                 android:textColor="@color/text_light_gray"
                 android:textSize="15sp"
@@ -135,18 +150,17 @@
             <TextView
 
                 android:id="@+id/id_home_event2_zhuangtai2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
+                android:layout_width="@dimen/param_67dp"
+                android:layout_height="@dimen/param_22dp"
+                android:gravity="center"
                 android:background="@drawable/yuanjiao_jinxingzhong"
                 android:ellipsize="end"
-                android:maxLines="2"
-                android:padding="@dimen/param_2dp"
-                android:paddingTop="1.5dp"
+                android:maxLines="1"
+
                 android:text="进行中"
                 android:textColor="@color/dj_jinxingzhong"
 
-                android:textSize="15sp" />
+                android:textSize="@dimen/param_15dp" />
         </LinearLayout>
 
 

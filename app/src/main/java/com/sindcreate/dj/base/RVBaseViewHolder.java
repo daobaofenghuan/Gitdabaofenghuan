@@ -50,6 +50,9 @@ public class RVBaseViewHolder extends RecyclerView.ViewHolder {
     public LinearLayout getLinearLayout(int resId){
         return  retrieveView(resId);
     }
+    public RecyclerView getRecyclerView(int resId){
+        return  retrieveView(resId);
+    }
     public Button getButton(int resId) {
         return retrieveView(resId);
     }

@@ -8,62 +8,61 @@
     android:orientation="vertical">
 
 
-
     <RelativeLayout
         android:id="@+id/id_message_rlydown"
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_44dp"
 
-       >
+        >
 
         <RelativeLayout
 
             android:layout_width="@dimen/param_10dp"
             android:layout_height="@dimen/param_10dp"
-          android:layout_alignParentLeft="true"
+            android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/param_10dp"
-            android:background="@drawable/yuan_dian" >
+            android:layout_marginLeft="@dimen/param_10dp">
+
             <RelativeLayout
                 android:layout_width="@dimen/param_5dp"
                 android:layout_height="@dimen/param_5dp"
-                android:layout_centerInParent="true"
-                android:background="@drawable/yuan_dian"
-                />
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/yuan_dian" />
+
             <RelativeLayout
                 android:id="@+id/id_message_iconright"
                 android:layout_width="@dimen/param_10dp"
                 android:layout_height="@dimen/param_10dp"
-                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
                 android:background="@mipmap/icon_yandian_right"
-                android:visibility="invisible"
-               /> >
+                android:visibility="invisible" />
 
 
 
-
-    </RelativeLayout>
+        </RelativeLayout>
 
         <TextView
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="@dimen/param_20dp"
-            android:layout_centerVertical="true"
-            android:singleLine="true"
             android:layout_marginRight="@dimen/param_90dp"
             android:ellipsize="end"
+            android:singleLine="true"
             android:text="@string/service_text2"
             android:textColor="@color/dj_textcolorsbule"
             android:textSize="@dimen/param_13dp" />
 
         <ImageView
+            android:id="@+id/id_message_icondown"
+            android:layout_width="@dimen/param_12dp"
+            android:layout_height="@dimen/param_14dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:id="@+id/id_message_icondown"
-            android:layout_width="@dimen/param_7.5dp"
-            android:layout_height="@dimen/param_10dp"
             android:layout_gravity="center_vertical"
             android:layout_marginRight="@dimen/param_10dp"
             android:src="@mipmap/icon_down"
@@ -72,54 +71,56 @@
 
 
     </RelativeLayout>
-<LinearLayout
-    android:id="@+id/id_message_nr"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    >
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/id_message_nr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/message_text1"
-        android:textColor="@color/dj_textcolorhui"
-        android:layout_marginLeft="@dimen/param_11dp"
-        android:layout_marginRight="@dimen/param_19dp"
-        android:ellipsize="end"
-        />
-<RelativeLayout
+        android:orientation="vertical">
 
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/param_22dp"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/param_11dp"
+            android:layout_marginRight="@dimen/param_19dp"
+            android:layout_marginTop="@dimen/param_5dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/param_10dp"
+            android:text="@string/message_text1"
+            android:textColor="@color/dj_textcolorhui"
+            android:textSize="@dimen/param_13dp" />
 
-    >
-    <TextView
-        android:layout_marginLeft="@dimen/param_10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/param_22dp"
-        android:text="2018-5-24"
-        android:textColor="@color/dj_textcolorhui"
-        
-        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/param_22dp"
+            android:layout_marginBottom="@dimen/param_22dp"
+            android:layout_marginTop="@dimen/param_22dp">
 
-    <TextView
-        android:layout_width="@dimen/param_71dp"
-        android:layout_height="@dimen/param_22dp"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="@dimen/param_10dp"
-        android:text="@string/message_queren"
-        android:textSize="@dimen/param_12dp"
-        android:gravity="center"
-        android:textColor="@color/dj_jinxingzhong"
-        android:background="@drawable/yuanjiao_jinxingzhong"
-        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/param_22dp"
+                android:layout_marginLeft="@dimen/param_10dp"
+                android:text="2018-5-24"
+                android:textColor="@color/dj_textcolorhui"
+
+                />
+
+            <TextView
+                android:layout_width="@dimen/param_71dp"
+                android:layout_height="@dimen/param_22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/param_10dp"
+                android:background="@drawable/yuanjiao_jinxingzhong"
+                android:gravity="center"
+                android:text="@string/message_queren"
+                android:textColor="@color/dj_jinxingzhong"
+                android:textSize="@dimen/param_12dp" />
 
 
-</RelativeLayout>
+        </RelativeLayout>
 
-</LinearLayout>
-    
+    </LinearLayout>
+
 
 </LinearLayout>

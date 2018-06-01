@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="9.5dp"
-            android:background="@drawable/shap_line"
+
             android:orientation="horizontal">
 
             <TextView
@@ -61,12 +61,21 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_marginTop="@dimen/param_2.5dp"
+            android:layout_marginLeft="@dimen/param_40dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/param_0.5dp"
+            android:background="@color/dj_dim"
+            android:alpha="0.16"
+            android:layout_marginRight="@dimen/param_22dp"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="9.5dp"
-            android:background="@drawable/shap_line"
+
             android:orientation="horizontal">
 
             <TextView
@@ -96,6 +105,15 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_marginTop="@dimen/param_2.5dp"
+            android:layout_marginLeft="@dimen/param_40dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/param_0.5dp"
+            android:background="@color/dj_dim"
+            android:alpha="0.16"
+            android:layout_marginRight="@dimen/param_22dp"
+            />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -142,6 +160,15 @@
 
         </RelativeLayout>
 
+        <View
+            android:layout_marginTop="@dimen/param_2.5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/param_0.5dp"
+            android:background="@color/dj_dim"
+            android:alpha="0.16"
+            android:layout_marginRight="@dimen/param_22dp"
+            />
 
     </LinearLayout>
 

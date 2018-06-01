@@ -15,7 +15,9 @@ import android.widget.LinearLayout;
 
 
 import com.sindcreate.dj.adapter.MainRecycleAdapter;
+import com.sindcreate.dj.bean.Mydata;
 import com.sindcreate.dj.fragment.EducationFragment;
+import com.sindcreate.dj.fragment.HomePage.Part_DangRi_Fragemnt;
 import com.sindcreate.dj.fragment.HomePageFragment;
 import com.sindcreate.dj.fragment.MessageFragment;
 import com.sindcreate.dj.fragment.ServiceFragment;
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     EducationFragment fragment2;
     ServiceFragment fragment3;
     MessageFragment messageFragment;
+    Part_DangRi_Fragemnt dangRi_fragemnt6;
 
     @BindView(R.id.id_home_bottom_ly1)
     LinearLayout bottomly1;
@@ -57,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
                 switch (msg.what) {
                     case 100:
               initview(5);
+                    case 101:
+                        initview(6);
 
                         break;
 
@@ -72,7 +77,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Mydata.handler=this.handler;
+        Mydata.context=this;
         StatusBarUtils.setWindowStatusBarColor(MainActivity.this, R.color.dj_titalred);
         ButterKnife.bind(MainActivity.this);
 
@@ -122,6 +128,15 @@ public class MainActivity extends AppCompatActivity {
                     mFragmentTransaction.show(messageFragment);
                 }
                 break;
+                case 6:
+                    if(dangRi_fragemnt6==null){
+                        dangRi_fragemnt6=new Part_DangRi_Fragemnt();
+                        mFragmentTransaction.add(R.id.fragment_container,dangRi_fragemnt6);
+                    }else {
+                        mFragmentTransaction.show(dangRi_fragemnt6);
+                    }
+                   break;
+
 
 
         }
@@ -169,6 +184,10 @@ public class MainActivity extends AppCompatActivity {
         }
         if(messageFragment!=null){
             fragmentTransaction.hide(messageFragment);
+        }
+        if(dangRi_fragemnt6!=null){
+            fragmentTransaction.remove(dangRi_fragemnt6);
+            dangRi_fragemnt6=null;
         }
     }
 
