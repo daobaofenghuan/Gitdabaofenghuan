@@ -1,4 +1,4 @@
-package com.sindcreate.dj.fragment.HomePage.cell;
+package com.sindcreate.dj.cell.homemaincell;
 
 import android.annotation.SuppressLint;
 import android.util.Log;
@@ -14,9 +14,9 @@ import com.sindcreate.dj.model.Entry;
  * Created by Double on 2018/5/23.
  */
 
-public class Drangri_Part3 extends RVBaseCell<Entry> {
-    public static final int TYPE = 113;
-    public Drangri_Part3(Entry entry){
+public class Part_EveryDayLesson extends RVBaseCell<Entry> {
+    public static final int TYPE = 103;
+    public Part_EveryDayLesson(Entry entry){
         super(entry);
 
     }
@@ -28,11 +28,7 @@ public class Drangri_Part3 extends RVBaseCell<Entry> {
     @SuppressLint("InflateParams")
     @Override
     public RVBaseViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
-        RVBaseViewHolder view= new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_dangri_part3,parent,false));
-
-
-        return view;
+        return new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_mainactivity_lesson,parent,false));
      //   return null;
     }
 

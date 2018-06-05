@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_67dp"
+    android:background="@color/white"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/id_sanhuiitemly1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_17dp"
+        android:layout_marginRight="@dimen/param_115dp"
+        android:layout_marginTop="@dimen/param_12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/id_weibaoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:background="@drawable/yuanjiaoblue_12"
+            android:paddingLeft="@dimen/param_6dp"
+            android:paddingRight="@dimen/param_6dp"
+            android:text="@string/sanhui_weibaoming"
+            android:textColor="@color/white"
+            android:textSize="@dimen/param_12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/param_7dp"
+            android:layout_toRightOf="@+id/id_weibaoming"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/param_180dp"
+            android:singleLine="true"
+            android:text="应急管理部有关负责人就有关负…"
+
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/param_22dp"
+        android:layout_below="@+id/id_sanhuiitemly1"
+        android:layout_marginTop="@dimen/param_6dp"
+        android:gravity="center_vertical"
+
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-5-24 13:00 报名截止"
+            android:textColor="@color/dj_textcolorhui"
+            android:textSize="12dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/param_115dp"
+            android:text=" 49人已报名"
+            android:textColor="@color/dj_textcolors_hei" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/param_1.5dp"
+        android:layout_height="@dimen/param_25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/param_90dp"
+        android:background="@color/dj_line_shu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/param_21dp"
+        android:text="@string/dianjijinru"
+        android:textColor="@color/dj_jinxingzhong"
+        android:textSize="@dimen/param_13dp"
+        android:layout_centerVertical="true"
+        />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_0.5dp"
+    android:background="@color/dj_dim"
+    android:alpha="0.16"
+android:layout_alignParentBottom="true"
+    />
+
+
+</RelativeLayout>

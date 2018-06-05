@@ -15,6 +15,7 @@
     <string name="homepage_part3_2">  二十四字社会主义核心价值观出自《关于培育和践行社会主义核心价值观的意见》，其主要内容为富强、民主、文明、和谐，自由、平等、公正、法治， 爱国、敬业、诚信、友善。2014年2月12日，《人民日报》登二十四字“社会主义核心价值观”。</string>
     <string name="homepage_part3_1">每日一课</string>
     <string name="more">更多</string>
+    <string name="more2">展开</string>
     <string name="kaishidati">开始答题</string>
 
     <string name="homepage_bottom1">首页</string>
@@ -34,6 +35,10 @@
 
     <string name="dangri_text1">全体党员大会</string>
     <string name="dangri_ing">进行中...</string>
-
+    <string name="sanhui_text1">进行中</string>
+    <string name="sanhui_text2">已完成</string>
+    <string name="sanhui_text3">所有活动</string>
+    <string name="sanhui_weibaoming">未报名</string>
+    <string name="dianjijinru">点击进入</string>
 
 </resources>

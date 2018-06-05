@@ -15,6 +15,7 @@ import com.sindcreate.dj.MainActivity;
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.activity.MessageActivity;
 import com.sindcreate.dj.base.Cell;
+import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.cell.defautcell.ImageCell;
 import com.sindcreate.dj.cell.educell.Part_caution;
 import com.sindcreate.dj.cell.educell.Part_theme;
@@ -112,7 +113,7 @@ public class ServiceFragment extends AbsBaseFragment<Entry> {
             public void onClick(View v) {
              //   startActivity(new Intent(getActivity(), MessageActivity.class));
                 Message msg=Message.obtain();
-                msg.what=100;
+                msg.what= MsgNum.MSG_XiaoXI;
              handler.sendMessage(msg);
 
 

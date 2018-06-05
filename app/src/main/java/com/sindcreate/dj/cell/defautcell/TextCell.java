@@ -28,7 +28,7 @@ public class TextCell extends RVBaseCell<Entry> {
 
     @Override
     public RVBaseViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_grou1,null));
+        return new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_myfmg,null));
     }
 
     @Override

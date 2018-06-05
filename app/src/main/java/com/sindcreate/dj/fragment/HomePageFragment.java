@@ -1,6 +1,5 @@
 package com.sindcreate.dj.fragment;
 
-import android.content.Intent;
 import android.os.Build;
 
 
@@ -15,15 +14,15 @@ import android.widget.TextView;
 import com.sindcreate.dj.DataMocker;
 import com.sindcreate.dj.MainActivity;
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.activity.MessageActivity;
 import com.sindcreate.dj.base.Cell;
 
+import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.cell.defautcell.BannerCell;
-import com.sindcreate.dj.cell.maincell.Part_Event;
-import com.sindcreate.dj.cell.maincell.Part_EveryDayHomework;
-import com.sindcreate.dj.cell.maincell.Part_EveryDayLesson;
-import com.sindcreate.dj.cell.maincell.Part_Showresult;
-import com.sindcreate.dj.cell.maincell.Partone;
+import com.sindcreate.dj.cell.homemaincell.Part_Event;
+import com.sindcreate.dj.cell.homemaincell.Part_EveryDayHomework;
+import com.sindcreate.dj.cell.homemaincell.Part_EveryDayLesson;
+import com.sindcreate.dj.cell.homemaincell.Part_Showresult;
+import com.sindcreate.dj.cell.homemaincell.Partone;
 import com.sindcreate.dj.model.Entry;
 
 import java.util.ArrayList;
@@ -116,7 +115,7 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
             public void onClick(View v) {
                 //   startActivity(new Intent(getActivity(), MessageActivity.class));
                 Message msg=Message.obtain();
-                msg.what=100;
+                msg.what= MsgNum.MSG_XiaoXI;
                 handler.sendMessage(msg);
 
 

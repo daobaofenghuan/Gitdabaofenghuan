@@ -2,8 +2,6 @@ package com.sindcreate.dj.fragment;
 
 
 
-import android.app.Fragment;
-
 import android.os.Bundle;
 
 import android.view.LayoutInflater;
@@ -30,7 +28,7 @@ public class GroupFragmentr1 extends AbsBaseFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_grou1, container, false);
+        View view = inflater.inflate(R.layout.fragment_myfmg, container, false);
         ButterKnife.bind(this, view);
 
 

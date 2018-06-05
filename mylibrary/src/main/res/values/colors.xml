@@ -62,13 +62,16 @@
     <color name="dj_textcolor_title">#fe8c26</color>
     <color name="dj_textcolor_title2">#fb4f5e</color>
     <color name="dj_textcolor_part3">#ffe4e7</color>
+    <color name="dj_textcolor_4">#5f5f5f</color>
     <color name="dj_titalred">#fa5538</color>
     <color name="dj_titalred_2">#fa3252</color>
+    <color name="dj_dim2">#cecece</color>
 
     <color name="dj_textcolors">#15182d</color>
     <color name="dj_textcolorhui">#888888</color>
     <color name="dj_textcolor_org">#fe8c26</color>
     <color name="dj_textcolors_hei">#474747</color>
+    <color name="dj_textcolors_red">#fa3451</color>
     <color name="dj_textcolors_hei2">#333333</color>
     <color name="dj_home_title_bj">#d8d8d8</color>
     <color name="dj_bj_fen">#fff7f7</color>
@@ -80,7 +83,8 @@
     <color name="dj_yuandian">#c6c6c6</color>
     <color name="dj_textcolorsbule">#17b9ec</color>
     <color name="dj_yuandianlan">#08e0e7</color>
-
+    <color name="dj_yuanjiaolan2">#17b9ec</color>
+    <color name="dj_line_shu">#eaeaea</color>
 
 
 </resources>

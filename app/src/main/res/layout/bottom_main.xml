@@ -28,7 +28,7 @@
           android:layout_marginTop="1.9dp"
 
           android:gravity="center_vertical"
-          android:src="@mipmap/icon_bottom1" />
+          android:src="@mipmap/icon_bottom11" />
 
       <TextView
           android:layout_marginTop="5dp"

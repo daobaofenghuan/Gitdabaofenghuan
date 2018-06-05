@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="183.5dp"
+    android:layout_height="wrap_content"
 
     android:background="@color/white"
     android:orientation="vertical"
 
  >
 <include
-    layout="@layout/item_home_title"
+    layout="@layout/item_home_title_ti"
     />
+  <RelativeLayout
+      android:id="@+id/id_home_tily"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
 <TextView
     android:id="@+id/id_homework_text"
-    android:layout_marginTop="54dp"
+    android:layout_marginTop="@dimen/param_18.5dp"
 android:layout_marginLeft="11.5dp"
     android:layout_marginRight="18.5dp"
     android:layout_width="match_parent"
@@ -29,6 +34,7 @@ android:layout_marginLeft="11.5dp"
     android:layout_width="125.5dp"
     android:layout_height="40dp"
     android:layout_marginTop="@dimen/param_12dp"
+    android:layout_marginBottom="@dimen/param_26dp"
     android:background="@drawable/yuanjiaored"
     >
     <TextView
@@ -44,6 +50,6 @@ android:layout_marginLeft="11.5dp"
 
 
 </RelativeLayout>
+  </RelativeLayout>
 
-
-</RelativeLayout>
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.sindcreate.dj.fragment.HomePage.cell;
+package com.sindcreate.dj.cell.homemaincell;
 
 import android.annotation.SuppressLint;
 import android.util.Log;
@@ -15,9 +15,9 @@ import com.sindcreate.dj.model.Entry;
  * Created by Double on 2018/5/23.
  */
 
-public class Drangri_Part1 extends RVBaseCell<Entry> {
-    public static final int TYPE = 111;
-    public Drangri_Part1(Entry entry){
+public class Part_Showresult extends RVBaseCell<Entry> {
+    public static final int TYPE = 105;
+    public Part_Showresult(Entry entry){
         super(entry);
 
     }
@@ -30,11 +30,11 @@ public class Drangri_Part1 extends RVBaseCell<Entry> {
     @Override
     public RVBaseViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        RVBaseViewHolder view= new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_dangri_part1,parent,false));
-            //  TextView texttitle= view.getTextView(R.id.id_hometitle_1);
-          //    TextView zhuti=view.getTextView(R.id.id_home_event_zhuti);
+        RVBaseViewHolder view= new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_mainactivity_showresult,parent,false));
+              TextView texttitle= view.getTextView(R.id.id_hometitle_2);
+              TextView zhuti=view.getTextView(R.id.id_home_event_zhuti);
           // zhuti.getPaint().setFlags(Paint. UNDERLINE_TEXT_FLAG ); //下划线
-       // texttitle.setText("党组活动");
+        texttitle.setText("成果展示");
 
 
         return view;

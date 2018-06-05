@@ -55,13 +55,14 @@
             android:layout_height="@dimen/param_10dp"
             android:src="@mipmap/icon_done"
             />
+
         <TextView
-            android:layout_marginLeft="@dimen/param_3dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="已读"
-            android:textSize="@dimen/param_12dp"
+            android:layout_marginLeft="@dimen/param_3dp"
+            android:text="签到"
             android:textColor="@color/base_text_black"
+            android:textSize="@dimen/param_12dp"
 
             />
 
@@ -76,7 +77,7 @@
         android:layout_height="@dimen/param_16dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:layout_marginLeft="@dimen/param_73dp"
+        android:layout_marginLeft="@dimen/param_17dp"
         >
 
         <ImageView
@@ -89,7 +90,7 @@
             android:layout_marginLeft="@dimen/param_3dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="已读"
+            android:text="上传心得体会"
             android:textSize="@dimen/param_12dp"
             android:textColor="@color/base_text_black"
 
@@ -98,4 +99,69 @@
 
     </LinearLayout>
 
+
+
+    <LinearLayout
+        android:id="@+id/bottom_dr_ly4"
+
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="@dimen/param_16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+
+     android:layout_marginRight="@dimen/param_15dp"
+        android:layout_toLeftOf="@+id/bottom_dr_ly5"
+        >
+
+        <ImageView
+
+            android:layout_width="@dimen/param_10dp"
+            android:layout_height="@dimen/param_10dp"
+            android:src="@mipmap/icon_zan"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/param_3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点赞"
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/base_text_black"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_dr_ly5"
+
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="@dimen/param_16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/param_10dp"
+        >
+
+        <ImageView
+
+            android:layout_width="@dimen/param_10dp"
+            android:layout_height="@dimen/param_10dp"
+            android:src="@mipmap/icon_collect"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/param_3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收藏"
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/base_text_black"
+
+            />
+
+
+    </LinearLayout>
 </RelativeLayout>

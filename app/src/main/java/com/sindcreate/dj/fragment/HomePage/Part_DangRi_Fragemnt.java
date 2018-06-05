@@ -1,32 +1,28 @@
 package com.sindcreate.dj.fragment.HomePage;
 
 import android.os.Build;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.sindcreate.dj.DataMocker;
 import com.sindcreate.dj.MainActivity;
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.base.Cell;
-import com.sindcreate.dj.cell.defautcell.BannerCell;
-import com.sindcreate.dj.cell.maincell.Part_Event;
-import com.sindcreate.dj.cell.maincell.Part_EveryDayHomework;
-import com.sindcreate.dj.cell.maincell.Part_EveryDayLesson;
-import com.sindcreate.dj.cell.maincell.Part_Showresult;
-import com.sindcreate.dj.cell.maincell.Partone;
+import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.fragment.AbsBaseFragment;
-import com.sindcreate.dj.fragment.HomePage.cell.Drangri_Part1;
-import com.sindcreate.dj.fragment.HomePage.cell.Drangri_Part2;
-import com.sindcreate.dj.fragment.HomePage.cell.Drangri_Part3;
+import com.sindcreate.dj.fragment.HomePage.DangRicell.Drangri_Part1;
+import com.sindcreate.dj.fragment.HomePage.DangRicell.Drangri_Part2;
+import com.sindcreate.dj.fragment.HomePage.DangRicell.Drangri_Part3;
 import com.sindcreate.dj.model.Entry;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static com.sindcreate.dj.DataMocker.mockData;
@@ -62,6 +58,13 @@ public class Part_DangRi_Fragemnt extends AbsBaseFragment<Entry> {
         loadMore();
     }
 
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view =  inflater.inflate(R.layout.rv_base_fragment_layout2,null);
+
+        return view;
+    }
 
     private void loadMore(){
         mRecyclerView.postDelayed(new Runnable() {
@@ -80,7 +83,10 @@ public class Part_DangRi_Fragemnt extends AbsBaseFragment<Entry> {
         cells.add(new Drangri_Part1(null));
         cells.add(new Drangri_Part2(null));
         cells.add(new Drangri_Part3(null));
-
+        cells.add(new Drangri_Part2(null));
+        cells.add(new Drangri_Part3(null));
+        cells.add(new Drangri_Part2(null));
+        cells.add(new Drangri_Part3(null));
 
         return cells;
     }
@@ -105,7 +111,7 @@ public class Part_DangRi_Fragemnt extends AbsBaseFragment<Entry> {
             public void onClick(View v) {
                 //   startActivity(new Intent(getActivity(), MessageActivity.class));
                 Message msg=Message.obtain();
-                msg.what=100;
+                msg.what= MsgNum.MSG_XiaoXI;
                 handler.sendMessage(msg);
 
 
