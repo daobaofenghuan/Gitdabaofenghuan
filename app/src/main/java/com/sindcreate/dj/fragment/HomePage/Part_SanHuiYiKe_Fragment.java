@@ -49,14 +49,15 @@ public class Part_SanHuiYiKe_Fragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_homepage_sanhuiyike, container, false);
         ButterKnife.bind(this, view);
         unbinder = ButterKnife.bind(this, view);
+
         initTabLayout();
         bindViewPager();
-
 
 
         return view;
 
     }
+
 
 
     private void initTabLayout() {
@@ -66,6 +67,7 @@ public class Part_SanHuiYiKe_Fragment extends Fragment {
         mTabs.add(UiUtil.getString(R.string.sanhui_text1));
         mTabs.add(UiUtil.getString(R.string.sanhui_text2));
         mTabs.add(UiUtil.getString(R.string.sanhui_text3));
+
 
 
     }

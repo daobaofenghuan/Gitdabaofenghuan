@@ -14,23 +14,13 @@
         android:layout_marginTop="@dimen/param_12dp"
         android:gravity="center_vertical">
 
-        <TextView
-            android:id="@+id/id_weibaoming"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/param_10dp"
-            android:background="@drawable/yuanjiaoblue_12"
-            android:paddingLeft="@dimen/param_6dp"
-            android:paddingRight="@dimen/param_6dp"
-            android:text="@string/sanhui_weibaoming"
-            android:textColor="@color/white"
-            android:textSize="@dimen/param_12dp" />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/param_7dp"
-            android:layout_toRightOf="@+id/id_weibaoming"
+            android:layout_marginLeft="@dimen/param_10dp"
+
             android:ellipsize="end"
             android:maxWidth="@dimen/param_180dp"
             android:singleLine="true"
@@ -47,7 +37,7 @@
         android:layout_below="@+id/id_sanhuiitemly1"
         android:layout_marginTop="@dimen/param_6dp"
         android:gravity="center_vertical"
-      android:layout_marginBottom="@dimen/param_7dp"
+
         >
 
         <TextView
@@ -56,17 +46,12 @@
             android:layout_height="wrap_content"
             android:text="2018-5-24 13:00 报名截止"
             android:textColor="@color/dj_textcolorhui"
-            android:textSize="@dimen/param_12dp"
+            android:textSize="12dp"
+            android:layout_marginBottom="@dimen/param_7dp"
 
             />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="@dimen/param_115dp"
-            android:text=" 49人已报名"
-            android:textColor="@color/dj_textcolors_hei" />
+
 
 
     </RelativeLayout>
@@ -76,18 +61,53 @@
         android:layout_height="@dimen/param_25dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="@dimen/param_90dp"
+        android:layout_marginRight="@dimen/param_105dp"
         android:background="@color/dj_line_shu" />
 
+
     <TextView
+        android:id="@+id/id_weibaoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_marginRight="@dimen/param_27dp"
+        android:layout_marginTop="@dimen/param_12dp"
+
+        android:background="@drawable/yuanjiaoblue_12"
+        android:paddingLeft="@dimen/param_6dp"
+        android:paddingRight="@dimen/param_6dp"
+        android:text="@string/sanhui_text1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/param_12dp" />
+
+    <TextView
+        android:id="@+id/id_weibaoming2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_marginRight="@dimen/param_27dp"
+        android:layout_marginTop="@dimen/param_12dp"
+        android:visibility="invisible"
+        android:background="@drawable/yuanjiaohui_12"
+        android:paddingLeft="@dimen/param_6dp"
+        android:paddingRight="@dimen/param_6dp"
+        android:text="@string/zaixian_yiguoqi"
+        android:textColor="@color/white"
+        android:textSize="@dimen/param_12dp" />
+    <TextView
+        android:layout_below="@+id/id_weibaoming"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="@dimen/param_21dp"
-        android:text="@string/dianjijinru"
-        android:textColor="@color/dj_jinxingzhong"
-        android:textSize="@dimen/param_13dp"
-        android:layout_centerVertical="true"
+     android:textSize="@dimen/param_12dp"
+        android:text="49人参与"
+        android:textColor="@color/dj_textcolors_hei"
+android:layout_marginRight="@dimen/param_29dp"
+        android:layout_marginTop="@dimen/param_7.5dp"
         />
 
 <View

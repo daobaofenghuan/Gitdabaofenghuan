@@ -40,5 +40,12 @@
     <string name="sanhui_text3">所有活动</string>
     <string name="sanhui_weibaoming">未报名</string>
     <string name="dianjijinru">点击进入</string>
-
+    <string name="zaixian_daikao">待考</string>
+    <string name="zaixian_yikao">已考</string>
+    <string name="zaixian_yiguoqi">已过期</string>
+    <string name="weidu">未读</string>
+    <string name="yidu">已读</string>
+    <string name="weiwancheng">未完成</string>
+    <string name="yiwancheng">已完成</string>
+    <string name="wugengduo">无更多数据</string>
 </resources>

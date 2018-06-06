@@ -6,9 +6,11 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,6 +22,7 @@ import com.sindcreate.dj.fragment.AbsBaseFragment;
 import com.sindcreate.dj.fragment.HomePage.DangRicell.Drangri_Part1;
 import com.sindcreate.dj.fragment.HomePage.DangRicell.Drangri_Part2;
 import com.sindcreate.dj.fragment.HomePage.DangRicell.Drangri_Part3;
+import com.sindcreate.dj.fragment.HomePage.DangRicell.Drangri_title;
 import com.sindcreate.dj.model.Entry;
 
 import java.util.ArrayList;
@@ -61,7 +64,10 @@ public class Part_DangRi_Fragemnt extends AbsBaseFragment<Entry> {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
         View view =  inflater.inflate(R.layout.rv_base_fragment_layout2,null);
+
+
 
         return view;
     }
@@ -80,6 +86,7 @@ public class Part_DangRi_Fragemnt extends AbsBaseFragment<Entry> {
     protected List<Cell> getCells(List<Entry> entries){
         //根据实体生成Cell
         List<Cell> cells = new ArrayList<>();
+       cells.add(new Drangri_title(null));
         cells.add(new Drangri_Part1(null));
         cells.add(new Drangri_Part2(null));
         cells.add(new Drangri_Part3(null));
@@ -98,29 +105,10 @@ public class Part_DangRi_Fragemnt extends AbsBaseFragment<Entry> {
         View toolbar = LayoutInflater.from(getContext()).inflate(R.layout.title_show,null);
 
 
-        TextView title=toolbar.findViewById(R.id.id_title_text);
-        title.setText("党日活动");
-
-
-        MainActivity mainActivity= (MainActivity) getActivity();
-        assert mainActivity != null;
-        final Handler handler=mainActivity.handler;
-        ImageView img=toolbar.findViewById(R.id.title_img);
-        img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //   startActivity(new Intent(getActivity(), MessageActivity.class));
-                Message msg=Message.obtain();
-                msg.what= MsgNum.MSG_XiaoXI;
-                handler.sendMessage(msg);
 
 
 
-            }
-        });
-
-
-        return toolbar;
+        return null;
     }
 
     /**

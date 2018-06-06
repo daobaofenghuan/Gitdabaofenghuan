@@ -21,12 +21,15 @@ import com.sindcreate.dj.bean.Mydata;
 import com.sindcreate.dj.fragment.EducationFragment;
 import com.sindcreate.dj.fragment.HomePage.Part_DangRi_Fragemnt;
 import com.sindcreate.dj.fragment.HomePage.Part_SanHuiYiKe_Fragment;
+import com.sindcreate.dj.fragment.HomePage.Part_Work_Fragment;
+import com.sindcreate.dj.fragment.HomePage.Part_ZaiXian_Fragment;
+
 import com.sindcreate.dj.fragment.HomePageFragment;
 import com.sindcreate.dj.fragment.MessageFragment;
 import com.sindcreate.dj.fragment.MyFragment;
 import com.sindcreate.dj.fragment.ServiceFragment;
 import com.sindcreate.dj.util.UiUtil;
-import com.sindcreate.dj.util.Utils;
+
 import com.sindcreate.mylibrary.comm.util.StatusBarUtils;
 
 import static com.sindcreate.dj.bean.MsgNum.*;
@@ -43,13 +46,20 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayList<Fragment> list = new ArrayList<>();
     MainRecycleAdapter mAdapter;
+    //4个主页
     HomePageFragment fragment;
     EducationFragment fragment2;
     ServiceFragment fragment3;
     MyFragment fragment4;//我的
+    //消息
     MessageFragment messageFragment;
+    //homepage 4个新选项
+
     Part_DangRi_Fragemnt dangRi_fragemnt6;
     Part_SanHuiYiKe_Fragment sanHuiYiKe_fragment7;
+    Part_ZaiXian_Fragment zaiXian_fragment8;
+    Part_Work_Fragment work_fragment9;
+
 
     @BindView(R.id.id_home_bottom_img1)
     ImageView bottomimg1;
@@ -95,6 +105,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case MSG_SanHui:
                         initview(7);
+                        break;
+                    case MSG_ZAIXIANKAOSHI:
+                        initview(8);
+                        break;
+                    case MSG_Work:
+                        initview(9);
                         break;
                 }
 
@@ -186,7 +202,22 @@ public class MainActivity extends AppCompatActivity {
                     mFragmentTransaction.show(sanHuiYiKe_fragment7);
                 }
                 break;
-
+            case 8:
+                if (zaiXian_fragment8 == null) {
+                    zaiXian_fragment8 = new Part_ZaiXian_Fragment();
+                    mFragmentTransaction.add(R.id.fragment_container, zaiXian_fragment8);
+                } else {
+                    mFragmentTransaction.show(zaiXian_fragment8);
+                }
+                break;
+            case 9:
+                if (work_fragment9 == null) {
+                    work_fragment9 = new Part_Work_Fragment();
+                    mFragmentTransaction.add(R.id.fragment_container, work_fragment9);
+                } else {
+                    mFragmentTransaction.show(work_fragment9);
+                }
+                break;
 
         }
         mFragmentTransaction.commit();
@@ -225,8 +256,6 @@ public class MainActivity extends AppCompatActivity {
         //如果此fragment不为空的话就隐藏起来
 
 
-
-
         if (fragment != null) {
             fragmentTransaction.hide(fragment);
         }
@@ -251,11 +280,19 @@ public class MainActivity extends AppCompatActivity {
             //   sanHuiYiKe_fragment7.onDetach();
             // sanHuiYiKe_fragment7 = null;
         }
+        if (zaiXian_fragment8 != null) {
+            fragmentTransaction.hide(zaiXian_fragment8);
+
+        }
+        if (work_fragment9 != null) {
+            fragmentTransaction.hide(work_fragment9);
+
+        }
 
     }
 
-    private void selectcolor(int flag){
-       bottomimg1.setImageResource(R.mipmap.icon_bottom1);
+    private void selectcolor(int flag) {
+        bottomimg1.setImageResource(R.mipmap.icon_bottom1);
         bottomimg2.setImageResource(R.mipmap.icon_bottom2);
         bottomimg3.setImageResource(R.mipmap.icon_bottom3);
         bottomimg4.setImageResource(R.mipmap.icon_bottom4);
@@ -263,7 +300,7 @@ public class MainActivity extends AppCompatActivity {
         textView2.setTextColor(UiUtil.getColor(R.color.dj_textcolors));
         textView3.setTextColor(UiUtil.getColor(R.color.dj_textcolors));
         textView4.setTextColor(UiUtil.getColor(R.color.dj_textcolors));
-        switch (flag){
+        switch (flag) {
             case 1:
                 bottomimg1.setImageResource(R.mipmap.icon_bottom11);
                 textView1.setTextColor(UiUtil.getColor(R.color.dj_textcolors_red));
@@ -281,7 +318,6 @@ public class MainActivity extends AppCompatActivity {
                 bottomimg4.setImageResource(R.mipmap.icon_bottom44);
                 textView4.setTextColor(UiUtil.getColor(R.color.dj_textcolors_red));
                 break;
-
 
 
         }

@@ -100,7 +100,7 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
     @Override
     public View addToolbar() {
         View toolbar = LayoutInflater.from(getContext()).inflate(R.layout.title,null);
-
+        
 
         TextView title=toolbar.findViewById(R.id.id_title_text);
         title.setText("智慧党建");

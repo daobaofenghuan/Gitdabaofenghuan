@@ -9,6 +9,6 @@ public class MsgNum {
     public static final int MSG_SanHui = 1001;
     public static final int MSG_DangRI = 1002;
     public static final int MSG_ZAIXIANKAOSHI = 1003;
-
+    public static final int MSG_Work = 1004;
 
 }

@@ -45,7 +45,8 @@ public class Partone extends RVBaseCell<Entry> implements View.OnClickListener {
         img1.setOnClickListener(this);
         final ImageView img3 = view.getImageView(R.id.id_home_zaixiandati_img);
         img3.setOnClickListener(this);
-
+        final ImageView img4 = view.getImageView(R.id.id_home_gongzuorenwu_img);
+        img4.setOnClickListener(this);
 
         return view;
     }
@@ -78,7 +79,12 @@ public class Partone extends RVBaseCell<Entry> implements View.OnClickListener {
 
                 break;
             case R.id.id_home_zaixiandati_img:
+                System.out.println("在线被点击");
                 msg.what = MsgNum.MSG_ZAIXIANKAOSHI;
+                break;
+            case R.id.id_home_gongzuorenwu_img:
+                System.out.println("工作被点击");
+                msg.what=MsgNum.MSG_Work;
                 break;
 
         }
