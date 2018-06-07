@@ -18,8 +18,8 @@ import android.widget.FrameLayout;
 
 
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.base.Cell;
-import com.sindcreate.dj.base.RVSimpleAdapter;
+import com.sindcreate.dj.base.basecell.Cell;
+import com.sindcreate.dj.base.basecell.RVSimpleAdapter;
 
 import java.util.List;
 

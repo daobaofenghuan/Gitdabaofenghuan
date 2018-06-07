@@ -7,14 +7,18 @@ package com.sindcreate.dj.cell.servicecell;
 
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.base.RVBaseCell;
-import com.sindcreate.dj.base.RVBaseViewHolder;
+import com.sindcreate.dj.activity.ApplyForHelpActivity;
+import com.sindcreate.dj.base.basecell.RVBaseCell;
+import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
+import com.sindcreate.dj.bean.Mydata;
 import com.sindcreate.dj.model.Entry;
 
 /**
@@ -40,11 +44,17 @@ public class Part_caution2 extends RVBaseCell<Entry> {
 
         RVBaseViewHolder view= new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_service_cedu,parent,false));
         TextView texttitle= view.getTextView(R.id.id_hometitle_1);
-     //   TextView zhuti=view.getTextView(R.id.id_home_event_zhuti);
 
-        // zhuti.getPaint().setFlags(Paint. UNDERLINE_TEXT_FLAG ); //下划线
         texttitle.setText("政策法规");
-     //   TextView righttext=view.getTextView(R.id.id_item_rtext);
+        TextView textView=view.getTextView(R.id.id_sevice_shenqing);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Mydata.context.startActivity(new Intent(Mydata.context, ApplyForHelpActivity.class));
+
+            }
+        });
+
 
 
 

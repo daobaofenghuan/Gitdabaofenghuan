@@ -13,8 +13,8 @@ import com.bigkoo.convenientbanner.adapter.CBViewHolderCreator;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.sindcreate.dj.R;
 
-import com.sindcreate.dj.base.RVBaseCell;
-import com.sindcreate.dj.base.RVBaseViewHolder;
+import com.sindcreate.dj.base.basecell.RVBaseCell;
+import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
 
 
 import java.util.List;

@@ -1,11 +1,9 @@
 package com.sindcreate.dj.fragment;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.RequiresApi;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -13,12 +11,9 @@ import android.widget.TextView;
 
 import com.sindcreate.dj.MainActivity;
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.activity.MessageActivity;
-import com.sindcreate.dj.base.Cell;
+import com.sindcreate.dj.base.basecell.Cell;
 import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.cell.defautcell.ImageCell;
-import com.sindcreate.dj.cell.educell.Part_caution;
-import com.sindcreate.dj.cell.educell.Part_theme;
 import com.sindcreate.dj.cell.servicecell.Part_caution2;
 import com.sindcreate.dj.cell.servicecell.Part_laws;
 import com.sindcreate.dj.model.Entry;

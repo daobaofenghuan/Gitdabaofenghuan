@@ -1,6 +1,5 @@
 package com.sindcreate.dj.fragment;
 
-import android.content.Intent;
 import android.os.Build;
 
 
@@ -12,14 +11,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.sindcreate.dj.DataMocker;
 import com.sindcreate.dj.MainActivity;
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.activity.MessageActivity;
-import com.sindcreate.dj.base.Cell;
+import com.sindcreate.dj.base.basecell.Cell;
 
 import com.sindcreate.dj.bean.MsgNum;
-import com.sindcreate.dj.cell.defautcell.BannerCell;
 
 import com.sindcreate.dj.cell.defautcell.ImageCell;
 import com.sindcreate.dj.cell.educell.Part_caution;
@@ -27,7 +23,6 @@ import com.sindcreate.dj.cell.educell.Part_theme;
 import com.sindcreate.dj.model.Entry;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static com.sindcreate.dj.DataMocker.mockData;
@@ -81,20 +76,7 @@ public class EducationFragment extends AbsBaseFragment<Entry> {
         cells.add(new Part_theme(null));
         cells.add(new ImageCell(null));
         cells.add(new Part_caution(null));
-//        cells.add(new Partone(null));
-//        cells.add(new Part_EveryDayHomework(null));
-//        cells.add(new Part_EveryDayLesson(null));
-//        cells.add(new Part_Event(null));
-//        cells.add(new Part_Showresult(null));
 
-//        for (int i=0;i<entries.size();i++){
-//            Entry entry = entries.get(i);
-//            if(entry.type == Entry.TYPE_IMAGE){
-//                cells.add(new ImageCell(entry));
-//            }else{
-//                cells.add(new TextCell(entry));
-//            }
-//        }
         return cells;
     }
 

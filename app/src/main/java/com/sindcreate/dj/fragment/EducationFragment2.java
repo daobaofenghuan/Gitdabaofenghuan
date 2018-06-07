@@ -1,4 +1,4 @@
-package com.sindcreate.dj.fragment.HomePage;
+package com.sindcreate.dj.fragment;
 
 
 import android.os.Bundle;
@@ -13,11 +13,11 @@ import android.widget.TextView;
 
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.adapter.DynamicHomeAdapter;
-import com.sindcreate.dj.base.BaseFragment;
+import com.sindcreate.dj.cell.educell.Part_Edu_fragment1;
+import com.sindcreate.dj.fragment.HomePage.Sanhuifragment.Part_Sanhui1_fragment;
 import com.sindcreate.dj.fragment.HomePage.Sanhuifragment.Part_Sanhui2_fragment;
 import com.sindcreate.dj.fragment.HomePage.Sanhuifragment.Part_Sanhui3_fragment;
 import com.sindcreate.dj.fragment.HomePage.WorkFragment.Part_Work_fragment1;
-import com.sindcreate.dj.fragment.HomePage.ZaixianFragemnt.Part_ZaiXian_fragment1;
 import com.sindcreate.dj.util.UiUtil;
 
 import java.util.ArrayList;
@@ -25,47 +25,41 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.Unbinder;
 
-public class Part_Work_Fragment extends BaseFragment {
+/**
+ * Created by Double on 2018/5/22.
+ */
+public class EducationFragment2 extends Fragment {
     private Button but, but2;
     private TextView textView;
-    private List<String> mTabs;
-    Unbinder unbinder;
-    @BindView(R.id.vp3)
+    private List<String> mTabs=new ArrayList<>();
+    @BindView(R.id.vp4)
     ViewPager vp;
 
-    @BindView(R.id.tl3)
+    @BindView(R.id.tl4)
     TabLayout tl;
     @BindView(R.id.id_title_text)
     TextView titletext;
 
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_homepage_work, container, false);
+        View view = inflater.inflate(R.layout.fragment_edu_main, container, false);
         ButterKnife.bind(this, view);
-        unbinder = ButterKnife.bind(this, view);
-
         initTabLayout();
         bindViewPager();
-
 
         return view;
 
     }
-
-
-
-
     private void initTabLayout() {
-    //    textView.setText("三会一课");
+
         mTabs = new ArrayList<>();
         mTabs.clear();
-        mTabs.add(UiUtil.getString(R.string.weidu));
-        mTabs.add(UiUtil.getString(R.string.weiwancheng));
-        mTabs.add(UiUtil.getString(R.string.yiwancheng));
+        mTabs.add(UiUtil.getString(R.string.quanbu));
+        mTabs.add(UiUtil.getString(R.string.dangzhangdanggui));
+        mTabs.add(UiUtil.getString(R.string.sanhuiyike));
+        mTabs.add(UiUtil.getString(R.string.zhidangzhiguo));
 
 
     }
@@ -73,18 +67,23 @@ public class Part_Work_Fragment extends BaseFragment {
     private void bindViewPager() {
 
         List<Fragment> fragments = new ArrayList<>();
-        fragments.add(new Part_Work_fragment1());
+        fragments.add(new Part_Edu_fragment1());
         fragments.add(new Part_Sanhui2_fragment());
         fragments.add(new Part_Sanhui3_fragment());
+        fragments.add(new Part_Sanhui1_fragment());
 
 
         DynamicHomeAdapter adapter = new DynamicHomeAdapter(getFragmentManager(), fragments, mTabs);
-        vp.setOffscreenPageLimit(3);
+        vp.setOffscreenPageLimit(4);
         vp.setAdapter(adapter);
         tl.setupWithViewPager(vp);
-     //   reflex(tl);
+        //   reflex(tl);
 
     }
+
+
+
+
 
 
 

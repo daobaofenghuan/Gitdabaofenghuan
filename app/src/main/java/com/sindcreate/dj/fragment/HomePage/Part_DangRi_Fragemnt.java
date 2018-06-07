@@ -2,22 +2,14 @@ package com.sindcreate.dj.fragment.HomePage;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
-import android.widget.TextView;
 
-import com.sindcreate.dj.MainActivity;
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.base.Cell;
-import com.sindcreate.dj.bean.MsgNum;
+import com.sindcreate.dj.base.basecell.Cell;
 import com.sindcreate.dj.fragment.AbsBaseFragment;
 import com.sindcreate.dj.fragment.HomePage.DangRicell.Drangri_Part1;
 import com.sindcreate.dj.fragment.HomePage.DangRicell.Drangri_Part2;

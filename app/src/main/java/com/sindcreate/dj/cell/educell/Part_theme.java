@@ -7,15 +7,14 @@ package com.sindcreate.dj.cell.educell;
 
 
 import android.annotation.SuppressLint;
-import android.graphics.Paint;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.base.RVBaseCell;
-import com.sindcreate.dj.base.RVBaseViewHolder;
+import com.sindcreate.dj.base.basecell.RVBaseCell;
+import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
 import com.sindcreate.dj.model.Entry;
 
 /**

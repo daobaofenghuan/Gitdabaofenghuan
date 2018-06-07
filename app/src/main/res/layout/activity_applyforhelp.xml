@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ApplyForHelpActivity"
+    android:orientation="vertical"
+    >
+<include
+    layout="@layout/title_show2"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_45dp">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="@dimen/param_10dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="类型"
+        android:textSize="@dimen/param_14dp"
+        android:textColor="@color/dj_textcolors"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textSize="@dimen/param_14dp"
+        android:textColor="@color/dj_jinxingzhong"
+        />
+
+
+</LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产品建议"
+                android:textSize="@dimen/param_14dp"
+                android:textColor="@color/dj_textcolors"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/param_27dp"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:src="@mipmap/icon_right"
+              android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/param_10dp"
+                android:layout_marginTop="@dimen/param_17dp"
+                android:layout_marginBottom="@dimen/param_17dp"
+                />
+
+
+
+    </RelativeLayout>
+<include
+    layout="@layout/dim"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_45dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/param_10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textColor="@color/dj_textcolors"
+                android:textSize="@dimen/param_14dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="@dimen/param_14dp"
+                android:textColor="@color/dj_jinxingzhong"
+                />
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:hint="请输入标题，1-64个字符"
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/dj_textcolors"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:layout_marginRight="@dimen/param_9dp"
+            android:layout_centerVertical="true"
+            />
+
+
+
+
+    </RelativeLayout>
+    <include
+        layout="@layout/dim"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_45dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/param_10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容"
+                android:textColor="@color/dj_textcolors"
+                android:textSize="@dimen/param_14dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="@dimen/param_14dp"
+                android:textColor="@color/dj_jinxingzhong"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_70dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入内容，1-2000个字符"
+            android:textSize="@dimen/param_12dp"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/param_9.5dp"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/param_37dp"
+        android:layout_height="@dimen/param_37dp"
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:background="@color/base_gray_eee"
+        ></RelativeLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/param_10dp"
+    android:layout_marginTop="@dimen/param_14dp"
+    android:text="最多可上传9张照片"
+    />
+    <include
+        layout="@layout/dim"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_56dp">
+   <TextView
+       android:layout_width="@dimen/param_71dp"
+       android:layout_height="@dimen/param_30dp"
+       android:background="@drawable/yuanjiaored_8dp"
+       android:layout_centerVertical="true"
+       android:layout_alignParentRight="true"
+       android:textColor="@color/white"
+       android:text="发布"
+       android:gravity="center"
+       android:textSize="@dimen/param_14dp"
+       />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

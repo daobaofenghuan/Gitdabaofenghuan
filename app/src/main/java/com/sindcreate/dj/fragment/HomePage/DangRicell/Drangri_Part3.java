@@ -6,8 +6,8 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.base.RVBaseCell;
-import com.sindcreate.dj.base.RVBaseViewHolder;
+import com.sindcreate.dj.base.basecell.RVBaseCell;
+import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
 import com.sindcreate.dj.model.Entry;
 
 /**

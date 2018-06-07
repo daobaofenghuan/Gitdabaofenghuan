@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.adapter.DynamicHomeAdapter;
+import com.sindcreate.dj.base.BaseFragment;
 import com.sindcreate.dj.fragment.HomePage.Sanhuifragment.Part_Sanhui1_fragment;
 import com.sindcreate.dj.fragment.HomePage.Sanhuifragment.Part_Sanhui2_fragment;
 import com.sindcreate.dj.fragment.HomePage.Sanhuifragment.Part_Sanhui3_fragment;
@@ -31,7 +32,7 @@ import butterknife.Unbinder;
 
 import static com.sindcreate.dj.util.DensityUtil.dip2px;
 
-public class Part_ZaiXian_Fragment extends Fragment {
+public class Part_ZaiXian_Fragment extends BaseFragment {
     private Button but, but2;
     private TextView textView;
     private List<String> mTabs;

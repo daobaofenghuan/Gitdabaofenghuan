@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.sindcreate.dj.DataMocker;
 import com.sindcreate.dj.MainActivity;
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.base.Cell;
+import com.sindcreate.dj.base.basecell.Cell;
 
 import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.cell.defautcell.BannerCell;

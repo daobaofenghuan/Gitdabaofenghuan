@@ -1,4 +1,4 @@
-package com.sindcreate.dj.base;
+package com.sindcreate.dj.base.basecell;
 
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -6,6 +6,8 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.sindcreate.dj.base.basecell.RVBaseAdapter;
+import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
 import com.sindcreate.dj.cell.defautcell.EmptyCell;
 import com.sindcreate.dj.cell.defautcell.ErrorCell;
 import com.sindcreate.dj.cell.defautcell.LoadMoreCell;
@@ -17,7 +19,7 @@ import com.sindcreate.dj.util.Utils;
  * Created by zhouwei on 17/1/23.
  */
 
-public class RVSimpleAdapter extends RVBaseAdapter{
+public class RVSimpleAdapter extends RVBaseAdapter {
     public static final int ERROR_TYPE = Integer.MAX_VALUE -1;
     public static final int EMPTY_TYPE = Integer.MAX_VALUE -2;
     public static final int LOADING_TYPE = Integer.MAX_VALUE -3;

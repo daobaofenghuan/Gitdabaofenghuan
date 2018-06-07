@@ -207,6 +207,7 @@
     >
     
     <TextView
+        android:id="@+id/id_sevice_shenqing"
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_40dp"
         android:layout_marginTop="@dimen/param_22dp"

@@ -48,4 +48,8 @@
     <string name="weiwancheng">未完成</string>
     <string name="yiwancheng">已完成</string>
     <string name="wugengduo">无更多数据</string>
+    <string name="quanbu">全部</string>
+    <string name="dangzhangdanggui">党章党规</string>
+    <string name="sanhuiyike">三会一课</string>
+    <string name="zhidangzhiguo">治党治国</string>
 </resources>

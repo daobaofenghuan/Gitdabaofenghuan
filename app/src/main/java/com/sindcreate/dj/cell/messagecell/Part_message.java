@@ -12,15 +12,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.base.RVBaseCell;
-import com.sindcreate.dj.base.RVBaseViewHolder;
-import com.sindcreate.dj.bean.Mydata;
+import com.sindcreate.dj.base.basecell.RVBaseCell;
+import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
 import com.sindcreate.dj.model.Entry;
 
 

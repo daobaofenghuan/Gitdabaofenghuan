@@ -2,10 +2,10 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android" >
     <solid android:color="@color/dj_yuanjiaored" />
     <corners       
-                     android:topLeftRadius="@dimen/param_10dp"
-                    android:topRightRadius="@dimen/param_10dp"
-                    android:bottomRightRadius="@dimen/param_10dp"
-                    android:bottomLeftRadius="@dimen/param_10dp"
+                     android:topLeftRadius="@dimen/param_14dp"
+                    android:topRightRadius="@dimen/param_14dp"
+                    android:bottomRightRadius="@dimen/param_14dp"
+                    android:bottomLeftRadius="@dimen/param_14dp"
                 
                 />    
 

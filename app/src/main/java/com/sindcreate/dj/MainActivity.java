@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.sindcreate.dj.adapter.MainRecycleAdapter;
 import com.sindcreate.dj.bean.Mydata;
 import com.sindcreate.dj.fragment.EducationFragment;
+import com.sindcreate.dj.fragment.EducationFragment2;
 import com.sindcreate.dj.fragment.HomePage.Part_DangRi_Fragemnt;
 import com.sindcreate.dj.fragment.HomePage.Part_SanHuiYiKe_Fragment;
 import com.sindcreate.dj.fragment.HomePage.Part_Work_Fragment;
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     MainRecycleAdapter mAdapter;
     //4个主页
     HomePageFragment fragment;
-    EducationFragment fragment2;
+    EducationFragment2 fragment2;
     ServiceFragment fragment3;
     MyFragment fragment4;//我的
     //消息
@@ -112,6 +113,9 @@ public class MainActivity extends AppCompatActivity {
                     case MSG_Work:
                         initview(9);
                         break;
+                    case MSG_Home:
+                        initview(1);
+                        break;
                 }
 
 
@@ -153,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 2:
                 if (fragment2 == null) {
-                    fragment2 = new EducationFragment();
+                    fragment2 = new EducationFragment2();
                     mFragmentTransaction.add(R.id.fragment_container, fragment2);
                 } else {
                     mFragmentTransaction.show(fragment2);

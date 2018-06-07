@@ -5,8 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.base.RVBaseViewHolder;
-import com.sindcreate.dj.base.RVSimpleAdapter;
+import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
+import com.sindcreate.dj.base.basecell.RVSimpleAdapter;
 
 
 /**

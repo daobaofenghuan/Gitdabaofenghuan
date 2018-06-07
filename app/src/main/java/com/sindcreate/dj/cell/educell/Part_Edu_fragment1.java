@@ -1,6 +1,5 @@
-package com.sindcreate.dj.fragment.HomePage.Sanhuifragment;
+package com.sindcreate.dj.cell.educell;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -8,14 +7,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.activity.WebViewActivity;
-import com.sindcreate.dj.adapter.listviewadapter.SanhuiListAdapter;
-import com.sindcreate.dj.base.BaseFragment;
+import com.sindcreate.dj.adapter.listviewadapter.EduListAdapter;
+import com.sindcreate.dj.adapter.listviewadapter.ZaiXianListAdapter;
 import com.sindcreate.dj.bean.Datebean.AcceptData;
 
 import java.util.ArrayList;
@@ -27,31 +23,25 @@ import butterknife.ButterKnife;
  * Created by Double on 2018/6/4.
  */
 
-public class Part_Sanhui1_fragment extends Fragment {
+public class Part_Edu_fragment1 extends Fragment {
     @BindView(R.id.id_sanhui_list)
     ListView listView;
-    SanhuiListAdapter adapter;
+    EduListAdapter adapter;
     ArrayList<AcceptData> datalist=new ArrayList<>();
 
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-      View view=inflater.inflate(R.layout.fragment_homepage_sanhuiyike_1,container,false);
+      View view=inflater.inflate(R.layout.fragment_homepage_zaixian,container,false);
         ButterKnife.bind(this,view);
         AcceptData databean=new AcceptData();
 
         datalist.add(databean);
         datalist.add(databean);
         datalist.add(databean);
-        adapter=new SanhuiListAdapter(getContext(),datalist);
+        adapter=new EduListAdapter(getContext(),datalist);
         listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                startActivity(new Intent(getActivity(), WebViewActivity.class));
-            }
-        });
 
 
         return view;

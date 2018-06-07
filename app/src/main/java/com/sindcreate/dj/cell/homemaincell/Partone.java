@@ -9,14 +9,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.base.RVBaseCell;
-import com.sindcreate.dj.base.RVBaseViewHolder;
+import com.sindcreate.dj.base.basecell.RVBaseCell;
+import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
 
 import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.bean.Mydata;
 import com.sindcreate.dj.model.Entry;
-
-import butterknife.ButterKnife;
 
 /**
  * Created by Double on 2018/5/23.

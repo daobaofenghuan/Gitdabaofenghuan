@@ -1,4 +1,6 @@
-package com.sindcreate.dj.base;
+package com.sindcreate.dj.base.basecell;
+
+import com.sindcreate.dj.base.basecell.Cell;
 
 /**
  * Created by Double on 2018/5/22.

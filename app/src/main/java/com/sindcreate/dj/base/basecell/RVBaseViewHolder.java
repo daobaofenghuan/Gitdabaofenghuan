@@ -1,4 +1,4 @@
-package com.sindcreate.dj.base;
+package com.sindcreate.dj.base.basecell;
 
 import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;

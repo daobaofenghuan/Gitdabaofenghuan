@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/item_edu_ly1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_marginRight="@dimen/param_13dp"
+        android:layout_weight="1">
+
+        <ImageView
+
+            android:id="@+id/item_edu_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/param_88dp"
+            android:background="@color/base_gray_eee"
+            android:layout_marginTop="@dimen/param_10dp"
+            android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/test_pic_04" />
+
+        <TextView
+            android:layout_below="@id/item_edu_img"
+            android:id="@+id/item_edu_texttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/param_15dp"
+            android:text="组织观看组织观看《厉害了，我的国》"
+            android:textSize="@dimen/param_13dp"
+            android:textColor="@color/dj_textcolors"
+            />
+        <TextView
+            android:layout_below="@id/item_edu_texttitle"
+            android:id="@+id/item_edu_sj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/param_15dp"
+            android:text="2018-05-24"
+            android:textSize="@dimen/param_13dp"
+            android:textColor="@color/dj_textcolorhui"
+            android:layout_marginBottom="@dimen/param_21dp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/item_edu_ly2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_marginRight="@dimen/param_13dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/item_edu_img2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/param_88dp"
+            android:background="@color/base_gray_eee"
+            android:layout_marginTop="@dimen/param_10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+         />
+
+        <TextView
+            android:layout_below="@id/item_edu_img2"
+            android:id="@+id/item_edu_texttitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/param_15dp"
+            android:text="组织观看组织观看《厉害了，我的国》"
+            android:textSize="@dimen/param_13dp"
+            android:textColor="@color/dj_textcolors"
+            />
+        <TextView
+            android:layout_below="@id/item_edu_texttitle2"
+            android:id="@+id/item_edu_sj2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/param_15dp"
+            android:text="2018-05-24"
+            android:textSize="@dimen/param_13dp"
+            android:textColor="@color/dj_textcolorhui"
+            android:layout_marginBottom="@dimen/param_21dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
