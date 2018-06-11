@@ -15,12 +15,7 @@
         />
 
 
-    <include
-        android:id="@+id/id_title_event1"
 
-
-        layout="@layout/cell_mainactivity_event_part1"
-        />
 
     <include
         android:id="@+id/id_title_event2"
@@ -28,5 +23,10 @@
 
         layout="@layout/cell_mainactivity_event_part2"
         />
+    <include
+        android:id="@+id/id_title_event1"
 
+
+        layout="@layout/cell_mainactivity_event_part1"
+        />
 </LinearLayout>

@@ -7,6 +7,11 @@
 
 
     android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cell_homepage_eventpart2"
+        >
 
 
     <ImageView
@@ -36,6 +41,7 @@
                 android:layout_width="40dp"
                 android:layout_height="22dp"
 
+
                 android:layout_alignTop="@+id/id_home_event2_zhuti"
                 android:layout_toLeftOf="@+id/id_home_event2_zhuti"
                 android:gravity="center_vertical"
@@ -49,9 +55,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-
+               android:layout_marginRight="@dimen/param_12dp"
+                android:maxEms="12"
+                android:singleLine="true"
                 android:ellipsize="end"
-                android:maxLines="2"
 
                 android:paddingTop="1.5dp"
                 android:text="无偿献血活动"
@@ -82,7 +89,7 @@
                 android:layout_height="22dp"
 
                 android:gravity="center_vertical"
-                android:text="主题："
+                android:text="时间："
                 android:textSize="13sp"
 
                 />
@@ -94,7 +101,7 @@
 
 
                 android:ellipsize="end"
-                android:maxLines="2"
+                android:maxLines="1"
 
                 android:paddingTop="1.5dp"
                 android:text="2018年4月27日"
@@ -166,5 +173,5 @@
 
     </LinearLayout>
 
-
+    </RelativeLayout>
 </RelativeLayout>

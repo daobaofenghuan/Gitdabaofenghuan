@@ -60,7 +60,7 @@ public class ServiceFragment extends AbsBaseFragment<Entry> {
             @Override
             public void run() {
                 hideLoadMore();
-                mBaseAdapter.addAll(getCells(mockMoreData()));
+              //  mBaseAdapter.addAll(getCells(mockMoreData()));
 
             }
         },10000);
@@ -70,7 +70,7 @@ public class ServiceFragment extends AbsBaseFragment<Entry> {
         //根据实体生成Cell
         List<Cell> cells = new ArrayList<>();
         cells.add(new Part_laws(null));
-        cells.add(new ImageCell(null));
+      //  cells.add(new ImageCell(null));
         cells.add(new Part_caution2(null));
       //  cells.add(new Part_theme(null));
      //   cells.add(new ImageCell(null));

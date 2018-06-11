@@ -11,6 +11,7 @@ public class Entry {
     public int type;
     public String imageUrl;
     public String content;
+    public String nr;
 
 
     //后续自己添加

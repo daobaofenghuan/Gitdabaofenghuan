@@ -45,8 +45,10 @@ public class Part_caution2 extends RVBaseCell<Entry> {
         RVBaseViewHolder view= new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_service_cedu,parent,false));
         TextView texttitle= view.getTextView(R.id.id_hometitle_1);
 
-        texttitle.setText("政策法规");
         TextView textView=view.getTextView(R.id.id_sevice_shenqing);
+        texttitle.setText("党员服务");
+       TextView title2=view.getTextView(R.id.id_item_rtext);
+       title2.setVisibility(View.INVISIBLE);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

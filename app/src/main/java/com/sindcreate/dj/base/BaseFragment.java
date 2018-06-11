@@ -26,10 +26,23 @@ public class BaseFragment extends Fragment {
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 
-    @OnClick(R.id.id_title_back)
+    @OnClick({R.id.id_title_back,R.id.title_img})
     public  void  goback(View v){
         Message msg=Message.obtain();
-        msg.what= MsgNum.MSG_Home;
-        Mydata.handler.sendMessage(msg);
+        switch (v.getId()){
+
+            case R.id.id_title_back:
+
+                msg.what= MsgNum.MSG_Home;
+                Mydata.handler.sendMessage(msg);
+               break;
+            case R.id.title_img:
+
+                msg.what= MsgNum.MSG_XiaoXI;
+                Mydata.handler.sendMessage(msg);
+                break;
+
+        }
+
     }
 }

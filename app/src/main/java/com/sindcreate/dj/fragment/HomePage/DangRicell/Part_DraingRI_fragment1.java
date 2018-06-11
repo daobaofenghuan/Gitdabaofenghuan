@@ -1,4 +1,4 @@
-package com.sindcreate.dj.fragment.HomePage.WorkFragment;
+package com.sindcreate.dj.fragment.HomePage.DangRicell;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,7 +11,6 @@ import android.widget.ListView;
 
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.adapter.listviewadapter.WorkListAdapter;
-import com.sindcreate.dj.adapter.listviewadapter.ZaiXianListAdapter;
 import com.sindcreate.dj.bean.Datebean.AcceptData;
 
 import java.util.ArrayList;
@@ -23,7 +22,7 @@ import butterknife.ButterKnife;
  * Created by Double on 2018/6/4.
  */
 
-public class Part_Work_fragment1 extends Fragment {
+public class Part_DraingRI_fragment1 extends Fragment {
     @BindView(R.id.id_sanhui_list)
     ListView listView;
     WorkListAdapter adapter;
@@ -33,7 +32,7 @@ public class Part_Work_fragment1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-      View view=inflater.inflate(R.layout.fragment_homepage_list,container,false);
+      View view=inflater.inflate(R.layout.fragment_homepage_zaixian,container,false);
         ButterKnife.bind(this,view);
         AcceptData databean=new AcceptData();
 

@@ -43,7 +43,7 @@ public class Part_laws extends RVBaseCell<Entry> {
         TextView zhuti=view.getTextView(R.id.id_home_event_zhuti);
 
         // zhuti.getPaint().setFlags(Paint. UNDERLINE_TEXT_FLAG ); //下划线
-        texttitle.setText("警示教育");
+        texttitle.setText("政策法规");
         TextView righttext=view.getTextView(R.id.id_item_rtext);
         righttext.setText("查看全部");
 

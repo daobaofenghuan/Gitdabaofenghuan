@@ -20,6 +20,7 @@ import com.sindcreate.dj.adapter.MainRecycleAdapter;
 import com.sindcreate.dj.bean.Mydata;
 import com.sindcreate.dj.fragment.EducationFragment;
 import com.sindcreate.dj.fragment.EducationFragment2;
+import com.sindcreate.dj.fragment.HomePage.Part_DangRI_Fragmenttwo;
 import com.sindcreate.dj.fragment.HomePage.Part_DangRi_Fragemnt;
 import com.sindcreate.dj.fragment.HomePage.Part_SanHuiYiKe_Fragment;
 import com.sindcreate.dj.fragment.HomePage.Part_Work_Fragment;
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     MessageFragment messageFragment;
     //homepage 4个新选项
 
-    Part_DangRi_Fragemnt dangRi_fragemnt6;
+    Part_DangRI_Fragmenttwo dangRi_fragemnt6;
     Part_SanHuiYiKe_Fragment sanHuiYiKe_fragment7;
     Part_ZaiXian_Fragment zaiXian_fragment8;
     Part_Work_Fragment work_fragment9;
@@ -191,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 6:
                 if (dangRi_fragemnt6 == null) {
-                    dangRi_fragemnt6 = new Part_DangRi_Fragemnt();
+                    dangRi_fragemnt6 = new Part_DangRI_Fragmenttwo();
                     mFragmentTransaction.add(R.id.fragment_container, dangRi_fragemnt6);
                 } else {
                     mFragmentTransaction.show(dangRi_fragemnt6);
@@ -276,8 +277,8 @@ public class MainActivity extends AppCompatActivity {
             fragmentTransaction.hide(messageFragment);
         }
         if (dangRi_fragemnt6 != null) {
-            fragmentTransaction.remove(dangRi_fragemnt6);
-            dangRi_fragemnt6 = null;
+            fragmentTransaction.hide(dangRi_fragemnt6);
+          //  dangRi_fragemnt6 = null;
         }
         if (sanHuiYiKe_fragment7 != null) {
             fragmentTransaction.hide(sanHuiYiKe_fragment7);

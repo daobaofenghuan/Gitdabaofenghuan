@@ -7,7 +7,11 @@
 
 
     android:orientation="vertical">
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cell_homepage_eventpart1"
+    >
 
     <ImageView
         android:id="@+id/id_home_event_img"
@@ -46,16 +50,16 @@
 
             <TextView
                 android:id="@+id/id_home_event_zhuti"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-
+                android:maxEms="12"
+                android:singleLine="true"
                 android:ellipsize="end"
-                android:maxLines="1"
+
                 android:layout_marginRight="@dimen/param_7.5dp"
 
                 android:paddingTop="@dimen/param_1.5dp"
-                android:text="组织观看《厉害了，我的国》"
+                android:text="历史记忆中的长征"
                 android:textColor="@color/dj_textcolors"
 
                 android:textSize="15sp" />
@@ -174,5 +178,5 @@
 
     </LinearLayout>
 
-
+</RelativeLayout>
 </RelativeLayout>

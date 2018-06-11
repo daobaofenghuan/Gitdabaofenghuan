@@ -82,10 +82,18 @@ public class DataMocker {
 
     public static String[] images = {
 
-            "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1527844314&di=67466d8ccd64755508c49d7c0a6aa3d0&src=http://pic9.nipic.com/20100828/2116027_135158009416_2.jpg",
-"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527854492722&di=09955f97898ef177bc290565b90d67a0&imgtype=0&src=http%3A%2F%2Fpic6.nipic.com%2F20100423%2F4692664_103320047067_2.jpg"
-,"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527854492722&di=09955f97898ef177bc290565b90d67a0&imgtype=0&src=http%3A%2F%2Fpic6.nipic.com%2F20100423%2F4692664_103320047067_2.jpg"
-            ,"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527854492722&di=09955f97898ef177bc290565b90d67a0&imgtype=0&src=http%3A%2F%2Fpic6.nipic.com%2F20100423%2F4692664_103320047067_2.jpg"
+"http://p2.img.cctvpic.com/photoAlbum/page/performance/img/2017/11/17/1510882755358_744.jpg",
+            "http://p2.img.cctvpic.com/photoAlbum/page/performance/img/2017/11/13/1510541227985_359.jpg",
+            "http://p1.img.cctvpic.com/photoAlbum/page/performance/img/2017/10/25/1508896314079_178.jpg",
+            "http://p2.img.cctvpic.com/photoAlbum/page/performance/img/2017/10/15/1508051698237_91.jpg",
+            "http://p5.img.cctvpic.com/photoAlbum/page/performance/img/2017/10/15/1508051096457_594.jpg"
+
+
+
+
+
+
+
     };
 
     public static List<DetailEntry> mockStaggerData(){
@@ -104,4 +112,7 @@ public class DataMocker {
         }
         return detailEntries;
     }
+
+
+
 }

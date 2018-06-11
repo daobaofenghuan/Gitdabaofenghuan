@@ -19,6 +19,7 @@ import com.sindcreate.dj.base.basecell.Cell;
 import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.cell.defautcell.BannerCell;
 import com.sindcreate.dj.cell.homemaincell.Part_Event;
+import com.sindcreate.dj.cell.homemaincell.Part_Event2;
 import com.sindcreate.dj.cell.homemaincell.Part_EveryDayHomework;
 import com.sindcreate.dj.cell.homemaincell.Part_EveryDayLesson;
 import com.sindcreate.dj.cell.homemaincell.Part_Showresult;
@@ -68,7 +69,7 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
             @Override
             public void run() {
                 hideLoadMore();
-                mBaseAdapter.addAll(getCells(mockMoreData()));
+            //    mBaseAdapter.addAll(getCells(mockMoreData()));
 
             }
         },10000);
@@ -83,7 +84,7 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
         cells.add(new Part_EveryDayLesson(null));
         cells.add(new Part_Event(null));
         cells.add(new Part_Showresult(null));
-
+        cells.add(new Part_Event2(null));
 //        for (int i=0;i<entries.size();i++){
 //            Entry entry = entries.get(i);
 //            if(entry.type == Entry.TYPE_IMAGE){

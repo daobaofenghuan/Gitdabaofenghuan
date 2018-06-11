@@ -11,4 +11,5 @@ public class Mydata {
     public static boolean message_flag=false;
     public static Handler handler;
     public static Context context;
+
 }

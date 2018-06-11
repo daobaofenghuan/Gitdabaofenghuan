@@ -11,14 +11,20 @@
         android:layout_width="match_parent"
         android:layout_height="40dp">
 
-        <ImageView
+        <RelativeLayout
             android:id="@+id/id_title_back"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="@dimen/param_10dp"
-            android:layout_marginLeft="@dimen/param_10dp"
-            android:layout_marginTop="@dimen/param_10dp"
-            android:src="@mipmap/icon_leftwite" />
+            android:layout_width="@dimen/param_40dp"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/param_10dp"
+                android:layout_marginLeft="@dimen/param_10dp"
+                android:layout_marginTop="@dimen/param_10dp"
+                android:src="@mipmap/icon_leftwite" />
+        </RelativeLayout>
+
 
         <TextView
             android:id="@+id/id_title_text"

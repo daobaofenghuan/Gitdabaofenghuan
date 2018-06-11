@@ -7,7 +7,7 @@
     <string name="error_message">网络错误,请稍后重试</string>
 
     <string name="homepage_part1_1">三会一课</string>
-    <string name="homepage_part1_2">党日活动</string>
+    <string name="homepage_part1_2">主题活动</string>
     <string name="homepage_part1_3">在线答题</string>
     <string name="homepage_part1_4">工作任务</string>
     <string name="homepage_part2_1">每日一题</string>
@@ -27,7 +27,7 @@
 
     <string name="service_text1_1">应急管理部有关负责人就《地方党政领导等等等</string>
     <string name="service_text1_sj">2018-5-24</string>
-    <string name="service_help">申请帮扶</string>
+    <string name="service_help">有困难找组织</string>
     <string name="service_text2">《专业技术类公务员管理规定（试行）》图解</string>
     <string name="title_activity_message">MessageActivity</string>
     <string name="message_text1">为了响应学校开展特色党日的号召,加强党员的党性修养,推进支部建设,我支部计划开展紧紧围绕“强组织、增活力...</string>
@@ -52,4 +52,14 @@
     <string name="dangzhangdanggui">党章党规</string>
     <string name="sanhuiyike">三会一课</string>
     <string name="zhidangzhiguo">治党治国</string>
+    <string name="daiwobaoming">待我报名</string>
+    <string name="woyibangming">我已报名</string>
+
+
+
+    <string name="edu_text1"> 两学一做</string>
+    <string name="edu_text2">廉政教育</string>
+    <string name="edu_text3">学习十九大</string>
+    <string name="edu_text4">习近平用典</string>
+    <string name="edu_text5">十九大系列专题片</string>
 </resources>

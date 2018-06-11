@@ -1,5 +1,11 @@
 package com.sindcreate.dj.fragment.HomePage;
 
+/**
+ * Created by Double on 2018/6/8.
+ */
+
+import android.support.v4.app.Fragment;
+
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -27,15 +33,15 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
-public class Part_Work_Fragment extends BaseFragment {
+public class Part_DangRI_Fragmenttwo extends BaseFragment {
     private Button but, but2;
     private TextView textView;
     private List<String> mTabs;
     Unbinder unbinder;
-    @BindView(R.id.vp3)
+    @BindView(R.id.vp5)
     ViewPager vp;
 
-    @BindView(R.id.tl3)
+    @BindView(R.id.tl5)
     TabLayout tl;
     @BindView(R.id.id_title_text)
     TextView titletext;
@@ -44,7 +50,7 @@ public class Part_Work_Fragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_homepage_work, container, false);
+        View view = inflater.inflate(R.layout.fragment_homepage_dangri, container, false);
         ButterKnife.bind(this, view);
         unbinder = ButterKnife.bind(this, view);
 
@@ -57,15 +63,13 @@ public class Part_Work_Fragment extends BaseFragment {
     }
 
 
-
-
     private void initTabLayout() {
-    //    textView.setText("三会一课");
+        //    textView.setText("三会一课");
         mTabs = new ArrayList<>();
         mTabs.clear();
-        mTabs.add(UiUtil.getString(R.string.weidu));
-        mTabs.add(UiUtil.getString(R.string.weiwancheng));
-        mTabs.add(UiUtil.getString(R.string.yiwancheng));
+        mTabs.add(UiUtil.getString(R.string.daiwobaoming));
+        mTabs.add(UiUtil.getString(R.string.woyibangming));
+        mTabs.add(UiUtil.getString(R.string.sanhui_text3));
 
 
     }
@@ -82,10 +86,9 @@ public class Part_Work_Fragment extends BaseFragment {
         vp.setOffscreenPageLimit(3);
         vp.setAdapter(adapter);
         tl.setupWithViewPager(vp);
-     //   reflex(tl);
+        //   reflex(tl);
 
     }
-
 
 
 }
