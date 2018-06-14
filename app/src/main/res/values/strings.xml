@@ -31,7 +31,7 @@
     <string name="service_text2">《专业技术类公务员管理规定（试行）》图解</string>
     <string name="title_activity_message">MessageActivity</string>
     <string name="message_text1">为了响应学校开展特色党日的号召,加强党员的党性修养,推进支部建设,我支部计划开展紧紧围绕“强组织、增活力...</string>
-<string name="message_queren">确认提醒</string>
+    <string name="message_queren">确认提醒</string>
 
     <string name="dangri_text1">全体党员大会</string>
     <string name="dangri_ing">进行中...</string>
@@ -56,10 +56,10 @@
     <string name="woyibangming">我已报名</string>
 
 
-
     <string name="edu_text1"> 两学一做</string>
     <string name="edu_text2">廉政教育</string>
     <string name="edu_text3">学习十九大</string>
     <string name="edu_text4">习近平用典</string>
     <string name="edu_text5">十九大系列专题片</string>
+    <string name="title_activity_main3">Main3Activity</string>
 </resources>

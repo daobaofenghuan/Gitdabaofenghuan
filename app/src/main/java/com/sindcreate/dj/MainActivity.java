@@ -117,6 +117,10 @@ public class MainActivity extends AppCompatActivity {
                     case MSG_Home:
                         initview(1);
                         break;
+                    case  MSG_edu:
+                        initview(2);
+                        selectcolor(2);
+                        break;
                 }
 
 

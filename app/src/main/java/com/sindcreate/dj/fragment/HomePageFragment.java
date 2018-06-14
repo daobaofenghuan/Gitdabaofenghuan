@@ -20,6 +20,7 @@ import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.cell.defautcell.BannerCell;
 import com.sindcreate.dj.cell.homemaincell.Part_Event;
 import com.sindcreate.dj.cell.homemaincell.Part_Event2;
+import com.sindcreate.dj.cell.homemaincell.Part_Event_edu;
 import com.sindcreate.dj.cell.homemaincell.Part_EveryDayHomework;
 import com.sindcreate.dj.cell.homemaincell.Part_EveryDayLesson;
 import com.sindcreate.dj.cell.homemaincell.Part_Showresult;
@@ -83,6 +84,7 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
         cells.add(new Part_EveryDayHomework(null));
         cells.add(new Part_EveryDayLesson(null));
         cells.add(new Part_Event(null));
+        cells.add(new Part_Event_edu(null));
         cells.add(new Part_Showresult(null));
         cells.add(new Part_Event2(null));
 //        for (int i=0;i<entries.size();i++){

@@ -152,13 +152,13 @@
 
     <ImageView
         android:id="@+id/id_my_img_gr"
-        android:layout_width="@dimen/param_18dp"
+        android:layout_width="13dp"
         android:layout_height="@dimen/param_18dp"
         android:layout_alignParentStart="true"
 
         android:layout_centerVertical="true"
-        android:layout_marginStart="26dp"
-        android:background="@color/base_orange" />
+        android:layout_marginStart="23dp"
+        android:src="@mipmap/icon_my_01" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -197,17 +197,16 @@
         android:layout_height="@dimen/param_46dp">
 
         <ImageView
-            android:id="@+id/id_my_img_gr"
-            android:layout_width="@dimen/param_18dp"
+            android:id="@+id/id_my_img_wode"
+            android:layout_width="13dp"
             android:layout_height="@dimen/param_18dp"
             android:layout_alignParentStart="true"
-
             android:layout_centerVertical="true"
             android:layout_marginStart="26dp"
-            android:background="@color/base_orange" />
+            android:src="@mipmap/icon_my_02" />
 
         <TextView
-            android:layout_toRightOf="@+id/id_my_img_gr"
+            android:layout_toRightOf="@+id/id_my_img_wode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/param_10dp"
@@ -244,13 +243,12 @@
 
         <ImageView
             android:id="@+id/id_my_img_gr2"
-            android:layout_width="@dimen/param_18dp"
-            android:layout_height="@dimen/param_18dp"
+            android:layout_width="13dp"
+            android:layout_height="18dp"
             android:layout_alignParentStart="true"
-
             android:layout_centerVertical="true"
             android:layout_marginStart="26dp"
-            android:background="@color/base_orange" />
+            android:src="@mipmap/icon_my_03" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -290,12 +288,12 @@
         <ImageView
             android:id="@+id/id_my_img_gr3"
             android:layout_width="@dimen/param_18dp"
-            android:layout_height="@dimen/param_18dp"
+            android:layout_height="18dp"
             android:layout_alignParentStart="true"
 
             android:layout_centerVertical="true"
             android:layout_marginStart="26dp"
-            android:background="@color/base_orange" />
+            android:src="@mipmap/icon_my_04" />
 
         <TextView
             android:layout_width="wrap_content"

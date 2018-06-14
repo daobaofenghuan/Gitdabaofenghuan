@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/id_message_rlydown"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_44dp"
+    android:background="@color/dj_bj_fen"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="@dimen/param_10dp"
+            android:layout_height="@dimen/param_10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:layout_width="@dimen/param_5dp"
+                android:layout_height="@dimen/param_5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/yuan_dian" />
+
+            <RelativeLayout
+                android:id="@+id/id_message_iconright"
+                android:layout_width="@dimen/param_10dp"
+                android:layout_height="@dimen/param_10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/icon_yandian_right"
+                android:visibility="invisible" />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:layout_marginRight="@dimen/param_90dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="全体党员标题"
+
+            android:textColor="@color/dj_textcolors"
+            android:textSize="@dimen/param_15dp" />
+
+        <ImageView
+            android:id="@+id/id_message_icondown"
+            android:layout_width="@dimen/param_12dp"
+            android:layout_height="@dimen/param_14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/param_10dp"
+            android:src="@mipmap/icon_down"
+
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/id_message_nr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/param_11dp"
+            android:layout_marginRight="@dimen/param_19dp"
+            android:layout_marginTop="@dimen/param_5dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/param_10dp"
+            android:text="@string/message_text1"
+            android:textColor="@color/dj_textcolorhui"
+            android:textSize="@dimen/param_13dp"
+            android:layout_marginBottom="@dimen/param_30dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

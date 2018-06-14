@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.activity.ApplyForHelpActivity;
+import com.sindcreate.dj.activity.JYXC_Activity;
 import com.sindcreate.dj.base.basecell.RVBaseCell;
 import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
 import com.sindcreate.dj.bean.Mydata;
@@ -44,7 +45,7 @@ public class Part_caution2 extends RVBaseCell<Entry> {
 
         RVBaseViewHolder view= new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_service_cedu,parent,false));
         TextView texttitle= view.getTextView(R.id.id_hometitle_1);
-
+        TextView textjyxc=view.getTextView(R.id.id_sevice_jyxc);
         TextView textView=view.getTextView(R.id.id_sevice_shenqing);
         texttitle.setText("党员服务");
        TextView title2=view.getTextView(R.id.id_item_rtext);
@@ -56,7 +57,12 @@ public class Part_caution2 extends RVBaseCell<Entry> {
 
             }
         });
-
+        textjyxc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Mydata.context.startActivity(new Intent(Mydata.context, JYXC_Activity.class));
+            }
+        });
 
 
 

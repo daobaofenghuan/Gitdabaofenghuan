@@ -13,7 +13,6 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
-
     <style name="RadingStyle" parent="@android:style/Widget.RatingBar">
         <!-- 定义星星图片 -->
         <item name="android:progressDrawable">@drawable/layer_live_rating_bar</item>

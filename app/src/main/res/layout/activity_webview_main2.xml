@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<include
+    layout="@layout/title_show2"
+   />
+
+<include
+    layout="@layout/activity_webview_main2_part"
+    />
+<include
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+   layout="@layout/activity_webview_mainpart"
+   />
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/param_50dp">
+
+
+      <TextView
+
+android:layout_marginLeft="@dimen/param_67dp"
+      android:layout_centerVertical="true"
+          android:layout_width="@dimen/param_70dp"
+          android:layout_height="@dimen/param_30dp"
+          android:text="点赞"
+          android:gravity="center"
+          android:textSize="@dimen/param_14dp"
+          android:textColor="@color/white"
+          android:background="@drawable/yuanjiaored_8dp"
+          />
+      <TextView
+
+          android:layout_marginRight="@dimen/param_67dp"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+          android:layout_width="@dimen/param_70dp"
+          android:layout_height="@dimen/param_30dp"
+          android:text="收藏"
+          android:gravity="center"
+          android:textSize="@dimen/param_14dp"
+          android:textColor="@color/white"
+          android:background="@drawable/yuanjiaoorg_8dp"
+          />
+
+   </RelativeLayout>
+
+
+</LinearLayout>

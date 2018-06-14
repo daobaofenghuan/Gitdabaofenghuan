@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_60dp"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:id="@+id/id_message_rlydown"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/param_22dp"
+       android:background="@color/dj_bj_fen"
+       android:layout_marginTop="@dimen/param_13dp"
+       >
+
+
+
+      <TextView
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="@dimen/param_10dp"
+          android:layout_marginRight="@dimen/param_90dp"
+          android:ellipsize="end"
+          android:singleLine="true"
+          android:text="应急管理部有关负责人就有关负…"
+
+          android:textColor="@color/dj_textcolors"
+          android:textSize="@dimen/param_15dp" />
+
+      <ImageView
+          android:id="@+id/id_message_icondown"
+          android:layout_width="@dimen/param_12dp"
+          android:layout_height="@dimen/param_14dp"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_gravity="center_vertical"
+          android:layout_marginRight="@dimen/param_10dp"
+          android:src="@mipmap/icon_down"
+
+          />
+
+
+   </RelativeLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="@dimen/param_5dp"
+       android:layout_marginTop="@dimen/param_5dp"
+       >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+android:text="2018-5-24"
+          android:layout_marginLeft="@dimen/param_10dp"
+          android:textSize="@dimen/param_12dp"
+          android:textColor="@color/dj_textcolorhui"
+          />
+      <TextView
+          android:id="@+id/id_webview_count"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="24"
+          android:layout_marginRight="@dimen/param_13dp"
+          android:layout_alignParentRight="true"
+          android:textSize="@dimen/param_12dp"
+          android:textColor="@color/dj_textcolorhui"
+          />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/id_webview_count"
+android:src="@mipmap/icon_eye"
+    />
+
+
+   </RelativeLayout>
+   <include
+     layout="@layout/dim"
+      />
+
+</LinearLayout>

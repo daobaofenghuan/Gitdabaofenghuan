@@ -18,6 +18,7 @@ public class ApplyForHelpActivity extends AppCompatActivity {
         StatusBarUtils.setWindowStatusBarColor(ApplyForHelpActivity.this, R.color.dj_titalred);
 
 
+
     }
 
 }

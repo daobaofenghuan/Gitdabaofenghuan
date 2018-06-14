@@ -27,7 +27,7 @@ import butterknife.ButterKnife;
  * Created by Double on 2018/6/7.
  */
 
-public class WebViewActivity  extends BaseActivity {
+public class WebViewActivity2 extends BaseActivity {
     @BindView(R.id.webview)
     WebView webView;
     @BindView(R.id.progressbar)
@@ -36,7 +36,7 @@ public class WebViewActivity  extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview_main);
-        StatusBarUtils.setWindowStatusBarColor(WebViewActivity.this, R.color.dj_titalred);
+        StatusBarUtils.setWindowStatusBarColor(WebViewActivity2.this, R.color.dj_titalred);
         ButterKnife.bind(this);
        // goback();
 
@@ -1229,7 +1229,7 @@ public class WebViewActivity  extends BaseActivity {
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
             Log.i("ansen","拦截url:"+url);
             if(url.equals("http://www.google.com/")){
-                Toast.makeText(WebViewActivity.this,"国内不能访问google,拦截该url",Toast.LENGTH_LONG).show();
+                Toast.makeText(WebViewActivity2.this,"国内不能访问google,拦截该url",Toast.LENGTH_LONG).show();
                 return true;//表示我已经处理过了
             }
             return super.shouldOverrideUrlLoading(view, url);
