@@ -327,6 +327,7 @@
         />
 
     <RelativeLayout
+        android:id="@+id/id_my_myfoot"
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_46dp">
 

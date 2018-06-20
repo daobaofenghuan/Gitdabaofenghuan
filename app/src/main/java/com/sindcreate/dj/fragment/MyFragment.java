@@ -21,6 +21,7 @@ import android.widget.TextView;
 
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.activity.Login_Activity;
+import com.sindcreate.dj.activity.MyCollectAndFoot;
 import com.sindcreate.dj.activity.MyDangMoney;
 import com.sindcreate.dj.base.BaseFragment;
 import com.sindcreate.dj.bean.MsgNum;
@@ -50,7 +51,7 @@ public class MyFragment extends Fragment {
     }
 
 
-    @OnClick({R.id.title_img,R.id.id_my_mydangfeily})
+    @OnClick({R.id.title_img,R.id.id_my_mydangfeily,R.id.id_my_myfoot})
     public  void  goback(View v){
         Message msg=Message.obtain();
         switch (v.getId()){
@@ -63,6 +64,9 @@ public class MyFragment extends Fragment {
                 break;
             case R.id.id_my_mydangfeily:
                 getActivity().startActivity(new Intent(getContext(), MyDangMoney.class));;
+                break;
+            case  R.id.id_my_myfoot:
+                getActivity().startActivity(new Intent(getContext(), MyCollectAndFoot.class));
                 break;
         }
 

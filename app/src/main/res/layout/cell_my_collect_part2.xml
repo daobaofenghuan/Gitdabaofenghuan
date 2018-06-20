@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_49dp"
+
+    android:background="@color/white"
+
+    android:orientation="horizontal">
+
+    <LinearLayout
+
+        android:id="@+id/id_mycolect_leftly"
+        android:layout_width="@dimen/param_20dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:orientation="vertical"
+
+
+        >
+
+
+
+
+
+
+        <View
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:layout_width="@dimen/param_1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dj_dim" />
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_16.5dp"
+        android:text="13:53听了"
+        android:layout_marginTop="@dimen/param_7.5dp"
+        android:textSize="@dimen/param_12dp"
+        android:textColor="@color/dj_textcolorhui"
+
+        />
+
+    <TextView
+        android:layout_marginTop="@dimen/param_3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/param_15dp"
+        android:text="组织观看观看《厉害了，我的国》"
+        android:textColor="@color/dj_textcolors"
+        />
+
+</LinearLayout>
+
+</LinearLayout>

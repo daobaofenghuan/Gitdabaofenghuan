@@ -1,4 +1,4 @@
-package com.sindcreate.dj.fragment;
+package com.sindcreate.dj.fragment.myindex;
 
 import android.os.Build;
 import android.os.Handler;
@@ -22,6 +22,11 @@ import com.sindcreate.dj.cell.homemaincell.Part_EveryDayHomework;
 import com.sindcreate.dj.cell.homemaincell.Part_EveryDayLesson;
 import com.sindcreate.dj.cell.homemaincell.Part_Showresult;
 import com.sindcreate.dj.cell.homemaincell.Partone;
+import com.sindcreate.dj.fragment.AbsBaseFragment;
+import com.sindcreate.dj.fragment.myindex.colectcell.Colect_Part1;
+import com.sindcreate.dj.fragment.myindex.colectcell.Colect_Part2;
+import com.sindcreate.dj.fragment.myindex.colectcell.Colect_Part_empbig;
+import com.sindcreate.dj.fragment.myindex.colectcell.Colect_Part_empsm;
 import com.sindcreate.dj.model.Entry;
 
 import java.util.ArrayList;
@@ -75,22 +80,17 @@ public class ColectFragment extends AbsBaseFragment<Entry> {
     protected List<Cell> getCells(List<Entry> entries){
         //根据实体生成Cell
         List<Cell> cells = new ArrayList<>();
-        cells.add(new BannerCell(Arrays.asList(DataMocker.images)));
-        cells.add(new Partone(null));
-        cells.add(new Part_EveryDayHomework(null));
-        cells.add(new Part_EveryDayLesson(null));
-        cells.add(new Part_Event(null));
-        cells.add(new Part_Event_edu(null));
-        cells.add(new Part_Showresult(null));
-        cells.add(new Part_Event2(null));
-//        for (int i=0;i<entries.size();i++){
-//            Entry entry = entries.get(i);
-//            if(entry.type == Entry.TYPE_IMAGE){
-//                cells.add(new ImageCell(entry));
-//            }else{
-//                cells.add(new TextCell(entry));
-//            }
-//        }
+        cells.add(new Colect_Part1(null));
+        cells.add(new Colect_Part2(null));
+        cells.add(new Colect_Part_empbig(null));
+        cells.add(new Colect_Part1(null));
+        cells.add(new Colect_Part2(null));
+        cells.add(new Colect_Part_empsm(null));
+        cells.add(new Colect_Part2(null));
+        cells.add(new Colect_Part_empsm(null));
+        cells.add(new Colect_Part2(null));
+        cells.add(new Colect_Part_empsm(null));
+        cells.add(new Colect_Part2(null));
         return cells;
     }
 
@@ -116,7 +116,7 @@ public class ColectFragment extends AbsBaseFragment<Entry> {
                 mBaseAdapter.hideLoading();
                 mBaseAdapter.addAll(getCells(mockData()));
             }
-        },2000);
+        },20);
     }
 }
 

@@ -45,6 +45,10 @@
             android:name=".activity.JYXC_Activity"
 
        ></activity>
+        <activity
+            android:name=".activity.MyCollectAndFoot"
+
+            ></activity>
     </application>
 
 </manifest>

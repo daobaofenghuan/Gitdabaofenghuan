@@ -77,6 +77,7 @@
     <dimen name="param_21dp">21dp</dimen>
     <dimen name="param_22dp">22dp</dimen>
     <dimen name="param_23dp">23dp</dimen>
+    <dimen name="param_23.5dp">23.5dp</dimen>
     <dimen name="param_24dp">24dp</dimen>
     <dimen name="param_24.5dp">24.5dp</dimen>
     <dimen name="param_25dp">25dp</dimen>
@@ -94,6 +95,7 @@
     <dimen name="param_36dp">36dp</dimen>
     <dimen name="param_37dp">37dp</dimen>
     <dimen name="param_38dp">38dp</dimen>
+    <dimen name="param_38.5dp">38.5dp</dimen>
     <dimen name="param_40dp">40dp</dimen>
     <dimen name="param_41dp">41dp</dimen>
     <dimen name="param_42dp">42dp</dimen>
@@ -124,6 +126,7 @@
     <dimen name="param_70dp">70dp</dimen>
     <dimen name="param_71dp">71dp</dimen>
     <dimen name="param_72dp">72dp</dimen>
+    <dimen name="param_72.5dp">72.5dp</dimen>
     <dimen name="param_73dp">73dp</dimen>
     <dimen name="param_74dp">74dp</dimen>
     <dimen name="param_75dp">75dp</dimen>

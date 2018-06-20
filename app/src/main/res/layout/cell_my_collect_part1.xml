@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_20dp"
+    android:layout_marginTop="@dimen/param_10dp"
+    android:layout_marginLeft="@dimen/param_10dp"
+    >
+
+    <ImageView
+        android:layout_width="@dimen/param_20dp"
+        android:layout_height="@dimen/param_20dp"
+        android:src="@mipmap/icon_colect_dian"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/param_14dp"
+        android:textColor="@color/dj_textcolors_hei2"
+        android:text="2018-05-12"
+        />
+
+
+</LinearLayout>
+
+</LinearLayout>
