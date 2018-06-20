@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_gradient"
+    tools:context=".activity.Login_Activity">
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/param_117dp"
+        android:layout_height="@dimen/param_117dp"
+        android:layout_marginTop="@dimen/param_75dp"
+    android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:gravity="center_horizontal|bottom"
+        >
+        <ImageView
+            android:layout_width="@dimen/param_100dp"
+            android:layout_height="@dimen/param_100dp"
+
+            android:src="@mipmap/icon_danghui"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_lg_namely"
+        android:layout_marginTop="@dimen/param_300dp"
+        android:layout_width="match_parent"
+
+android:layout_marginBottom="@dimen/param_10dp"
+        android:layout_height="@dimen/param_30dp">
+<ImageView
+    android:layout_width="@dimen/param_21dp"
+    android:layout_height="@dimen/param_23dp"
+android:layout_marginLeft="@dimen/param_32dp"
+    android:src="@mipmap/icon_lg_name"
+    />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/param_85dp"
+    android:layout_marginBottom="@dimen/param_7dp"
+    android:hint="用户名"
+    android:textColorHint="@color/white"
+    android:background="@null"
+   android:textSize="@dimen/param_14dp"
+    android:textColor="@color/white"
+    />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/param_1dp"
+            android:background="@color/white"
+        android:alpha="0.3"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_lg_pwly"
+        android:layout_width="match_parent"
+        android:layout_below="@id/id_lg_namely"
+
+        android:layout_marginTop="@dimen/param_40dp"
+
+        android:layout_height="@dimen/param_30dp">
+
+        <ImageView
+            android:layout_width="@dimen/param_21dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="@dimen/param_32dp"
+            android:src="@mipmap/icon_lg_pw" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/param_85dp"
+            android:layout_marginBottom="@dimen/param_7dp"
+            android:hint="密码"
+            android:textColorHint="@color/white"
+            android:background="@null"
+            android:textSize="@dimen/param_14dp"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/param_1dp"
+            android:background="@color/white"
+            android:alpha="0.3"
+            />
+    </RelativeLayout>
+    <TextView
+
+        android:layout_below="@+id/id_lg_pwly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/param_40dp"
+        android:layout_marginTop="@dimen/param_15dp"
+        android:text="@string/lg_wj"
+        android:textColor="@color/white"
+        android:textSize="@dimen/param_14dp"
+        />
+
+    <TextView
+        android:id="@+id/id_login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/yuanjiaowite_100dp"
+     android:layout_marginBottom="@dimen/param_93dp"
+        android:layout_width="@dimen/param_150dp"
+        android:layout_height="@dimen/param_60dp"
+        android:textSize="@dimen/param_18dp"
+        android:textColor="@color/text_lg_orange"
+        android:text="@string/lg_lonin"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/param_113dp"
+        />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="20dp"
+        android:layout_marginBottom="@dimen/param_33dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lg_noname"
+            android:textColor="@color/white"
+            android:alpha="0.5"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lg_register"
+            android:textColor="@color/white"
+
+            android:layout_marginLeft="@dimen/param_26dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

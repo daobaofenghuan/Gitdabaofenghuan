@@ -97,6 +97,7 @@
     <dimen name="param_40dp">40dp</dimen>
     <dimen name="param_41dp">41dp</dimen>
     <dimen name="param_42dp">42dp</dimen>
+    <dimen name="param_43dp">43dp</dimen>
     <dimen name="param_44dp">44dp</dimen>
     <dimen name="param_46dp">46dp</dimen>
     <dimen name="param_47dp">47dp</dimen>
@@ -130,6 +131,7 @@
     <dimen name="param_78dp">78dp</dimen>
     <dimen name="param_80dp">80dp</dimen>
     <dimen name="param_81dp">81dp</dimen>
+    <dimen name="param_82dp">82dp</dimen>
     <dimen name="param_85dp">85dp</dimen>
     <dimen name="param_86dp">86dp</dimen>
     <dimen name="param_87dp">87dp</dimen>
@@ -142,9 +144,12 @@
     <dimen name="param_101dp">101dp</dimen>
     <dimen name="param_104dp">104dp</dimen>
     <dimen name="param_110dp">110dp</dimen>
+    <dimen name="param_113dp">113dp</dimen>
     <dimen name="param_118dp">118dp</dimen>
     <dimen name="param_115dp">115dp</dimen>
+    <dimen name="param_117dp">117dp</dimen>
     <dimen name="param_120dp">120dp</dimen>
+    <dimen name="param_122dp">122dp</dimen>
     <dimen name="param_126dp">126dp</dimen>
     <dimen name="param_130dp">130dp</dimen>
     <dimen name="param_135dp">135dp</dimen>
@@ -167,11 +172,14 @@
     <dimen name="param_205dp">205dp</dimen>
     <dimen name="param_218dp">218dp</dimen>
     <dimen name="param_212dp">212dp</dimen>
+    <dimen name="param_228dp">228dp</dimen>
     <dimen name="param_245dp">245dp</dimen>
     <dimen name="param_250dp">250dp</dimen>
+    <dimen name="param_255dp">255dp</dimen>
     <dimen name="param_256dp">256dp</dimen>
     <dimen name="param_260dp">260dp</dimen>
     <dimen name="param_265dp">265dp</dimen>
+    <dimen name="param_285dp">285dp</dimen>
     <dimen name="param_300dp">300dp</dimen>
     <dimen name="param_311dp">311dp</dimen>
     <dimen name="param_317dp">317dp</dimen>
@@ -203,8 +211,14 @@
     <dimen name="param_45dp">45dp</dimen>
     <dimen name="param_95dp">95dp</dimen>
     <dimen name="param_105dp">105dp</dimen>
+    <dimen name="param_305dp">305dp</dimen>
     <dimen name="param_309dp">309dp</dimen>
-    <dimen name="param_325dp">325dp</dimen>
 
+    <dimen name="param_320dp">320dp</dimen>
+    <dimen name="param_325dp">325dp</dimen>
+    <dimen name="param_337dp">337dp</dimen>
+    <dimen name="param_357dp">357dp</dimen>
+    <dimen name="param_377dp">377dp</dimen>
+    <dimen name="param_397dp">397dp</dimen>
 
 </resources>

@@ -18,24 +18,33 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".activity.ApplyForHelpActivity"
+       />
+        <activity
+            android:name=".activity.MyDangMoney"
+           />
+        <activity
+            android:name=".activity.Login_Activity"
+           >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity
-            android:name=".activity.ApplyForHelpActivity"
-            android:label="@string/title_activity_message"
-            android:theme="@style/AppTheme" />
+
         <activity
             android:name=".activity.WebViewActivity"
-            android:label="@string/title_activity_message"
-            android:theme="@style/AppTheme" />
+        />
         <activity
             android:name=".activity.JYXC_Activity"
-            android:label="@string/title_activity_main3"
-            android:theme="@style/AppTheme"></activity>
+
+       ></activity>
     </application>
 
 </manifest>

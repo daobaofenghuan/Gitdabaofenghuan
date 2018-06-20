@@ -62,4 +62,9 @@
     <string name="edu_text4">习近平用典</string>
     <string name="edu_text5">十九大系列专题片</string>
     <string name="title_activity_main3">Main3Activity</string>
+
+    <string name="lg_wj">忘记密码?</string>
+    <string name="lg_noname">没有账户</string>
+    <string name="lg_register">注册</string>
+    <string name="lg_lonin">登录</string>
 </resources>

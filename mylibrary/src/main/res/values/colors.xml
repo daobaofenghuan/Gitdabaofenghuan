@@ -27,6 +27,8 @@
     <color name="main_divider">#eeeeee</color>
     <color name="text_base">#131313</color>
     <color name="text_orange">#f14d20</color>
+
+    <color name="text_lg_orange">#f5a623</color>
     <color name="text_light_gray">#787878</color>
     <color name="text_dot_gray">#999999</color>
     <color name="text_green">#11ab30</color>
@@ -73,6 +75,8 @@
     <color name="dj_textcolor_org">#fe8c26</color>
     <color name="dj_textcolors_hei">#474747</color>
     <color name="dj_textcolors_red">#fa3451</color>
+    <color name="dj_login_red2">#fa3451</color>
+    <color name="dj_login_red1">#fa523a</color>
     <color name="dj_textcolors_hei2">#333333</color>
     <color name="dj_home_title_bj">#d8d8d8</color>
     <color name="dj_hui2">#c8c8c8</color>

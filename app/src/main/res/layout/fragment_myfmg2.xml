@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/param_166dp"
+        android:layout_height="@dimen/param_186dp"
         android:background="@drawable/shape_gradient">
 
         <RelativeLayout
@@ -60,21 +60,23 @@
 
 
         <RelativeLayout
-            android:layout_width="@dimen/param_68dp"
-            android:layout_height="@dimen/param_68dp"
+            android:layout_width="@dimen/param_55dp"
+            android:layout_height="@dimen/param_70dp"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="@dimen/param_33dp"
             android:layout_marginLeft="@dimen/param_26dp"
-            android:background="@drawable/yuan_touxiang"
-            android:gravity="bottom">
+            android:background="@color/white"
+            android:gravity="center">
 
-            <com.sindcreate.dj.view.MyCircleImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                <ImageView
+                android:layout_width="@dimen/param_45dp"
+                android:layout_height="@dimen/param_60dp"
                 android:layout_margin="@dimen/param_1dp"
                 android:src="@mipmap/icon_test_touxiang"
+                    android:adjustViewBounds="true"
+            android:scaleType="fitXY"
 
-                />
+            />
 
 
         </RelativeLayout>
@@ -84,61 +86,104 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/param_88dp"
+            android:layout_marginBottom="@dimen/param_93dp"
             android:layout_marginLeft="@dimen/param_110dp"
-            android:text="奈何天"
+            android:text="姓名：奈何天"
             android:textColor="@color/white"
             android:textSize="@dimen/param_16dp" />
 
-        <RatingBar
-            android:id="@+id/ratingBar"
-            style="@style/RadingStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/param_15dp"
-            android:layout_alignBottom="@+id/id_my_name"
-            android:layout_marginRight="@dimen/param_177dp"
-            android:layout_toRightOf="@id/id_my_name"
-            android:progressTint="@color/white"
-            android:layout_marginLeft="@dimen/param_10dp"
-            android:numStars="4"
-            android:rating="3">
-
-        </RatingBar>
-
         <TextView
-            android:id="@+id/id_my_text_jifen"
+            android:id="@+id/id_my_dangage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/param_31dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/param_62dp"
             android:layout_marginLeft="@dimen/param_110dp"
-            android:layout_alignParentBottom="true"
-            android:text="积分:"
+            android:text="党龄：3年6个月4天"
             android:textColor="@color/white"
-            android:paddingBottom="@dimen/param_5dp"
-            android:textSize="@dimen/param_16dp"
-
-
-            />
+            android:textSize="@dimen/param_16dp" />
         <TextView
+            android:id="@+id/id_my_lv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/id_my_text_jifen"
-            android:text="208"
-            android:layout_toRightOf="@+id/id_my_text_jifen"
-            android:layout_marginLeft="@dimen/param_8dp"
-            android:textSize="@dimen/param_32dp"
-            android:textColor="@color/dj_bj_huang"
-            />
-
-        <ImageView
-            android:layout_width="@dimen/param_23dp"
-            android:layout_height="0dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="@dimen/param_59dp"
-            android:layout_marginRight="@dimen/param_32dp"
-            android:src="@mipmap/icon_change" />
+            android:layout_marginBottom="@dimen/param_32dp"
+            android:layout_marginLeft="@dimen/param_110dp"
+            android:text="等级：LV7"
+            android:textColor="@color/white"
+            android:textSize="@dimen/param_16dp" />
 
+
+
+
+        <RelativeLayout
+            android:id="@+id/id_my_lyjifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="@dimen/param_56dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/id_my_dangage"
+            android:layout_marginLeft="@dimen/param_21dp"
+            android:gravity="bottom|right"
+
+            >
+
+            <TextView
+                android:id="@+id/id_my_text_jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/param_5dp"
+                android:text="积分:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/param_13dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/id_my_text_jifen"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/id_my_text_jifen"
+                android:text="208"
+                android:textColor="@color/dj_bj_huang"
+                android:textSize="@dimen/param_32dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/param_32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/id_my_lyjifen"
+            android:layout_marginRight="@dimen/param_27dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/id_my_text_jingyan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+
+                android:paddingBottom="@dimen/param_5dp"
+                android:text="经验条:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/param_13dp"
+
+
+                />
+
+        </LinearLayout>
 
 
     </RelativeLayout>
@@ -303,6 +348,50 @@
             android:layout_marginTop="@dimen/param_14dp"
             android:layout_toRightOf="@+id/id_my_img_gr3"
             android:text="我的足迹"
+            android:textColor="@color/dj_textcolor_4"
+
+            android:textSize="@dimen/param_13dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_right"
+            android:layout_marginTop="@dimen/param_13dp"
+            android:layout_marginBottom="@dimen/param_20dp"
+            android:layout_marginRight="@dimen/param_18dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_0.5dp"
+        android:background="@color/dj_dim2"
+
+        />
+    <RelativeLayout
+        android:id="@+id/id_my_mydangfeily"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_46dp">
+
+        <ImageView
+            android:id="@+id/id_my_img_gr4"
+            android:layout_width="@dimen/param_18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginStart="26dp"
+            android:src="@mipmap/icon_my_04" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/param_13dp"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:layout_marginTop="@dimen/param_14dp"
+            android:layout_toRightOf="@+id/id_my_img_gr4"
+            android:text="我的党费"
             android:textColor="@color/dj_textcolor_4"
 
             android:textSize="@dimen/param_13dp" />

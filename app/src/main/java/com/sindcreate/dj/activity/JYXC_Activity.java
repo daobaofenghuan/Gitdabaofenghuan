@@ -13,8 +13,8 @@ import com.sindcreate.mylibrary.comm.util.StatusBarUtils;
 import butterknife.ButterKnife;
 
 public class JYXC_Activity extends BaseActivity {
-JYXC_Fragment fragment;
 
+JYXC_Fragment fragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
