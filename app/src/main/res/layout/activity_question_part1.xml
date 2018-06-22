@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.JYXC_Activity">
+<include
+    layout="@layout/title_back"
+    />
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_40dp"
+    android:gravity="center"
+    android:background="@color/dj_bj_lan"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_width="@dimen/param_23.5dp"
+            android:layout_height="@dimen/param_17.5dp"
+            android:src="@mipmap/icon_learn"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/param_5dp"
+            android:id="@+id/id_question_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学习十九大，共创未来知识答题"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/id_question_part1ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_22dp"
+        android:layout_marginTop="@dimen/param_17dp"
+       android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/id_zongfen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:text="试卷总分："
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/dj_textcolorhui"
+
+            />
+        <TextView
+            android:layout_toRightOf="@+id/id_zongfen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="100分"
+
+            android:textSize="@dimen/param_14dp"
+            android:textColor="@color/dj_textcolors_hei"
+            />
+        <TextView
+            android:id="@+id/id_jigefen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/param_210dp"
+            android:text="及格分："
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/dj_textcolorhui"
+
+
+           />
+        <TextView
+            android:layout_toRightOf="@+id/id_jigefen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="60分"
+
+            android:textSize="@dimen/param_14dp"
+            android:textColor="@color/dj_textcolors_hei"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_question_part2ly"
+android:layout_below="@+id/id_question_part1ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_22dp"
+        android:layout_marginTop="@dimen/param_17dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/id_zongtishu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:gravity="center"
+            android:text="总提数 ：    "
+            android:textColor="@color/dj_textcolorhui"
+            android:textSize="@dimen/param_12dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/id_zongtishu"
+            android:gravity="center"
+            android:text="68题"
+
+            android:textColor="@color/dj_textcolors_hei"
+            android:textSize="@dimen/param_14dp" />
+
+        <TextView
+            android:id="@+id/id_kaoshishichang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/param_210dp"
+            android:gravity="center"
+            android:text="考试时长 ："
+            android:textColor="@color/dj_textcolorhui"
+            android:textSize="@dimen/param_12dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/id_kaoshishichang"
+            android:gravity="center"
+            android:text="60分钟"
+
+            android:textColor="@color/dj_textcolors_hei"
+            android:textSize="@dimen/param_14dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/id_question_part3ly"
+        android:layout_below="@+id/id_question_part2ly"
+        android:layout_marginTop="@dimen/param_23.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_22dp"
+        android:gravity="center_vertical"
+        >
+    <View
+        android:layout_width="@dimen/param_0dp"
+        android:layout_height="@dimen/param_4dp"
+        android:layout_weight="34.7"
+        android:background="@color/dj_home_title_bj"
+        />
+<RelativeLayout
+    android:layout_width="@dimen/param_0dp"
+    android:layout_weight="30.6"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_centerInParent="true"
+        android:text="考试时间"
+        android:textColor="@color/dj_textcolors_hei"
+        android:textSize="@dimen/param_14dp" />
+
+</RelativeLayout>
+        <View
+            android:layout_width="@dimen/param_0dp"
+            android:layout_height="@dimen/param_4dp"
+            android:layout_weight="34.7"
+            android:background="@color/dj_home_title_bj"
+            />
+    </LinearLayout>
+<RelativeLayout
+    android:id="@+id/id_question_part4ly"
+    android:layout_marginTop="@dimen/param_22.5dp"
+    android:layout_below="@+id/id_question_part3ly"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginLeft="@dimen/param_13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/param_21dp"
+        android:layout_centerInParent="true"
+        android:text="2018－05-16  09:00   至   2018－05-16  09:00 "
+        android:textColor="@color/dj_textcolors_hei"
+        android:textSize="@dimen/param_14dp" />
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/id_question_part5ly"
+        android:layout_below="@+id/id_question_part4ly"
+        android:layout_marginTop="@dimen/param_23.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_22dp"
+        android:gravity="center_vertical"
+        >
+        <View
+            android:layout_width="@dimen/param_0dp"
+            android:layout_height="@dimen/param_4dp"
+            android:layout_weight="34.7"
+            android:background="@color/dj_home_title_bj"
+            />
+        <RelativeLayout
+            android:layout_width="@dimen/param_0dp"
+            android:layout_weight="30.6"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/param_21dp"
+                android:layout_centerInParent="true"
+                android:text="考试说明"
+                android:textColor="@color/dj_textcolors_hei"
+                android:textSize="@dimen/param_14dp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="@dimen/param_0dp"
+            android:layout_height="@dimen/param_4dp"
+            android:layout_weight="34.7"
+            android:background="@color/dj_home_title_bj"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_marginTop="@dimen/param_13.5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="在规定时间内完成考试。
+考试期间，个人认真答题，切勿作弊"
+        android:textColor="@color/dj_textcolors_hei"
+        android:textSize="@dimen/param_14dp" />
+
+    <TextView
+        android:layout_marginTop="@dimen/param_58dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/param_182dp"
+        android:layout_height="@dimen/param_46dp"
+        android:background="@drawable/yuanjiaored_8dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/param_19dp"
+        android:gravity="center"
+        android:text="开始答题"
+        />
+</LinearLayout>
