@@ -260,6 +260,6 @@ android:layout_below="@+id/id_question_part1ly"
         android:textColor="@color/white"
         android:textSize="@dimen/param_19dp"
         android:gravity="center"
-        android:text="开始答题"
+        android:text="开始答题 "
         />
 </LinearLayout>
