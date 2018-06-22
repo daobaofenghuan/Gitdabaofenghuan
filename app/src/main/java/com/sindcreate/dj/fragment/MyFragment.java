@@ -51,7 +51,7 @@ public class MyFragment extends Fragment {
     }
 
 
-    @OnClick({R.id.title_img,R.id.id_my_mydangfeily,R.id.id_my_myfoot})
+    @OnClick({R.id.title_img,R.id.id_my_mydangfeily,R.id.id_my_myfoot,R.id.id_my_collectly})
     public  void  goback(View v){
         Message msg=Message.obtain();
         switch (v.getId()){
@@ -66,8 +66,16 @@ public class MyFragment extends Fragment {
                 getActivity().startActivity(new Intent(getContext(), MyDangMoney.class));;
                 break;
             case  R.id.id_my_myfoot:
-                getActivity().startActivity(new Intent(getContext(), MyCollectAndFoot.class));
+              Intent intent=  new Intent(getContext(), MyCollectAndFoot.class);
+              intent.putExtra("flag",0);
+                getActivity().startActivity(intent);
                 break;
+            case R.id.id_my_collectly:
+                Intent intent2=  new Intent(getContext(), MyCollectAndFoot.class);
+                intent2.putExtra("flag",1);
+                getActivity().startActivity(intent2);
+                break;
+
         }
 
     }

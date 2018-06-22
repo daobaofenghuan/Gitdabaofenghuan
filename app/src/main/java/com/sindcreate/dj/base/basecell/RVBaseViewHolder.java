@@ -3,10 +3,12 @@ package com.sindcreate.dj.base.basecell;
 import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -44,12 +46,18 @@ public class RVBaseViewHolder extends RecyclerView.ViewHolder {
     public ImageView getImageView(int resId) {
         return retrieveView(resId);
     }
-
+    public WebView getWebView(int resId){
+        return  retrieveView(resId);
+    }
     public RelativeLayout getRelativeLayout(int resId) {
         return retrieveView(resId);
     }
     public LinearLayout getLinearLayout(int resId){
         return  retrieveView(resId);
+    }
+    public ProgressBar getProgressBar(int resId){
+        return retrieveView(resId);
+
     }
     public ListView getListView(int resId){
       return   retrieveView(resId);

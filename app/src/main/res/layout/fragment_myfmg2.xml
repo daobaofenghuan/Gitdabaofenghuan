@@ -283,6 +283,7 @@
 
 
     <RelativeLayout
+        android:id="@+id/id_my_collectly"
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_46dp">
 

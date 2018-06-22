@@ -12,5 +12,5 @@ public class Mydata {
     public static Handler handler;
     public static Context context;
     public static Context contextcollect;
-
+    public static Context contexthuodong;
 }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+
+    android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/param_11.5dp"
+    android:textColor="@color/dj_textcolors_hei"
+    android:textSize="@dimen/param_16dp"
+    android:text="组织观看观看《厉害了，我的国》"
+    android:layout_marginLeft="@dimen/param_10dp"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_16.5dp"
+      android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/param_8dp"
+        >
+
+        <View
+        android:layout_marginLeft="10dp"
+            android:layout_width="@dimen/param_19dp"
+            android:layout_height="@dimen/param_1dp"
+android:background="@color/dj_yuandian"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="柯凡的北大回忆录"
+android:textSize="@dimen/param_12dp"
+            android:textColor="@color/dj_textcolorhui"
+            android:layout_marginLeft="@dimen/param_4dp"
+
+            />
+    </LinearLayout>
+<include
+    android:layout_marginTop="@dimen/param_7.5dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_0.5dp"
+
+    layout="@layout/dim"
+
+    />
+
+</LinearLayout>

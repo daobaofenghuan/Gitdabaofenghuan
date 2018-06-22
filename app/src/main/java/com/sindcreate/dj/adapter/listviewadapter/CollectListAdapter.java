@@ -61,7 +61,7 @@ public class CollectListAdapter extends BaseAdapter {
         ViewHolder vh;
 
         if (converView == null) {
-            view = mInflater.inflate(R.layout.cell_my_collect_part2, null);
+            view = mInflater.inflate(R.layout.item_listv_collect, null);
             vh = new ViewHolder(view);
 
             view.setTag(vh);

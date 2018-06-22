@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_40dp"
+    android:layout_marginLeft="@dimen/param_10dp"
+    android:layout_marginRight="@dimen/param_10dp"
+    android:background="@color/dj_hui"
+    >
+   <LinearLayout
+       android:layout_width="@dimen/param_0dp"
+       android:layout_weight="1"
+       android:layout_height="match_parent">
+      <CheckBox
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="已读"
+          />
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="@dimen/param_0dp"
+       android:layout_weight="1"
+       android:layout_height="match_parent">
+      <CheckBox
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="签到"
+          />
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="@dimen/param_0dp"
+       android:layout_weight="1"
+       android:gravity="center_vertical"
+       android:layout_height="match_parent">
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:src="@mipmap/icon_test_jia"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="心得体会"
+          />
+
+   </LinearLayout>
+
+</LinearLayout>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/icon_test_zan"
+    android:layout_marginTop="@dimen/param_26dp"
+    android:layout_gravity="center_horizontal"
+    />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="已报名人数"
+          android:textColor="@color/dj_textcolors_hei"
+          android:textSize="@dimen/param_14dp"
+          android:layout_marginLeft="@dimen/param_10dp"
+          />
+      <TextView
+          android:id="@+id/id_huodong_p3_zk"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:text="展开"
+          android:textColor="@color/dj_textcolors_hei"
+          android:textSize="@dimen/param_14dp"
+          />
+        <ImageView
+    android:layout_toLeftOf="@+id/id_huodong_p3_zk"
+            android:layout_width="@dimen/param_7.5dp"
+            android:layout_height="@dimen/param_10dp"
+            android:src="@mipmap/icon_down"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/param_8.5dp"
+            />
+   </RelativeLayout>
+   <include
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/param_0.5dp"
+       android:layout_marginTop="@dimen/param_3dp"
+       layout="@layout/dim"
+       />
+   <TextView
+       android:layout_marginTop="@dimen/param_7dp"
+       android:layout_marginBottom="@dimen/param_14dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="@dimen/param_10dp"
+       android:layout_marginRight="@dimen/param_29dp"
+       android:text="赵倩   阿里    李出弄   张一山   白雪    金文婷   李亚丹    赵丽   段誉   郭靖   黄蓉"
+       android:textColor="@color/dj_textcolorhui"
+       android:textSize="@dimen/param_12dp"
+       />
+</LinearLayout>

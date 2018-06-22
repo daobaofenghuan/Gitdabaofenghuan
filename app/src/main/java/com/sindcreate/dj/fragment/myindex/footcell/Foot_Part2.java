@@ -1,4 +1,4 @@
-package com.sindcreate.dj.fragment.myindex.colectcell;
+package com.sindcreate.dj.fragment.myindex.footcell;
 
 import android.annotation.SuppressLint;
 import android.util.Log;
@@ -19,9 +19,9 @@ import java.util.List;
  * Created by Double on 2018/5/23.
  */
 
-public class Colect_Part2 extends RVBaseCell<Entry> {
+public class Foot_Part2 extends RVBaseCell<Entry> {
     public static final int TYPE = 4002;
-    public Colect_Part2(Entry entry){
+    public Foot_Part2(Entry entry){
         super(entry);
 
     }
@@ -36,7 +36,7 @@ public class Colect_Part2 extends RVBaseCell<Entry> {
     @Override
     public RVBaseViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        RVBaseViewHolder view= new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_my_collect_part2,parent,false));
+        RVBaseViewHolder view= new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_my_foot_part2,parent,false));
 
         return view;
 

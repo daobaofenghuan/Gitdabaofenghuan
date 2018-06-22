@@ -8,14 +8,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.activity.WebViewActivity;
+import com.sindcreate.dj.activity.HuoDongActivity;
 import com.sindcreate.dj.adapter.listviewadapter.SanhuiListAdapter;
-import com.sindcreate.dj.base.BaseFragment;
 import com.sindcreate.dj.bean.Datebean.AcceptData;
 
 import java.util.ArrayList;
@@ -49,7 +47,7 @@ public class Part_Sanhui1_fragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                startActivity(new Intent(getActivity(), WebViewActivity.class));
+                startActivity(new Intent(getActivity(), HuoDongActivity.class));
             }
         });
 
