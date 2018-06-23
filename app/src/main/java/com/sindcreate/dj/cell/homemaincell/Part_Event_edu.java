@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.activity.WebViewActivity;
+import com.sindcreate.dj.activity.WebViewActivity2;
 import com.sindcreate.dj.base.basecell.RVBaseCell;
 import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
 import com.sindcreate.dj.bean.MsgNum;
@@ -61,14 +62,14 @@ public class Part_Event_edu extends RVBaseCell<Entry> {
         relativeLayout2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Mydata.context.startActivity(new Intent(Mydata.context, WebViewActivity.class));
+                Mydata.context.startActivity(new Intent(Mydata.context, WebViewActivity2.class));
             }
         });
 
         relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Mydata.context.startActivity(new Intent(Mydata.context, WebViewActivity.class));
+                Mydata.context.startActivity(new Intent(Mydata.context, WebViewActivity2.class));
             }
         });
         imgv1=view.getImageView(R.id.id_home_event_img);

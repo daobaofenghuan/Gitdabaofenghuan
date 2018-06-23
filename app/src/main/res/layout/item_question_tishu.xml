@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_all"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/id_question_timushu"
+        android:layout_marginLeft="@dimen/param_11dp"
+        android:background="@drawable/biankuang_xuxian_dim_8dp"
+        android:layout_width="@dimen/param_22dp"
+        android:layout_height="@dimen/param_22dp"
+        android:layout_marginRight="@dimen/param_11dp"
+        android:layout_marginBottom="@dimen/param_13dp"
+        />
+
+
+
+
+</LinearLayout>

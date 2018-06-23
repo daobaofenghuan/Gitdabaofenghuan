@@ -21,5 +21,8 @@
         <item name="android:isIndicator">true</item>
         //这里放一些你觉得公共的属性(你可以在控件里覆盖这里的属性)
     </style>
+    <style name="CustomRadioBtn">
+        <item name="android:button">@drawable/radiobtn_unchecked_style</item>
 
+    </style>
 </resources>

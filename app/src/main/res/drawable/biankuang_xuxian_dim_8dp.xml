@@ -5,8 +5,12 @@
     <solid android:color="#FFFFFF" />
     <!-- 线的宽度，颜色灰色 -->
     <stroke
-        android:width="@dimen/param_1dp"
-        android:color="@color/text_light_gray" />
+        android:dashGap="2dp"
+        android:dashWidth="1dp"
+        android:width="1dp"
+
+
+        android:color="@color/dj_textcolorhui" />
     <!-- 矩形的圆角半径 -->
-    <corners android:radius="@dimen/param_11dp" />
+    <corners android:radius="@dimen/param_1.5dp" />
 </shape>

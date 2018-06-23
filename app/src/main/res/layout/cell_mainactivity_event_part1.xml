@@ -62,7 +62,7 @@
                 android:text="历史记忆中的长征"
                 android:textColor="@color/dj_textcolors"
 
-                android:textSize="15sp" />
+                android:textSize="@dimen/param_15dp" />
 
 
         </LinearLayout>
@@ -89,7 +89,7 @@
 
                 android:gravity="center_vertical"
                 android:text="时间："
-                android:textSize="13sp"
+                android:textSize="@dimen/param_13dp"
 
                 />
 
@@ -144,12 +144,12 @@
 
                 android:id="@+id/id_home_event_zhuangtai"
                 android:layout_width="@dimen/param_67dp"
-                android:layout_height="@dimen/param_22dp"
+                android:layout_height="@dimen/param_22.5dp"
                 android:gravity="center"
 
                 android:background="@drawable/yuanjiao_yiwancheng"
                 android:ellipsize="end"
-                android:maxLines="2"
+                android:maxLines="1"
 
 
                 android:text="已完成"
@@ -162,7 +162,7 @@
 
                 android:id="@+id/id_home_event_zhuangtai2"
                 android:layout_width="@dimen/param_67dp"
-                android:layout_height="@dimen/param_22dp"
+                android:layout_height="@dimen/param_22.5dp"
                 android:gravity="center"
                 android:background="@drawable/yuanjiao_jinxingzhong"
                 android:ellipsize="end"

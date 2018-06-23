@@ -1,5 +1,6 @@
 package com.sindcreate.dj.fragment.HomePage.ZaixianFragemnt;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -7,12 +8,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.sindcreate.dj.R;
+import com.sindcreate.dj.activity.Question_Activity;
 import com.sindcreate.dj.adapter.listviewadapter.SanhuiListAdapter;
 import com.sindcreate.dj.adapter.listviewadapter.ZaiXianListAdapter;
 import com.sindcreate.dj.bean.Datebean.AcceptData;
+
 
 import java.util.ArrayList;
 
@@ -44,6 +48,12 @@ public class Part_ZaiXian_fragment1 extends Fragment {
         listView.setAdapter(adapter);
         View view1=inflater.inflate(R.layout.item_nomore,container,false);
        listView.addFooterView(view1);
+       listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+           @Override
+           public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+               getActivity().startActivity(new Intent(getActivity(), Question_Activity.class));
+           }
+       });
 
         return view;
     }

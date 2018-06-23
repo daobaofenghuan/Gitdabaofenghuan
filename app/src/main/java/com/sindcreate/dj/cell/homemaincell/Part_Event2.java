@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.activity.WebViewActivity;
+import com.sindcreate.dj.activity.WebViewActivity2;
 import com.sindcreate.dj.base.basecell.RVBaseCell;
 import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
 import com.sindcreate.dj.bean.Mydata;

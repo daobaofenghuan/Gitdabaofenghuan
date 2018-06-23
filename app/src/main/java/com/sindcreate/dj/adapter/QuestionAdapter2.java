@@ -12,7 +12,6 @@ import com.bumptech.glide.Glide;
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.view.MyCircleImageView;
 
-
 import java.util.List;
 
 import butterknife.BindView;
@@ -22,7 +21,7 @@ import butterknife.ButterKnife;
  * Created by Administrator on 2018/1/25.
  */
 
-public class GroupChatListAdapter extends RecyclerView.Adapter<GroupChatListAdapter.ViewHolder> {
+public class QuestionAdapter2 extends RecyclerView.Adapter<QuestionAdapter2.ViewHolder> {
     private Context mContext;
     private List<String> data;
     private OnClickListener onClickListener;
@@ -30,7 +29,7 @@ public class GroupChatListAdapter extends RecyclerView.Adapter<GroupChatListAdap
     private boolean isAll = false;
     private final int initNum = 28;
 
-    public GroupChatListAdapter(Context mContext, List<String> data) {
+    public QuestionAdapter2(Context mContext, List<String> data) {
         this.mContext = mContext;
         this.data = data;
     }

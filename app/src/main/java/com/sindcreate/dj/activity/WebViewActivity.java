@@ -41,7 +41,7 @@ public class WebViewActivity  extends BaseActivity {
        // goback();
 
         //http://192.168.1.110:8080/#/main/h555
-        webView.loadUrl("http://192.168.1.158:8080/video4.html");
+        webView.loadUrl("http://www.sindcreate.com:9017/video4.html");
    //  webView.loadUrl("http://xuexi.12371.cn/2016/08/16/VIDE1471329906547316.shtml");
        //webView.loadUrl("http://xuexi.12371.cn/2017/12/13/VIDE1513147084729223.shtml");
     //    webView.loadUrl("file:///android_asset/test.html");
@@ -122,8 +122,8 @@ public class WebViewActivity  extends BaseActivity {
 
 
         //支持屏幕缩放
-        webSettings.setSupportZoom(true);
-        webSettings.setBuiltInZoomControls(true);
+      //  webSettings.setSupportZoom(true);
+      //  webSettings.setBuiltInZoomControls(true);
 
         //不显示webview缩放按钮
 //        webSettings.setDisplayZoomControls(false);

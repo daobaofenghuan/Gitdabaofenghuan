@@ -16,13 +16,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            >
 
         </activity>
-        <activity android:name=".activity.ApplyForHelpActivity" />
-        <activity android:name=".activity.MyDangMoney" />
-        <activity android:name=".activity.Login_Activity">
+        <activity android:name=".activity.ApplyForHelpActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity.MyDangMoney"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity.Login_Activity"
+            android:screenOrientation="portrait"
+            >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,16 +43,24 @@
 
         <activity
             android:name=".activity.WebViewActivity"
-            android:hardwareAccelerated="true" />
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            />
         <activity android:name=".activity.JYXC_Activity"
-
+            android:screenOrientation="portrait"
 
             />
         <activity android:name=".activity.MyCollectAndFoot"
-
+            android:screenOrientation="portrait"
             />
         <activity android:name=".activity.HuoDongActivity"
-
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity.Question_Activity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity.WebViewActivity2"
+            android:screenOrientation="portrait"
             />
     </application>
 

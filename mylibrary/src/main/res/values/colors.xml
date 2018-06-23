@@ -49,6 +49,7 @@
     <color name="base_gray_eee">#eeeeee</color>
     <color name="base_divider">#cccccc</color>
     <color name="base_orange">#F98130</color>
+
     <color name="base_red">#FE4141</color>
     <color name="base_blue">#49BEF8</color>
     <color name="base_green">#65C25A</color>
@@ -75,6 +76,8 @@
     <color name="dj_textcolor_org">#fe8c26</color>
     <color name="dj_textcolors_hei">#474747</color>
     <color name="dj_textcolors_red">#fa3451</color>
+    <color name="dj_textcolors_huang">#ebd728</color>
+    <color name="dj_bj_huang2">#ffface</color>
     <color name="dj_login_red2">#fa3451</color>
     <color name="dj_login_red1">#fa523a</color>
     <color name="dj_textcolors_hei2">#333333</color>
@@ -90,6 +93,7 @@
     <color name="dj_textcolorsbule">#17b9ec</color>
     <color name="dj_yuandianlan">#08e0e7</color>
     <color name="dj_yuanjiaolan2">#17b9ec</color>
+    <color name="dj_timuok">#50e3c2</color>
     <color name="dj_line_shu">#eaeaea</color>
     <color name="dj_bj_lan">#e8f8ff</color>
 

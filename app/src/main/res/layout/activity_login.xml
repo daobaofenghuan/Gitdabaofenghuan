@@ -27,7 +27,7 @@
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/id_lg_namely"
-        android:layout_marginTop="@dimen/param_300dp"
+        android:layout_marginTop="@dimen/param_250dp"
         android:layout_width="match_parent"
 
 android:layout_marginBottom="@dimen/param_10dp"
@@ -43,7 +43,7 @@ android:layout_marginLeft="@dimen/param_32dp"
     android:layout_height="match_parent"
     android:layout_marginLeft="@dimen/param_85dp"
     android:layout_marginBottom="@dimen/param_7dp"
-    android:hint="用户名"
+    android:hint="身份证号"
     android:textColorHint="@color/white"
     android:background="@null"
    android:textSize="@dimen/param_14dp"
@@ -113,7 +113,7 @@ android:layout_marginLeft="@dimen/param_32dp"
         android:background="@drawable/yuanjiaowite_100dp"
      android:layout_marginBottom="@dimen/param_93dp"
         android:layout_width="@dimen/param_150dp"
-        android:layout_height="@dimen/param_60dp"
+        android:layout_height="@dimen/param_45dp"
         android:textSize="@dimen/param_18dp"
         android:textColor="@color/text_lg_orange"
         android:text="@string/lg_lonin"
@@ -126,7 +126,9 @@ android:layout_marginLeft="@dimen/param_32dp"
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_height="20dp"
-        android:layout_marginBottom="@dimen/param_33dp">
+        android:layout_marginBottom="@dimen/param_33dp"
+        android:visibility="gone"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

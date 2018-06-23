@@ -1,14 +1,19 @@
 package com.sindcreate.dj.cell.homemaincell;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.sindcreate.dj.R;
+import com.sindcreate.dj.activity.WebViewActivity2;
 import com.sindcreate.dj.base.basecell.RVBaseCell;
 import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
+import com.sindcreate.dj.bean.Mydata;
 import com.sindcreate.dj.model.Entry;
 
 /**
@@ -35,7 +40,13 @@ public class Part_Showresult extends RVBaseCell<Entry> {
               TextView zhuti=view.getTextView(R.id.id_home_event_zhuti);
           // zhuti.getPaint().setFlags(Paint. UNDERLINE_TEXT_FLAG ); //下划线
         texttitle.setText("基层风采");
-
+        LinearLayout jcfcly=view.getLinearLayout(R.id.id_jcfcly);
+        jcfcly.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Mydata.context.startActivity(new Intent(Mydata.context, WebViewActivity2.class));
+            }
+        });
 
         return view;
      //   return null;

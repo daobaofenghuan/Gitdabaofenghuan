@@ -142,7 +142,7 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
                 mBaseAdapter.hideLoading();
                 mBaseAdapter.addAll(getCells(mockData()));
             }
-        },2000);
+        },1000);
     }
 }
 
