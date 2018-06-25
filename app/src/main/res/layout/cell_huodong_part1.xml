@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/param_32dp"
+       android:background="@color/dj_bj_fen"
+
+       >
+
+      <ImageView
+          android:layout_width="@dimen/param_14dp"
+          android:layout_height="@dimen/param_14dp"
+          android:layout_marginBottom="@dimen/param_8dp"
+
+          android:layout_marginLeft="@dimen/param_11.5dp"
+          android:layout_marginTop="@dimen/param_9dp"
+          android:src="@mipmap/icon_danghui_1" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/param_21dp"
+          android:layout_marginBottom="@dimen/param_5dp"
+          android:layout_marginLeft="@dimen/param_31dp"
+          android:layout_marginTop="@dimen/param_6dp"
+          android:text="@string/dangri_text1"
+          android:textColor="@color/dj_textcolors_hei"
+          android:textSize="@dimen/param_15dp"
+
+
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginBottom="@dimen/param_5dp"
+          android:layout_marginRight="@dimen/param_27.5dp"
+          android:layout_marginTop="@dimen/param_6dp"
+          android:text="@string/dangri_ing"
+          android:textColor="@color/dj_textcolor_org"
+          android:textSize="@dimen/param_15dp" />
+
+   </RelativeLayout>
+
+</LinearLayout>

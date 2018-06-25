@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_marginTop="@dimen/param_10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="@dimen/param_10dp"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:textSize="@dimen/param_14dp"
+    android:textColor="@color/dj_textcolors_hei"
+    android:text="工作主题: "
+
+    />
+<TextView
+    android:layout_marginRight="@dimen/param_10dp"
+    android:layout_marginLeft="@dimen/param_8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/param_12dp"
+    android:text="三会一课。"
+    android:textColor="@color/dj_textcolorhui"
+
+    />
+</LinearLayout>
+   <LinearLayout
+
+       android:layout_marginTop="@dimen/param_20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="@dimen/param_10dp"
+       >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/param_14dp"
+          android:textColor="@color/dj_textcolors_hei"
+          android:text="地点: "
+
+          />
+      <TextView
+          android:layout_marginRight="@dimen/param_10dp"
+          android:layout_marginLeft="@dimen/param_8dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/param_12dp"
+          android:text="星海广场会中心。"
+          android:textColor="@color/dj_textcolorhui"
+
+          />
+   </LinearLayout>
+   <LinearLayout
+       android:layout_marginTop="@dimen/param_20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="@dimen/param_10dp"
+       >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/param_14dp"
+          android:textColor="@color/dj_textcolors_hei"
+          android:text="时间: "
+
+          />
+      <TextView
+          android:layout_marginRight="@dimen/param_10dp"
+          android:layout_marginLeft="@dimen/param_8dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/param_12dp"
+          android:text="2018-05-24  08:45 至 2018-05-24 17:30"
+          android:textColor="@color/dj_textcolorhui"
+
+          />
+   </LinearLayout>
+   <LinearLayout
+       android:layout_marginTop="@dimen/param_20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginBottom="@dimen/param_30dp"
+       android:layout_marginLeft="@dimen/param_10dp"
+       >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/param_14dp"
+          android:textColor="@color/dj_textcolors_hei"
+          android:text="工作内容: "
+
+          />
+      <TextView
+          android:layout_marginRight="@dimen/param_10dp"
+          android:layout_marginLeft="@dimen/param_8dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/param_12dp"
+          android:text="    为了响应学校开展特色党日的号召,加强党员的党性修养,推进支部建设,我支部计划开展紧紧围绕“强组织、增活力...。"
+          android:textColor="@color/dj_textcolorhui"
+
+          />
+   </LinearLayout>
+</LinearLayout>

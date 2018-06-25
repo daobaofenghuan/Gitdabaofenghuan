@@ -65,9 +65,9 @@ public class Part_SanHuiYiKe_Fragment extends BaseFragment {
     //    textView.setText("三会一课");
         mTabs = new ArrayList<>();
         mTabs.clear();
-        mTabs.add(UiUtil.getString(R.string.sanhui_text1));
+        mTabs.add(UiUtil.getString(R.string.weiwancheng));
         mTabs.add(UiUtil.getString(R.string.sanhui_text2));
-        mTabs.add(UiUtil.getString(R.string.sanhui_text3));
+
 
 
 
@@ -78,10 +78,10 @@ public class Part_SanHuiYiKe_Fragment extends BaseFragment {
         List<Fragment> fragments = new ArrayList<>();
         fragments.add(new Part_Sanhui1_fragment());
         fragments.add(new Part_Sanhui1_fragment());
-        fragments.add(new Part_Sanhui1_fragment());
+
 
         DynamicHomeAdapter adapter = new DynamicHomeAdapter(getFragmentManager(), fragments, mTabs);
-        vp.setOffscreenPageLimit(3);
+        vp.setOffscreenPageLimit(2);
         vp.setAdapter(adapter);
         tl.setupWithViewPager(vp);
      //   reflex(tl);

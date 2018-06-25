@@ -25,7 +25,7 @@ import com.sindcreate.dj.model.Entry;
 /**
  * Created by Double on 2018/5/23.
  */
-
+//webwiewfragment
 public class Huodong_part2 extends RVBaseCell<Entry> {
     public static final int TYPE = 10012;
     public Huodong_part2(Entry entry){

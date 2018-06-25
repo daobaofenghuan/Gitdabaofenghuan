@@ -63,7 +63,7 @@ public class Part_Work_Fragment extends BaseFragment {
     //    textView.setText("三会一课");
         mTabs = new ArrayList<>();
         mTabs.clear();
-        mTabs.add(UiUtil.getString(R.string.weidu));
+
         mTabs.add(UiUtil.getString(R.string.weiwancheng));
         mTabs.add(UiUtil.getString(R.string.yiwancheng));
 
@@ -75,11 +75,11 @@ public class Part_Work_Fragment extends BaseFragment {
         List<Fragment> fragments = new ArrayList<>();
         fragments.add(new Part_Work_fragment1());
         fragments.add(new Part_Work_fragment1());
-        fragments.add(new Part_Work_fragment1());
+
 
 
         DynamicHomeAdapter adapter = new DynamicHomeAdapter(getFragmentManager(), fragments, mTabs);
-        vp.setOffscreenPageLimit(3);
+        vp.setOffscreenPageLimit(2);
         vp.setAdapter(adapter);
         tl.setupWithViewPager(vp);
      //   reflex(tl);

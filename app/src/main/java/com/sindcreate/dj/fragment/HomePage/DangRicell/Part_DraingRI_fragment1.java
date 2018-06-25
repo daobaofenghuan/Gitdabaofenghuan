@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.sindcreate.dj.R;
+import com.sindcreate.dj.adapter.listviewadapter.DangFeiListAdapter;
+import com.sindcreate.dj.adapter.listviewadapter.DangRiListAdapter;
 import com.sindcreate.dj.adapter.listviewadapter.WorkListAdapter;
 import com.sindcreate.dj.bean.Datebean.AcceptData;
 
@@ -25,7 +27,7 @@ import butterknife.ButterKnife;
 public class Part_DraingRI_fragment1 extends Fragment {
     @BindView(R.id.id_sanhui_list)
     ListView listView;
-    WorkListAdapter adapter;
+    DangRiListAdapter adapter;
     ArrayList<AcceptData> datalist=new ArrayList<>();
 
 
@@ -39,7 +41,7 @@ public class Part_DraingRI_fragment1 extends Fragment {
         datalist.add(databean);
         datalist.add(databean);
         datalist.add(databean);
-        adapter=new WorkListAdapter(getContext(),datalist);
+        adapter=new DangRiListAdapter(getContext(),datalist);
         listView.setAdapter(adapter);
         View view1=inflater.inflate(R.layout.item_nomore,container,false);
         listView.addFooterView(view1);

@@ -18,7 +18,7 @@ import com.sindcreate.dj.view.MyCircleImageView;
 import java.io.File;
 import java.util.ArrayList;
 
-public class WorkListAdapter extends BaseAdapter {
+public class DangRiListAdapter extends BaseAdapter {
     private Context context;
     private View[] itemViews;
     private LayoutInflater mInflater;
@@ -28,7 +28,7 @@ public class WorkListAdapter extends BaseAdapter {
      */
     public static ArrayList<AcceptData> cf;
 
-    public WorkListAdapter(Context context, ArrayList<AcceptData> cf2) {
+    public DangRiListAdapter(Context context, ArrayList<AcceptData> cf2) {
         this.context = context;
         cf = cf2;
         this.cache = cache;
@@ -61,7 +61,7 @@ public class WorkListAdapter extends BaseAdapter {
         ViewHolder vh;
 
         if (converView == null) {
-            view = mInflater.inflate(R.layout.item_listv_work2xiugai, null);
+            view = mInflater.inflate(R.layout.item_listv_work, null);
             vh = new ViewHolder(view);
 
             view.setTag(vh);

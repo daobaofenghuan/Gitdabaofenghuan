@@ -20,6 +20,7 @@ import android.widget.TextView;
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.adapter.DynamicHomeAdapter;
 import com.sindcreate.dj.base.BaseFragment;
+import com.sindcreate.dj.fragment.HomePage.Sanhuifragment.Part_Sanhui1_fragment;
 import com.sindcreate.dj.fragment.HomePage.Sanhuifragment.Part_Sanhui2_fragment;
 import com.sindcreate.dj.fragment.HomePage.Sanhuifragment.Part_Sanhui3_fragment;
 import com.sindcreate.dj.fragment.HomePage.WorkFragment.Part_Work_fragment1;
@@ -67,9 +68,9 @@ public class Part_DangRI_Fragmenttwo extends BaseFragment {
         //    textView.setText("三会一课");
         mTabs = new ArrayList<>();
         mTabs.clear();
-        mTabs.add(UiUtil.getString(R.string.daiwobaoming));
-        mTabs.add(UiUtil.getString(R.string.woyibangming));
-        mTabs.add(UiUtil.getString(R.string.sanhui_text3));
+
+        mTabs.add(UiUtil.getString(R.string.weiwancheng));
+        mTabs.add(UiUtil.getString(R.string.sanhui_text2));
 
 
     }
@@ -77,13 +78,12 @@ public class Part_DangRI_Fragmenttwo extends BaseFragment {
     private void bindViewPager() {
 
         List<Fragment> fragments = new ArrayList<>();
-        fragments.add(new Part_Work_fragment1());
-        fragments.add(new Part_Work_fragment1());
-        fragments.add(new Part_Work_fragment1());
 
+        fragments.add(new Part_Sanhui1_fragment());
+        fragments.add(new Part_Sanhui1_fragment());
 
         DynamicHomeAdapter adapter = new DynamicHomeAdapter(getFragmentManager(), fragments, mTabs);
-        vp.setOffscreenPageLimit(3);
+        vp.setOffscreenPageLimit(2);
         vp.setAdapter(adapter);
         tl.setupWithViewPager(vp);
         //   reflex(tl);

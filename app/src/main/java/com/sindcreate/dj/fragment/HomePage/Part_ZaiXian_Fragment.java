@@ -66,8 +66,8 @@ public class Part_ZaiXian_Fragment extends BaseFragment {
     //    textView.setText("三会一课");
         mTabs = new ArrayList<>();
         mTabs.clear();
-        mTabs.add(UiUtil.getString(R.string.zaixian_daikao));
-        mTabs.add(UiUtil.getString(R.string.zaixian_yikao));
+        mTabs.add("进行中");
+        mTabs.add("已结束");
 
 
 

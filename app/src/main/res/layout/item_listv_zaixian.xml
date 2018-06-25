@@ -44,7 +44,7 @@
             android:layout_marginLeft="@dimen/param_10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2018-5-24 13:00 报名截止"
+            android:text="2018-5-24 13:00 结束"
             android:textColor="@color/dj_textcolorhui"
             android:textSize="12dp"
             android:layout_marginBottom="@dimen/param_7dp"
@@ -95,7 +95,7 @@
         android:background="@drawable/yuanjiaohui_12"
         android:paddingLeft="@dimen/param_6dp"
         android:paddingRight="@dimen/param_6dp"
-        android:text="@string/zaixian_yiguoqi"
+        android:text="未参与"
         android:textColor="@color/white"
         android:textSize="@dimen/param_12dp" />
     <TextView

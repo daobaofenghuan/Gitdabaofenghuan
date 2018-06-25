@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    >
+    <LinearLayout
+        android:id="@+id/id_work_ly1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_17dp"
+        android:layout_marginRight="@dimen/param_20dp"
+        android:layout_marginTop="@dimen/param_12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+       >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/param_10dp"
+          android:textColor="@color/dj_textcolors_hei"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/param_180dp"
+            android:singleLine="true"
+            android:text="公益活动:"
+
+
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮助指挥交通"
+            android:textColor="@color/dj_textcolorhui"
+            android:textSize="12dp"
+
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_work_ly2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_17dp"
+
+        android:layout_marginTop="@dimen/param_12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:textColor="@color/dj_textcolors_hei"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/param_180dp"
+            android:singleLine="true"
+            android:text="完成时限:"
+
+
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018.10.21 13:30"
+            android:textColor="@color/dj_textcolorhui"
+            android:textSize="12dp"
+
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/param_10dp"
+            android:gravity="right"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:textColor="@color/dj_textcolors_hei"
+                android:ellipsize="end"
+
+                android:singleLine="true"
+                android:text="发起人:"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/param_10dp"
+                android:text="董春荣"
+                android:textColor="@color/dj_textcolorhui"
+                android:textSize="@dimen/param_12dp"
+
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.webkit.WebView;
 
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.base.basecell.RVBaseCell;
@@ -15,9 +14,9 @@ import com.sindcreate.dj.model.Entry;
  * Created by Double on 2018/5/23.
  */
 
-public class Huodong_part1 extends RVBaseCell<Entry> {
-    public static final int TYPE = 10011;
-    public Huodong_part1(Entry entry){
+public class Huodong_part202 extends RVBaseCell<Entry> {
+    public static final int TYPE = 100121;
+    public Huodong_part202(Entry entry){
         super(entry);
 
     }
@@ -30,7 +29,7 @@ public class Huodong_part1 extends RVBaseCell<Entry> {
     @Override
     public RVBaseViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        RVBaseViewHolder view= new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_huodong_part1,parent,false));
+        RVBaseViewHolder view= new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_huodong_part201,parent,false));
 
 
         return view;

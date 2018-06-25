@@ -54,7 +54,10 @@
             android:layout_marginLeft="@dimen/param_10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2018-5-24 13:00 报名截止"
+            android:text="地点：XXX号楼会议室"
+            android:ems="13"
+            android:singleLine="true"
+            android:ellipsize="end"
             android:textColor="@color/dj_textcolorhui"
             android:textSize="@dimen/param_12dp"
 
@@ -64,8 +67,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
+
             android:layout_marginRight="@dimen/param_12dp"
-            android:text=" 49人已报名"
+            android:text=" 时间：2018.10.01 13:30"
             android:textColor="@color/dj_textcolors_hei" />
 
 

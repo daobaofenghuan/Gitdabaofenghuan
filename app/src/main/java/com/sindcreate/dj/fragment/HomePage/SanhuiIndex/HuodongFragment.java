@@ -76,7 +76,7 @@ public class HuodongFragment extends AbsBaseFragment<Entry> {
         List<Cell> cells = new ArrayList<>();
         // cells.add(new Drangri_title(null));
       cells.add(new Huodong_part1(null));
-        cells.add(new Huodong_part2(null));
+        cells.add(new Huodong_part202(null));
         cells.add(new Huodong_part3(null));
         return cells;
     }
