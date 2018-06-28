@@ -52,7 +52,7 @@ public class Part_ZaiXian_Fragment extends BaseFragment {
         View view = inflater.inflate(R.layout.fragment_homepage_zaixiankaoshi, container, false);
         ButterKnife.bind(this, view);
         unbinder2 = ButterKnife.bind(this, view);
-
+        titletext.setText("在线答题2");
         initTabLayout();
         bindViewPager();
 
@@ -80,7 +80,7 @@ public class Part_ZaiXian_Fragment extends BaseFragment {
         fragments.add(new Part_ZaiXian_fragment2());
 
 
-        DynamicHomeAdapter adapter = new DynamicHomeAdapter(getFragmentManager(), fragments, mTabs);
+        DynamicHomeAdapter adapter = new DynamicHomeAdapter(getChildFragmentManager(), fragments, mTabs);
         vp.setOffscreenPageLimit(2);
         vp.setAdapter(adapter);
         tl.setupWithViewPager(vp);

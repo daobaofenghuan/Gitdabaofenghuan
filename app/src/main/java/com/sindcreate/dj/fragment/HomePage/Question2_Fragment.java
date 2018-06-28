@@ -20,6 +20,7 @@ import android.widget.TextView;
 
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.adapter.QuestionAdapter;
+import com.sindcreate.dj.bean.Datebean.QSstatus;
 import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.bean.Mydata;
 
@@ -35,7 +36,7 @@ import butterknife.OnClick;
 public class Question2_Fragment extends Fragment  implements CompoundButton.OnClickListener{
     private Button but, but2;
     private QuestionAdapter   adapterlist;
-    List<String> datalist=new ArrayList<>();
+    List<QSstatus> datalist=new ArrayList<>();
 //    @BindView(R.id.id_question_start)
 //  TextView StartView;
     @BindView(R.id.id_question_showtmly)
@@ -70,7 +71,7 @@ RelativeLayout showly;
         String str="1. 我国已由高速增长阶段转向（ ）阶段。 <font color='#888888'> （单选题，1分）</font>";
         timutext.setTextSize(13);
         timutext.setText(Html.fromHtml(str));
-     initView();
+
 
 
         GridLayoutManager manager = new GridLayoutManager(getContext(), 8, LinearLayoutManager.VERTICAL, false) {
@@ -79,9 +80,13 @@ RelativeLayout showly;
                 return false;
             }
         };
-
         for (int i=0;i<68;i++){
-            datalist.add(String.valueOf(i+1));
+            QSstatus databean=new QSstatus();
+            databean.Nub=String.valueOf(i+1);
+            if(i<3){
+                databean.status=5;
+            }
+            datalist.add(databean);
 
 
         }
@@ -94,7 +99,7 @@ RelativeLayout showly;
 
 
 
-    @OnClick({R.id.id_title_back,R.id.id_question2_timu,R.id.id_question_showtmly,R.id.id_checkbox_A,R.id.id_checkbox_B,R.id.id_checkbox_C,R.id.id_checkbox_D,R.id.id_checkbox_E,R.id.id_checkbox_F})
+    @OnClick({R.id.id_title_back,R.id.id_question2_timu,R.id.id_question_showtmly,R.id.id_checkbox_A,R.id.id_checkbox_B,R.id.id_checkbox_C,R.id.id_checkbox_D,R.id.id_checkbox_E,R.id.id_checkbox_F,R.id.id_question_next})
     public  void  goback(View v){
         Message msg=Message.obtain();
         switch (v.getId()){
@@ -142,6 +147,11 @@ RelativeLayout showly;
             case R.id.id_title_back:
                 getActivity().finish();
                 break;
+            case R.id.id_question_next:
+
+                msg.what=MsgNum.MSG_Question_Result;
+                Mydata.Questionhandler.sendMessage(msg);
+                break;
         }
 
     }
@@ -159,16 +169,7 @@ RelativeLayout showly;
 
 
    }
-   void initView(){
-//box1.onclick(this);
-//       box2.setOnCheckedChangeListener(this);
-//       box3.setOnCheckedChangeListener(this);
-//       box4.setOnCheckedChangeListener(this);
-//       box5.setOnCheckedChangeListener(this);
-//       box6.setOnCheckedChangeListener(this);
 
-
-   }
 
 
 

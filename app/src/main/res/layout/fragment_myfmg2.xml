@@ -87,10 +87,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="@dimen/param_93dp"
-            android:layout_marginLeft="@dimen/param_110dp"
+            android:layout_marginLeft="@dimen/param_90dp"
             android:text="姓名：奈何天"
             android:textColor="@color/white"
-            android:textSize="@dimen/param_16dp" />
+            android:textSize="@dimen/param_13dp" />
 
         <TextView
             android:id="@+id/id_my_dangage"
@@ -98,20 +98,21 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="@dimen/param_62dp"
-            android:layout_marginLeft="@dimen/param_110dp"
+            android:layout_marginLeft="@dimen/param_90dp"
             android:text="党龄：3年6个月4天"
             android:textColor="@color/white"
-            android:textSize="@dimen/param_16dp" />
+            android:textSize="@dimen/param_13dp" />
+
         <TextView
             android:id="@+id/id_my_lv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="@dimen/param_32dp"
-            android:layout_marginLeft="@dimen/param_110dp"
+            android:layout_marginLeft="@dimen/param_90dp"
             android:text="等级：LV7"
             android:textColor="@color/white"
-            android:textSize="@dimen/param_16dp" />
+            android:textSize="@dimen/param_13dp" />
 
 
 
@@ -164,7 +165,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/id_my_lyjifen"
-            android:layout_marginRight="@dimen/param_27dp"
+            android:layout_marginRight="@dimen/param_25dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
             >
@@ -182,6 +183,18 @@
 
 
                 />
+<ProgressBar
+    android:layout_marginLeft="@dimen/param_5dp"
+    android:layout_width="match_parent"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_height="@dimen/param_5dp"
+    android:max="100"
+    android:progress="80"
+    android:progressDrawable="@drawable/progressbar"
+
+
+    />
+
 
         </LinearLayout>
 

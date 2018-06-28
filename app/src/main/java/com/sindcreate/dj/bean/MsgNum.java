@@ -13,5 +13,5 @@ public class MsgNum {
     public static final int MSG_Work = 1004;
     public static final int MSG_edu = 1005;
     public static final int MSG_Question = 1006;
-
+    public static final int MSG_Question_Result = 1007;
 }

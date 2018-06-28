@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/shape_gradient"
+   android:background="@drawable/login_beijing"
     tools:context=".activity.Login_Activity">
-
+    <!--android:background="@drawable/shape_gradient"-->
 
     <RelativeLayout
         android:layout_width="@dimen/param_117dp"

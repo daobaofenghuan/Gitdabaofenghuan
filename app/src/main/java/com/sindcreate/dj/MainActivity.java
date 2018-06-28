@@ -4,16 +4,20 @@ import android.annotation.SuppressLint;
 import android.app.Fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
+import android.text.TextUtils;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.sindcreate.dj.adapter.MainRecycleAdapter;
@@ -334,5 +338,32 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //back
+    private long firstTime = 0;
+    @Override
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        // TODO Auto-generated method stub
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_BACK:
+                long secondTime = System.currentTimeMillis();
+                if (secondTime - firstTime > 2000) { // 如果两次按键时间间隔大于2秒，则不退出
+                    Toast.makeText(this, "再按一次隐藏程序", Toast.LENGTH_SHORT).show();
+
+                    firstTime = secondTime;// 更新firstTime
+                    return true;
+                } else {
+
+                    Intent intent = new Intent(Intent.ACTION_MAIN);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    intent.addCategory(Intent.CATEGORY_HOME);
+                    startActivity(intent);
+                    return true;
+                    // finish(); //两次按键小于2秒时，退出应用
+                    // System.exit(0);
+                }
+                // break;
+        }
+        return super.onKeyUp(keyCode, event);
+    }
 
 }

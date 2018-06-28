@@ -2,8 +2,10 @@ package com.sindcreate.dj.activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.sindcreate.dj.MainActivity;
@@ -25,8 +27,14 @@ public class Login_Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
-
-        StatusBarUtils.setWindowStatusBarColor(Login_Activity.this, R.color.dj_login_red1);
+        //沉浸式状态栏
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            //透明状态栏
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            //透明导航栏
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        }else{
+       StatusBarUtils.setWindowStatusBarColor(Login_Activity.this, R.color.dj_login_red1);}
 
 
 
@@ -39,6 +47,7 @@ public class Login_Activity extends Activity {
         switch (v.getId()){
             case R.id.id_login_button:
                 startActivity(new Intent(Login_Activity.this, MainActivity.class));//TODO 後面傢finish或者main为干掉其他启动
+                finish();
                 break;
 
 

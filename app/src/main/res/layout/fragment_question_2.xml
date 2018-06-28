@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/param_28dp"
                 android:layout_marginTop="@dimen/param_17dp"
-                android:visibility="visible">
+                android:visibility="gone">
 
 
             </android.support.v7.widget.RecyclerView>
@@ -301,6 +301,7 @@
     </ScrollView>
 
     <TextView
+        android:id="@+id/id_question_next"
         android:layout_marginTop="@dimen/param_8dp"
         android:layout_width="@dimen/param_180dp"
         android:layout_height="@dimen/param_46dp"

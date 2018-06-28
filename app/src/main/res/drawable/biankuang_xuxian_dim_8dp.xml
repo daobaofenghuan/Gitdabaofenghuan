@@ -3,14 +3,14 @@
     android:shape="rectangle">
     <!-- 填充颜色 -->
     <solid android:color="#FFFFFF" />
-    <!-- 线的宽度，颜色灰色 -->
+    <!-- 线的宽度，颜色灰色  虚线间隔虚线XX 许县高度-->
     <stroke
-        android:dashGap="2dp"
-        android:dashWidth="1dp"
+        android:dashGap="3dp"
+        android:dashWidth="3dp"
         android:width="1dp"
 
 
         android:color="@color/dj_textcolorhui" />
     <!-- 矩形的圆角半径 -->
-    <corners android:radius="@dimen/param_1.5dp" />
+    <corners android:radius="@dimen/param_3dp" />
 </shape>

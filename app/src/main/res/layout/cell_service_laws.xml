@@ -82,7 +82,7 @@
             android:textSize="@dimen/param_13dp" />
 
         <TextView
-            android:layout_width="@dimen/param_63dp"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/param_22dp"
             android:layout_gravity="center_vertical"
             android:layout_marginRight="@dimen/param_10dp"
@@ -128,7 +128,9 @@
             android:layout_height="@dimen/param_22dp"
             android:layout_gravity="center_vertical"
             android:layout_marginRight="@dimen/param_10dp"
-            android:text="@string/service_text1_sj" />
+            android:text="@string/service_text1_sj"
+            android:textSize="@dimen/param_13dp"
+            />
 
 
     </LinearLayout>

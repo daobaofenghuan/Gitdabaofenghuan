@@ -16,6 +16,7 @@ import com.sindcreate.dj.fragment.HomePage.Question1start_Fragment;
 
 
 import com.sindcreate.dj.fragment.HomePage.Question2_Fragment;
+import com.sindcreate.dj.fragment.HomePage.Question3_Fragment;
 import com.sindcreate.mylibrary.comm.util.StatusBarUtils;
 import static com.sindcreate.dj.bean.MsgNum.*;
 import butterknife.ButterKnife;
@@ -23,6 +24,7 @@ import butterknife.ButterKnife;
 public class Question_Activity extends AppCompatActivity {
 Question1start_Fragment fragment;
 Question2_Fragment fragment2;
+Question3_Fragment fragment3;
 @SuppressLint("HandlerLeak")
 private Handler handler=new Handler(){
     @Override
@@ -34,6 +36,12 @@ private Handler handler=new Handler(){
      case  MSG_Question:
             fragment2=new Question2_Fragment();
        transaction.replace(R.id.contain_basefg,fragment2).commit();
+       break;
+     case  MSG_Question_Result:
+         System.out.println("替换发生");
+         fragment3=new Question3_Fragment();
+         transaction.replace(R.id.contain_basefg,fragment3).commit();
+
         break;
 
 

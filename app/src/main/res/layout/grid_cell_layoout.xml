@@ -10,7 +10,7 @@
      android:layout_marginTop="@dimen/param_1dp"
      android:id="@+id/banner"
      android:layout_width="match_parent"
-     android:layout_height="177dp"
+     android:layout_height="@dimen/param_177dp"
      app:canLoop="true"
      />
 

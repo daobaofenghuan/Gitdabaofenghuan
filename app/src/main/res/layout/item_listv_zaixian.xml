@@ -78,7 +78,7 @@
         android:background="@drawable/yuanjiaoblue_12"
         android:paddingLeft="@dimen/param_6dp"
         android:paddingRight="@dimen/param_6dp"
-        android:text="@string/sanhui_text1"
+        android:text="未参与"
         android:textColor="@color/white"
         android:textSize="@dimen/param_12dp" />
 
@@ -91,13 +91,13 @@
         android:layout_marginLeft="@dimen/param_10dp"
         android:layout_marginRight="@dimen/param_27dp"
         android:layout_marginTop="@dimen/param_12dp"
-        android:visibility="invisible"
         android:background="@drawable/yuanjiaohui_12"
         android:paddingLeft="@dimen/param_6dp"
         android:paddingRight="@dimen/param_6dp"
-        android:text="未参与"
+        android:text="已参与"
         android:textColor="@color/white"
-        android:textSize="@dimen/param_12dp" />
+        android:textSize="@dimen/param_12dp"
+        android:visibility="invisible" />
     <TextView
         android:layout_below="@+id/id_weibaoming"
         android:layout_width="wrap_content"
