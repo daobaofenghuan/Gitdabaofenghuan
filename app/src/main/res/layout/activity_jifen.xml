@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ >
+<include
+    layout="@layout/title_back"
+    />
+<RelativeLayout
+    android:id="@+id/contain_sanhuiindex"
+    android:layout_width="@dimen/param_200dp"
+    android:layout_height="@dimen/param_113dp"
+android:background="@drawable/bg_jifen"
+ android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/param_9dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/param_42dp"
+        android:layout_marginTop="@dimen/param_22dp"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+
+            android:text="208"
+
+            android:textColor="@color/dj_bj_huang"
+            android:textSize="@dimen/param_36dp" />
+        <TextView
+            android:id="@+id/id_my_text_jifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+
+            android:text="积分:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/param_14dp"
+
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+<TextView
+    android:layout_marginTop="@dimen/param_20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/param_10dp"
+    android:text="积分规则："
+    android:textColor="@color/dj_textcolors_hei2"
+    android:textSize="@dimen/param_14dp"
+
+    />
+<LinearLayout
+    android:layout_marginTop="@dimen/param_8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/param_10dp"
+    android:orientation="vertical"
+    >
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1.这里是积分说明这里是积分说明这里是这里是积分说明这里
+是这里是这里是这里是这里是"
+
+    android:textSize="@dimen/param_13dp"
+    android:textColor="@color/dj_textcolors_hei2"
+    />
+    <TextView
+        android:layout_marginTop="@dimen/param_15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.这里是积分说明这里是积分说明这里是这里是积分"
+
+        android:textSize="@dimen/param_13dp"
+        android:textColor="@color/dj_textcolors_hei2"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/param_15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.这里是积分说明这里是积分说明这里是这里是积分"
+
+        android:textSize="@dimen/param_13dp"
+        android:textColor="@color/dj_textcolors_hei2"
+        />
+
+
+
+</LinearLayout>
+</LinearLayout>

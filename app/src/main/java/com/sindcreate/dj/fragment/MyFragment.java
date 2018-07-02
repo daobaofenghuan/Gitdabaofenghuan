@@ -20,9 +20,11 @@ import android.widget.TextView;
 
 
 import com.sindcreate.dj.R;
+import com.sindcreate.dj.activity.JiFenActivity;
 import com.sindcreate.dj.activity.Login_Activity;
 import com.sindcreate.dj.activity.MyCollectAndFoot;
 import com.sindcreate.dj.activity.MyDangMoney;
+import com.sindcreate.dj.activity.SettingActivity;
 import com.sindcreate.dj.base.BaseFragment;
 import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.bean.Mydata;
@@ -51,11 +53,13 @@ public class MyFragment extends Fragment {
     }
 
 
-    @OnClick({R.id.title_img,R.id.id_my_mydangfeily,R.id.id_my_myfoot,R.id.id_my_collectly})
+    @OnClick({R.id.title_img,R.id.id_my_mydangfeily,R.id.id_my_myfoot,R.id.id_my_collectly,R.id.id_turnsettingly,R.id.id_my_ly_jifen})
     public  void  goback(View v){
         Message msg=Message.obtain();
         switch (v.getId()){
-
+            case R.id.id_turnsettingly:
+                getActivity().startActivity(new Intent(getActivity(), SettingActivity.class));
+                break;
 
             case R.id.title_img:
 
@@ -74,6 +78,9 @@ public class MyFragment extends Fragment {
                 Intent intent2=  new Intent(getContext(), MyCollectAndFoot.class);
                 intent2.putExtra("flag",1);
                 getActivity().startActivity(intent2);
+                break;
+            case R.id.id_my_ly_jifen:
+                getActivity().startActivity(new Intent(getContext(), JiFenActivity.class));
                 break;
 
         }

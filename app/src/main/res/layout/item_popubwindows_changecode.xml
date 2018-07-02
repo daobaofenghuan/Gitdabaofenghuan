@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_transparent" >
+
+    <!--@drawable/bg_transparent"-->
+   <LinearLayout
+android:id="@+id/ll_popup"
+       android:layout_marginTop="@dimen/param_160dp"
+       android:layout_marginLeft="@dimen/param_35dp"
+       android:layout_marginRight="@dimen/param_35dp"
+       android:layout_width="match_parent"
+       android:background="@drawable/yuanjiaowite_6dp"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_50dp"
+    android:gravity="center"
+    android:text="修改密码"
+    android:textSize="@dimen/param_15dp"
+
+
+    />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/param_40dp"
+           android:textSize="@dimen/param_15dp"
+           android:textColor="@color/dj_yuandian"
+           android:background="@color/dj_hui"
+           android:hint="输入原密码"
+           android:gravity="center"
+           android:inputType="textPassword"
+           />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/param_40dp"
+           android:textSize="@dimen/param_15dp"
+           android:textColor="@color/dj_yuandian"
+           android:background="@color/dj_hui"
+           android:hint="输入新密码"
+           android:gravity="center"
+           android:inputType="textPassword"
+
+           />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/param_40dp"
+           android:textSize="@dimen/param_15dp"
+           android:textColor="@color/dj_yuandian"
+           android:background="@color/dj_hui"
+           android:hint="确认新密码"
+           android:inputType="textPassword"
+           android:gravity="center"
+
+
+           />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/param_56dp">
+<TextView
+    android:id="@+id/id_popu_quxiao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:textSize="@dimen/param_17dp"
+    android:textColor="@color/dj_textcolors_hei2"
+    android:gravity="center"
+    android:text="取消"
+    />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:textSize="@dimen/param_17dp"
+               android:textColor="@color/dj_jinxingzhong"
+               android:gravity="center"
+               android:text="确认 "
+               />
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</RelativeLayout>

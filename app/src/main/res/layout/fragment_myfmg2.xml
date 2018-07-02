@@ -60,6 +60,7 @@
 
 
         <RelativeLayout
+            android:id="@+id/id_turnsettingly"
             android:layout_width="@dimen/param_55dp"
             android:layout_height="@dimen/param_70dp"
             android:layout_alignParentBottom="true"
@@ -251,6 +252,7 @@
 
 
     <RelativeLayout
+        android:id="@+id/id_my_ly_jifen"
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_46dp">
 

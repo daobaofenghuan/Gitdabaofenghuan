@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    >
+    <include
+
+        layout="@layout/title_chenjin"
+        />
+<include
+    layout="@layout/title_back"
+    />
+<RelativeLayout
+    android:id="@+id/id_setting_ly1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_52dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/param_13dp"
+    android:textColor="@color/t_grey"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="@dimen/param_13dp"
+    android:text="修改密码"
+    />
+    <ImageView
+        android:layout_marginRight="@dimen/param_7.5dp"
+        android:layout_width="@dimen/param_12dp"
+        android:layout_height="@dimen/param_20dp"
+        android:layout_alignParentRight="true"
+android:layout_centerVertical="true"
+        android:src="@mipmap/icon_right"
+
+        />
+
+</RelativeLayout>
+    <include
+        layout="@layout/dim"
+        />
+    <RelativeLayout
+        android:id="@+id/id_setting_ly2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_52dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/param_13dp"
+            android:textColor="@color/t_grey"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/param_13dp"
+            android:text="设置头像"
+            />
+        <ImageView
+            android:id="@+id/id_settingright_icon"
+            android:layout_marginRight="@dimen/param_7.5dp"
+            android:layout_width="@dimen/param_12dp"
+            android:layout_height="@dimen/param_20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_right"
+
+            />
+        <com.sindcreate.dj.view.MyCircleImageView
+            android:layout_width="@dimen/param_34dp"
+            android:layout_height="@dimen/param_34dp"
+     android:layout_centerVertical="true"
+            android:src="@mipmap/icon_test_touxiang"
+    android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/param_31dp"
+            />
+
+    </RelativeLayout>
+    <include
+        layout="@layout/dim"
+        />
+
+</LinearLayout>
