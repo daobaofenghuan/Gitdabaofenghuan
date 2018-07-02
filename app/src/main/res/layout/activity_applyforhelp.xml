@@ -161,12 +161,33 @@
 
             />
     </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/param_10dp"
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
     <RelativeLayout
+
         android:layout_width="@dimen/param_37dp"
         android:layout_height="@dimen/param_37dp"
         android:layout_marginLeft="@dimen/param_10dp"
-        android:background="@color/base_gray_eee"
-        ></RelativeLayout>
+android:id="@+id/id_forhelp_picly"
+        >
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_test_xiangji"
+            />
+
+    </RelativeLayout>
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -178,6 +199,7 @@
         layout="@layout/dim"
         />
     <RelativeLayout
+
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_56dp">
    <TextView

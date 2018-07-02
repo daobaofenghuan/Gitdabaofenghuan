@@ -42,8 +42,10 @@ public class Part_Sanhui1_fragment extends Fragment {
         datalist.add(databean);
         datalist.add(databean);
         datalist.add(databean);
+
         adapter=new SanhuiListAdapter(getContext(),datalist);
         listView.setAdapter(adapter);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

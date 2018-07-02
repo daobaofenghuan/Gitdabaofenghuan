@@ -1,21 +1,16 @@
-package com.sindcreate.dj.adapter;
+package com.sindcreate.dj.adapter.recycleradapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.drawable.GradientDrawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.bean.Datebean.QSstatus;
-import com.sindcreate.dj.view.MyCircleImageView;
 
 
 import java.util.List;

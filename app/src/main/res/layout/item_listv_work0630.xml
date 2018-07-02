@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_87dp"
+    android:background="@color/white"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/id_sanhuiitemly1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/id_work_rightly"
+        android:layout_marginTop="@dimen/param_12dp"
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/id_work_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ellipsize="end"
+            android:maxWidth="@dimen/param_180dp"
+            android:singleLine="true"
+            android:text="应急管理部有关负责人就有关负…"
+            android:textColor="@color/dj_textcolors"
+
+
+            />
+
+        <TextView
+            android:id="@+id/id_itemwork_textsj"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/param_22dp"
+            android:layout_below="@+id/id_work_text1"
+
+            android:layout_marginTop="@dimen/param_7dp"
+            android:gravity="center"
+            android:text="要求完成时间：2018-06-31 17:00"
+            android:textColor="@color/dj_textcolorhui"
+            android:textSize="12dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/param_22dp"
+            android:layout_below="@+id/id_itemwork_textsj"
+
+            android:gravity="center"
+            android:text="发起人:张一山"
+            android:textColor="@color/dj_textcolors_hei"
+            android:textSize="12dp"
+
+
+            />
+
+
+        <View
+            android:layout_width="@dimen/param_1.5dp"
+            android:layout_height="@dimen/param_25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:background="@color/dj_line_shu" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/id_work_rightly"
+        android:layout_width="@dimen/param_120dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+
+          android:orientation="vertical"
+
+        >
+
+        <TextView
+
+            android:id="@+id/id_work_zt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/param_35dp"
+            android:gravity="center"
+            android:text="按期完成"
+
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/param_12dp"
+            android:visibility="visible" />
+
+        <TextView
+
+
+            android:id="@+id/id_work_zt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="逾期完成"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/param_35dp"
+            android:textColor="@color/dj_textcolor_title2"
+            android:textSize="@dimen/param_12dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_0.5dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.16"
+        android:background="@color/dj_dim" />
+
+
+</RelativeLayout>

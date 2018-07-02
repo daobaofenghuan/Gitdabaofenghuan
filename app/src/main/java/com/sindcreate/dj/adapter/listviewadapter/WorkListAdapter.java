@@ -61,7 +61,7 @@ public class WorkListAdapter extends BaseAdapter {
         ViewHolder vh;
 
         if (converView == null) {
-            view = mInflater.inflate(R.layout.item_listv_work2xiugai, null);
+            view = mInflater.inflate(R.layout.item_listv_work0630, null);
             vh = new ViewHolder(view);
 
             view.setTag(vh);

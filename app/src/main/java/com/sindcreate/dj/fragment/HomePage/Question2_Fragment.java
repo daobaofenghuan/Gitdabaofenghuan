@@ -14,23 +14,22 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.adapter.QuestionAdapter;
+import com.sindcreate.dj.adapter.recycleradapter.QuestionAdapter;
 import com.sindcreate.dj.bean.Datebean.QSstatus;
 import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.bean.Mydata;
+import com.sindcreate.dj.view.MPopupWindows;
+import com.sindcreate.dj.view.MPopupWindows2;
 
-import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnCheckedChanged;
 import butterknife.OnClick;
 
 public class Question2_Fragment extends Fragment  implements CompoundButton.OnClickListener{
@@ -42,10 +41,12 @@ public class Question2_Fragment extends Fragment  implements CompoundButton.OnCl
     @BindView(R.id.id_question_showtmly)
 RelativeLayout showly;
 
-    @BindView(R.id.question_contain)
-    RecyclerView  listv;
+//    @BindView(R.id.question_contain)
+//    RecyclerView  listv;
     @BindView(R.id.id_question2_timu)
    TextView timutext;
+
+
 
     @BindView(R.id.id_checkbox_A)
     CheckBox box1;
@@ -74,25 +75,25 @@ RelativeLayout showly;
 
 
 
-        GridLayoutManager manager = new GridLayoutManager(getContext(), 8, LinearLayoutManager.VERTICAL, false) {
-            @Override
-            public boolean canScrollVertically() {
-                return false;
-            }
-        };
-        for (int i=0;i<68;i++){
-            QSstatus databean=new QSstatus();
-            databean.Nub=String.valueOf(i+1);
-            if(i<3){
-                databean.status=5;
-            }
-            datalist.add(databean);
-
-
-        }
-        adapterlist = new QuestionAdapter(getContext(), datalist);
-        listv.setLayoutManager(manager);
-        listv.setAdapter(adapterlist);
+//        GridLayoutManager manager = new GridLayoutManager(getContext(), 8, LinearLayoutManager.VERTICAL, false) {
+//            @Override
+//            public boolean canScrollVertically() {
+//                return false;
+//            }
+//        };
+//        for (int i=0;i<68;i++){
+//            QSstatus databean=new QSstatus();
+//            databean.Nub=String.valueOf(i+1);
+//            if(i<3){
+//                databean.status=5;
+//            }
+//            datalist.add(databean);
+//
+//
+//        }
+//        adapterlist = new QuestionAdapter(getContext(), datalist);
+//        listv.setLayoutManager(manager);
+//        listv.setAdapter(adapterlist);
         return view;
 
     }
@@ -111,12 +112,14 @@ RelativeLayout showly;
                 Mydata.Questionhandler.sendMessage(msg);
                 break;
             case R.id.id_question_showtmly:
-                if(listv.getVisibility()==View.VISIBLE){
-                    listv.setVisibility(View.GONE);
-
-                }else {
-                    listv.setVisibility(View.VISIBLE);
-                }
+//                if(listv.getVisibility()==View.VISIBLE){
+//                    listv.setVisibility(View.GONE);
+//
+//                }else {
+//                    listv.setVisibility(View.VISIBLE);
+//                }
+                MPopupWindows2 mPopupWindows = new MPopupWindows2(getContext(), showly, getActivity());
+                mPopupWindows.showAsDropDown(showly,0,0);
                 break;
             case R.id.id_checkbox_A:
                 selectcheckbox();

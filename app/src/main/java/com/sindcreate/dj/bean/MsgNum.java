@@ -5,6 +5,7 @@ package com.sindcreate.dj.bean;
  */
 
 public class MsgNum {
+    public static final int OK = 100;
     public static final int MSG_Home = 10000;
     public static final int MSG_XiaoXI = 1000;
     public static final int MSG_SanHui = 1001;

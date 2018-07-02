@@ -111,7 +111,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/param_10dp"
                 android:gravity="center"
-                android:text="总提数 ：    "
+                android:text="总题数 ：    "
                 android:textColor="@color/dj_textcolorhui"
                 android:textSize="@dimen/param_12dp"
 

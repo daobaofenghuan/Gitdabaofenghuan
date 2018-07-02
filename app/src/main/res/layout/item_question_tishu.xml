@@ -8,15 +8,14 @@
 >
 
     <TextView
-        android:gravity="center"
         android:id="@+id/id_question_timushu"
-        android:layout_marginLeft="@dimen/param_11dp"
-        android:background="@drawable/biankuang_xuxian_dim_8dp"
-        android:layout_width="@dimen/param_22dp"
-        android:layout_height="@dimen/param_22dp"
-        android:layout_marginRight="@dimen/param_11dp"
+        android:layout_width="@dimen/param_23dp"
+        android:layout_height="@dimen/param_25dp"
         android:layout_marginBottom="@dimen/param_13dp"
-        />
+        android:layout_marginLeft="@dimen/param_11dp"
+        android:layout_marginRight="@dimen/param_11dp"
+        android:background="@drawable/biankuang_xuxian_dim_8dp"
+        android:gravity="center" />
 
 <RelativeLayout
     android:id="@+id/id_question2_rightly"

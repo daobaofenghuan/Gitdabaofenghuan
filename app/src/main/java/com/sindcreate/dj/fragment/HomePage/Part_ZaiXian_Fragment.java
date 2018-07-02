@@ -52,7 +52,7 @@ public class Part_ZaiXian_Fragment extends BaseFragment {
         View view = inflater.inflate(R.layout.fragment_homepage_zaixiankaoshi, container, false);
         ButterKnife.bind(this, view);
         unbinder2 = ButterKnife.bind(this, view);
-        titletext.setText("在线答题2");
+        titletext.setText("在线考试");
         initTabLayout();
         bindViewPager();
 
@@ -66,8 +66,8 @@ public class Part_ZaiXian_Fragment extends BaseFragment {
     //    textView.setText("三会一课");
         mTabs = new ArrayList<>();
         mTabs.clear();
-        mTabs.add("进行中");
-        mTabs.add("已结束");
+        mTabs.add("待考");
+        mTabs.add("已考");
 
 
 

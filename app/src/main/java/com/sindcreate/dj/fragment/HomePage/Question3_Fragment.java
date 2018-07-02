@@ -2,7 +2,6 @@ package com.sindcreate.dj.fragment.HomePage;
 
 
 import android.os.Bundle;
-import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,9 +13,8 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.adapter.QuestionAdapter;
+import com.sindcreate.dj.adapter.recycleradapter.QuestionAdapter;
 import com.sindcreate.dj.bean.Datebean.QSstatus;
-import com.sindcreate.dj.bean.MsgNum;
 
 import java.util.ArrayList;
 import java.util.List;

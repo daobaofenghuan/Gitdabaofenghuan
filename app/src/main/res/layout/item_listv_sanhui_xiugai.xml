@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/id_sanhuiitemly1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_25dp"
+        android:layout_marginRight="@dimen/param_12dp"
+        android:layout_marginTop="@dimen/param_12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/id_weibaoming"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:background="@drawable/yuanjiaohuang_3dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/param_3dp"
+            android:paddingRight="@dimen/param_3dp"
+            android:text="党务学习"
+            android:textColor="@color/white"
+            android:textSize="@dimen/param_12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/param_7dp"
+            android:layout_marginTop="@dimen/param_3.5dp"
+            android:layout_toRightOf="@+id/id_weibaoming"
+            android:ellipsize="end"
+
+            android:singleLine="true"
+            android:text="应急管理部有关负责人就《地方党政领导干部安全生产责任制规定》答记者问"
+
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_22dp"
+        android:layout_below="@+id/id_sanhuiitemly1"
+        android:layout_marginBottom="@dimen/param_10dp"
+        android:layout_marginTop="@dimen/param_15dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/id_sanhui_chankan"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/param_4dp"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:layout_marginTop="@dimen/param_4dp"
+            android:src="@mipmap/icon_eye" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/id_sanhui_chankan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/param_4dp"
+            android:layout_marginLeft="@dimen/param_15dp"
+            android:layout_marginTop="@dimen/param_4dp"
+            android:layout_toRightOf="@id/id_sanhui_chankan"
+            android:src="@mipmap/icon_sanhui2" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/id_sanhui_chanka3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/param_4dp"
+            android:layout_marginLeft="@dimen/param_15dp"
+            android:layout_marginTop="@dimen/param_4dp"
+            android:layout_toRightOf="@id/id_sanhui_chankan2"
+            android:src="@mipmap/icon_sanhui3" />
+
+
+        <TextView
+            android:layout_centerVertical="true"
+           android:layout_marginRight="@dimen/param_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+         android:layout_alignParentRight="true"
+            android:text="2018-5-24 13:00 截止"
+            android:ems="15"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/dj_textcolorhui"
+            android:textSize="@dimen/param_12dp"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_0.5dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.16"
+        android:background="@color/dj_dim" />
+
+
+</RelativeLayout>

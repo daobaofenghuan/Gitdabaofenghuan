@@ -41,13 +41,13 @@
         >
 
         <TextView
-            android:layout_marginLeft="@dimen/param_10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2018-5-24 13:00 结束"
+            android:layout_marginBottom="@dimen/param_7dp"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:text="2018-5-2018-5-24 13:00 报名截止"
             android:textColor="@color/dj_textcolorhui"
             android:textSize="12dp"
-            android:layout_marginBottom="@dimen/param_7dp"
 
             />
 
@@ -57,6 +57,7 @@
     </RelativeLayout>
 
     <View
+        android:id="@+id/id_zaixian_view"
         android:layout_width="@dimen/param_1.5dp"
         android:layout_height="@dimen/param_25dp"
         android:layout_alignParentRight="true"
@@ -64,21 +65,29 @@
         android:layout_marginRight="@dimen/param_105dp"
         android:background="@color/dj_line_shu" />
 
+<LinearLayout
+    android:layout_marginRight="@dimen/param_17dp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+
+    >
 
     <TextView
         android:id="@+id/id_weibaoming"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="@dimen/param_10dp"
-        android:layout_marginRight="@dimen/param_27dp"
+
+
         android:layout_marginTop="@dimen/param_12dp"
 
         android:background="@drawable/yuanjiaoblue_12"
         android:paddingLeft="@dimen/param_6dp"
         android:paddingRight="@dimen/param_6dp"
-        android:text="未参与"
+        android:text="已过期"
         android:textColor="@color/white"
         android:textSize="@dimen/param_12dp" />
 
@@ -87,9 +96,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="@dimen/param_10dp"
-        android:layout_marginRight="@dimen/param_27dp"
         android:layout_marginTop="@dimen/param_12dp"
         android:background="@drawable/yuanjiaohui_12"
         android:paddingLeft="@dimen/param_6dp"
@@ -97,18 +103,23 @@
         android:text="已参与"
         android:textColor="@color/white"
         android:textSize="@dimen/param_12dp"
-        android:visibility="invisible" />
+        android:visibility="gone" />
     <TextView
         android:layout_below="@+id/id_weibaoming"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-     android:textSize="@dimen/param_12dp"
-        android:text="49人参与"
+
+        android:textSize="@dimen/param_12dp"
+
+        android:text="49人已答题"
         android:textColor="@color/dj_textcolors_hei"
-android:layout_marginRight="@dimen/param_29dp"
+
+
         android:layout_marginTop="@dimen/param_7.5dp"
         />
+
+</LinearLayout>
+
 
 <View
     android:layout_width="match_parent"

@@ -65,7 +65,7 @@ public class SanhuiListAdapter extends BaseAdapter {
         ViewHolder vh;
 
         if (converView == null) {
-            view = mInflater.inflate(R.layout.item_listv_sanhui, null);
+            view = mInflater.inflate(R.layout.item_listv_sanhui_xiugai, null);
             vh = new ViewHolder(view);
 
             view.setTag(vh);

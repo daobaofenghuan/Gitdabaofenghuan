@@ -30,6 +30,7 @@ import com.sindcreate.dj.fragment.HomePage.Part_SanHuiYiKe_Fragment;
 import com.sindcreate.dj.fragment.HomePage.Part_Work_Fragment;
 import com.sindcreate.dj.fragment.HomePage.Part_ZaiXian_Fragment;
 
+import com.sindcreate.dj.fragment.HomePage.WorkFragment.Part_Work_fragment1;
 import com.sindcreate.dj.fragment.HomePageFragment;
 import com.sindcreate.dj.fragment.MessageFragment;
 import com.sindcreate.dj.fragment.MyFragment;
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     Part_DangRI_Fragmenttwo dangRi_fragemnt6;
     Part_SanHuiYiKe_Fragment sanHuiYiKe_fragment7;
     Part_ZaiXian_Fragment zaiXian_fragment8;
-    Part_Work_Fragment work_fragment9;
+    Part_Work_fragment1 work_fragment9;
 
 
     @BindView(R.id.id_home_bottom_img1)
@@ -225,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 9:
                 if (work_fragment9 == null) {
-                    work_fragment9 = new Part_Work_Fragment();
+                    work_fragment9 = new Part_Work_fragment1();
                     mFragmentTransaction.add(R.id.fragment_container, work_fragment9);
                 } else {
                     mFragmentTransaction.show(work_fragment9);

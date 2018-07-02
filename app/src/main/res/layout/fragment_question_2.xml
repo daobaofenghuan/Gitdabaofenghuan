@@ -57,16 +57,16 @@
 
             </RelativeLayout>
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/question_contain"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/param_28dp"
-                android:layout_marginTop="@dimen/param_17dp"
-                android:visibility="gone">
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/question_contain"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="@dimen/param_28dp"-->
+                <!--android:layout_marginTop="@dimen/param_17dp"-->
+                <!--android:visibility="gone">-->
 
 
-            </android.support.v7.widget.RecyclerView>
+            <!--</android.support.v7.widget.RecyclerView>-->
 
             <TextView
                 android:id="@+id/id_question2_timu"

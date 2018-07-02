@@ -54,7 +54,7 @@ public class Part_DangRI_Fragmenttwo extends BaseFragment {
         View view = inflater.inflate(R.layout.fragment_homepage_dangri, container, false);
         ButterKnife.bind(this, view);
         unbinder = ButterKnife.bind(this, view);
-
+        titletext.setText("党务工作");
         initTabLayout();
         bindViewPager();
 

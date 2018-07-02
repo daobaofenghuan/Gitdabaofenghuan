@@ -62,6 +62,7 @@ public   abstract class RVBaseAdapter<C extends RVBaseCell>  extends RecyclerVie
         return mData == null ? 0:mData.size();
     }
 
+
     @Override
     public int getItemViewType(int position) {
         return mData.get(position).getItemType();

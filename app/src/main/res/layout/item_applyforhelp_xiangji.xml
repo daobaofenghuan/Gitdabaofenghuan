@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_all"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+
+>
+<ImageView
+  android:layout_marginTop="@dimen/param_16dp"
+
+    android:id="@+id/item_img"
+    android:layout_width="@dimen/param_50dp"
+    android:layout_height="@dimen/param_50dp"
+    android:src="@mipmap/icon_test_xiangji"
+
+    />
+
+    <RelativeLayout
+        android:id="@+id/item_wrongly"
+        android:layout_width="@dimen/param_28dp"
+        android:layout_height="@dimen/param_28dp"
+        android:background="@drawable/yuan_dian_white"
+        android:layout_marginLeft="@dimen/param_40dp"
+
+        >
+        <ImageView
+             android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_width="@dimen/param_20dp"
+            android:layout_height="@dimen/param_20dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_wrong"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

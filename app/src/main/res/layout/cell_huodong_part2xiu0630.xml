@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_marginTop="@dimen/param_17dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="@dimen/param_10dp"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:textSize="@dimen/param_14dp"
+    android:textColor="@color/dj_textcolorsbule"
+    android:text="活动时间: "
+
+    />
+<TextView
+    android:layout_marginRight="@dimen/param_10dp"
+    android:layout_marginLeft="@dimen/param_8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/param_12dp"
+    android:text="2018-05-24  08:45 至 2018-05-24 17:30"
+    android:textColor="@color/dj_textcolorsbule"
+
+    />
+</LinearLayout>
+   <LinearLayout
+
+       android:layout_marginTop="@dimen/param_25dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="@dimen/param_10dp"
+       >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/param_14dp"
+          android:textColor="@color/dj_textcolorsbule"
+          android:text="活动地点: "
+
+          />
+      <TextView
+          android:layout_marginRight="@dimen/param_10dp"
+          android:layout_marginLeft="@dimen/param_8dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/param_12dp"
+          android:text="星海广场会中心。"
+          android:textColor="@color/dj_textcolorsbule"
+
+          />
+   </LinearLayout>
+   <LinearLayout
+       android:layout_marginTop="@dimen/param_25dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="@dimen/param_10dp"
+       >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="报名截止时间："
+          android:textColor="@color/dj_textcolorsbule"
+          android:textSize="@dimen/param_14dp"
+
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/param_8dp"
+          android:layout_marginRight="@dimen/param_10dp"
+          android:text="2018-05-24  09:00"
+          android:textColor="@color/dj_textcolorsbule"
+          android:textSize="@dimen/param_12dp"
+
+          />
+   </LinearLayout>
+   <LinearLayout
+       android:layout_marginTop="@dimen/param_25dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginBottom="@dimen/param_16dp"
+       android:layout_marginLeft="@dimen/param_10dp"
+       >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="报名名额： "
+          android:textColor="@color/dj_textcolorsbule"
+          android:textSize="@dimen/param_14dp"
+
+          />
+      <TextView
+          android:layout_marginRight="@dimen/param_10dp"
+          android:layout_marginLeft="@dimen/param_8dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/param_12dp"
+          android:text="1000人"
+          android:textColor="@color/dj_textcolorsbule"
+
+          />
+   </LinearLayout>
+   <include
+       layout="@layout/dim"
+       />
+</LinearLayout>

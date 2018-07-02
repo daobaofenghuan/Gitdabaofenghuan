@@ -49,8 +49,8 @@ public class Part_SanHuiYiKe_Fragment extends BaseFragment {
 
         View view = inflater.inflate(R.layout.fragment_homepage_sanhuiyike, container, false);
         ButterKnife.bind(this, view);
-        unbinder = ButterKnife.bind(this, view);
-
+      //  unbinder = ButterKnife.bind(this, view);
+        titletext.setText("三会一课");
         initTabLayout();
         bindViewPager();
 
@@ -65,8 +65,8 @@ public class Part_SanHuiYiKe_Fragment extends BaseFragment {
     //    textView.setText("三会一课");
         mTabs = new ArrayList<>();
         mTabs.clear();
-        mTabs.add(UiUtil.getString(R.string.weiwancheng));
-        mTabs.add(UiUtil.getString(R.string.sanhui_text2));
+        mTabs.add("开展中");
+        mTabs.add("已结束");
 
 
 

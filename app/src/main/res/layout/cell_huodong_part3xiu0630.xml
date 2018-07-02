@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_marginLeft="@dimen/param_11dp"
+    android:layout_marginTop="@dimen/param_17dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_24dp"
+    android:orientation="horizontal"
+    >
+  <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+      android:textSize="@dimen/param_13dp"
+      android:textColor="@color/dj_textcolor_title"
+android:background="@drawable/biankuanghuang_12dp"
+android:paddingLeft="@dimen/param_16dp"
+      android:paddingRight="@dimen/param_16dp"
+android:gravity="center"
+      android:text="签到"
+
+
+      />
+  <LinearLayout
+      android:layout_marginLeft="@dimen/param_15dp"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+android:background="@drawable/biankuangblue_12dp"
+      android:paddingLeft="@dimen/param_11dp"
+      android:paddingRight="@dimen/param_11dp"
+      android:gravity="center_vertical"
+      >
+<ImageView
+
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+android:src="@mipmap/icon_addbule"
+    android:layout_marginTop="@dimen/param_6.5dp"
+    android:layout_marginBottom="@dimen/param_6.5dp"
+
+    />
+<TextView
+    android:layout_marginLeft="@dimen/param_1dp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:textSize="@dimen/param_13dp"
+    android:textColor="@color/dj_textcolorsbule"
+    android:text="心得体会"
+    android:gravity="center_vertical"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/dj_textcolorsbule"
+        android:text="（截止2018-06－12）"
+        android:textSize="@dimen/param_11dp"
+        />
+
+
+  </LinearLayout>
+
+
+</LinearLayout>
+
+  <View
+      android:layout_marginTop="@dimen/param_18dp"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/param_1dp"
+      android:background="@color/dj_dim"
+      android:alpha="0.16"
+    />
+
+  <LinearLayout
+      android:layout_marginTop="@dimen/param_17dp"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/param_20dp"
+      android:gravity="center_vertical"
+      android:layout_marginLeft="@dimen/param_10dp"
+      >
+    <View
+
+
+        android:layout_width="@dimen/param_5dp"
+        android:layout_height="@dimen/param_5dp"
+        android:background="@drawable/yuan_dian_red"
+
+        />
+
+    <TextView
+        android:layout_marginLeft="@dimen/param_4dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+        android:textSize="@dimen/param_14dp"
+        android:textColor="@color/dj_textcolor_title2"
+        android:text="未读（13）"
+        />
+    <View
+
+        android:layout_marginLeft="@dimen/param_20dp"
+        android:layout_width="@dimen/param_5dp"
+        android:layout_height="@dimen/param_5dp"
+        android:background="@drawable/yuan_dian_red"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/param_4dp"
+        android:text="未签到（2）"
+        android:textColor="@color/dj_textcolors"
+        android:textSize="@dimen/param_14dp" />
+    <View
+
+android:layout_marginLeft="@dimen/param_20dp"
+        android:layout_width="@dimen/param_5dp"
+        android:layout_height="@dimen/param_5dp"
+        android:background="@drawable/yuan_dian_red"
+
+        />
+
+    <TextView
+        android:layout_marginLeft="@dimen/param_4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/param_14dp"
+        android:textColor="@color/dj_textcolors"
+        android:text="已上传心得体会（18）"
+        />
+
+  </LinearLayout>
+
+
+  <TextView
+
+      android:id="@+id/id_huodong_yidurenyuan"
+      android:layout_marginTop="@dimen/param_8dp"
+      android:layout_marginBottom="@dimen/param_30dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/param_10dp"
+      android:layout_marginRight="@dimen/param_10dp"
+      android:text="赵倩   阿里    李出弄   张一山   白雪    金文婷   李亚丹    赵丽   段誉   郭靖   黄蓉"
+      android:textColor="@color/dj_textcolorhui"
+      android:textSize="@dimen/param_12dp"
+      android:background="@color/dj_hui"
+android:paddingTop="@dimen/param_18dp"
+      android:paddingBottom="@dimen/param_20dp"
+
+      />
+</LinearLayout>

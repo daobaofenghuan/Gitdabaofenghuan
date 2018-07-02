@@ -42,4 +42,8 @@ dependencies {
     //banner
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    //党建
+    compile 'com.gyf.barlibrary:barlibrary:2.1.9'
+    //图册
+    compile 'com.yanzhenjie:album:1.0.0'
 }

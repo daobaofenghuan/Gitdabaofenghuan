@@ -29,7 +29,7 @@ public class Question1start_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_question_1start, container, false);
+        View view = inflater.inflate(R.layout.fragment_question_1start_xiu, container, false);
         ButterKnife.bind(this, view);
 
 

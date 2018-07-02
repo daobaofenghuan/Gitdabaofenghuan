@@ -47,7 +47,7 @@ public class Part_Work_Fragment extends BaseFragment {
         View view = inflater.inflate(R.layout.fragment_homepage_work, container, false);
         ButterKnife.bind(this, view);
         unbinder = ButterKnife.bind(this, view);
-
+        titletext.setText("工作任务");
         initTabLayout();
         bindViewPager();
 

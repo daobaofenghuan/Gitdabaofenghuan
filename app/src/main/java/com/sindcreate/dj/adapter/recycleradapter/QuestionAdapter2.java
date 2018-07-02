@@ -1,4 +1,4 @@
-package com.sindcreate.dj.adapter;
+package com.sindcreate.dj.adapter.recycleradapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
